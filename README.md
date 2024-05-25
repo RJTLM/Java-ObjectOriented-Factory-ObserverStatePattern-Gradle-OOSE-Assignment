@@ -1,0 +1,2 @@
+# Java-ObjectOriented-Factory-ObserverStatePattern-Gradle-OOSE-Assignment
+This repository contains the implementation of a Bike Shop simulation project for the Object-Oriented Software Engineering (OOSE) course, Semester 1, 2024. The project demonstrates the application of various design patterns including Factory, Observer, and State patterns using Java. The project is built and managed using Gradle.
