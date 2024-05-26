@@ -5,7 +5,8 @@
     - No PMD warnings should be present unless justified with comments.
 
 2. **Clear and Distinct Package/Class/Interface/Method Responsibilities (6 marks)**
-    - Application should be divided into meaningful packages or namespaces.
+    - Application should be divided into meaningful packages.
+    - The application is not specifically required to use MVC, but may take inspiration from it as a means of dividing up responsibilities.
 
 3. **Error Handling and Logging (6 marks)**
     - Proper use of exception handling.

@@ -1,104 +1,104 @@
 Assignment 2
-1 Your Task
-1.1 Your Responses to the Criteria
+1. Your Task
+1.1. Your Responses to the Criteria
 
-2 Problem Description
-2.1 Basic Operation
-2.2 Simulation Input
-2.3 Messages and Simulation Logic
-2.4 Outputs
+2. Problem Description
+2.1. Basic Operation
+2.2. Simulation Input
+2.3. Messages and Simulation Logic
+2.4. Outputs
 
-Topic: Object Oriented Software Engineering
-Semester 1, 2024
+Topic: Object Oriented Software Engineering
+Semester 1, 2024
 
-Assignment 2
-Marks Available: 45
+Assignment 2
+Marks Available: 45
 
-1. Your Task:
-Demonstrate the correct usage of OOSE concepts by designing and implementing a simple software application, whose functionality is specified in the Problem Description.
+1. Your Task:
+Demonstrate the correct usage of OOSE concepts by designing and implementing a simple software application, whose functionality is specified in the Problem Description.
 
-Use Java to implement the system described.
+Use Java to implement the system described.
 
-You will receive marks as follows:
+You will receive marks as follows:
 
-6 marks - General code quality.
+6 marks - General code quality.
 
-The code must be reasonably-well commented.
+The code must be reasonably-well commented.
 To start your project:
 
-Start with 2024_assignment2_starter_java.zip (from the “Assignments” area on Blackboard).
-You must use PMD “ruleset” “oose-pmd-rules.xml”.
-There should be no PMD warnings.
-You may choose to suppress specific PMD warnings, but only if:
-You include a reasonable justification using in-code comments (in the same place);
-You only suppress individual warnings (not all rules at once);
-You don’t suppress warnings across an entire class/interface/file at once (only where actually needed).
+Start with 2024_assignment2_starter_java.zip (from the “Assignments” area on Blackboard).
+You must use PMD “ruleset” “oose-pmd-rules.xml”.
+There should be no PMD warnings.
+You may choose to suppress specific PMD warnings, but only if:
+You include a reasonable justification using in-code comments (in the same place);
+You only suppress individual warnings (not all rules at once);
+You don’t suppress warnings across an entire class/interface/file at once (only where actually needed).
 
-6 marks - Clear and distinct package/class/interface/method responsibilities.
+6 marks - Clear and distinct package/class/interface/method responsibilities.
 
-You must break up your application into multiple packages (or namespaces), in some meaningful way.
-You are not specifically required to use MVC, but you may take inspiration from it if you like, as a means of dividing up responsibilities.
+You must break up your application into multiple packages (or namespaces), in some meaningful way.
+You are not specifically required to use MVC, but you may take inspiration from it if you like, as a means of dividing up responsibilities.
 
-6 marks - Appropriate error handling and logging.
+6 marks - Appropriate error handling and logging.
 
-The program must use exception handling appropriately. It must gracefully handle external errors, without compromising the debugging of internal errors.
-The program must include a reasonable set of logging statements.
+The program must use exception handling appropriately. It must gracefully handle external errors, without compromising the debugging of internal errors.
+The program must include a reasonable set of logging statements.
 
-6 marks - Implementation of a factory (or factories if desired), and dependency injection.
+6 marks - Implementation of a factory (or factories if desired), and dependency injection.
 
-You do not need to “dependency inject” instances of state subclasses, when using the State Pattern.
+You do not need to “dependency inject” instances of state subclasses, when using the State Pattern.
 
-Factories are obviously able to create their own new objects too.
-Avoid using singletons.
+Factories are obviously able to create their own new objects too.
+Avoid using singletons.
 
-7 marks - Appropriate use of the Observer Pattern.
+7 marks - Appropriate use of the Observer Pattern.
 
-You must find a meaningful, practical use for this pattern as part of your design.
-You must use actual polymorphism.
+You must find a meaningful, practical use for this pattern as part of your design.
+You must use actual polymorphism.
 
-7 marks - Appropriate use of the State Pattern.
+7 marks - Appropriate use of the State Pattern.
 
-As above, you must find a meaningful, practical use for this pattern too as part of your design, and use actual polymorphism.
+As above, you must find a meaningful, practical use for this pattern too as part of your design, and use actual polymorphism.
 
-7 marks - Clear and correct UML diagrams, including one class diagram and one state chart.
+7 marks - Clear and correct UML diagrams, including one class diagram and one state chart.
 
-Provide one class diagram, showing the structure of your entire app.
-Provide one state chart, showing states and state transitions corresponding to your implementation of the State Pattern (If you use the State Pattern multiple times, you can choose which situation to illustrate using a diagram, or provide separate diagrams of each).
+Provide one class diagram, showing the structure of your entire app.
+Provide one state chart, showing states and state transitions corresponding to your implementation of the State Pattern (If you use the State Pattern multiple times, you can choose which situation to illustrate using a diagram, or provide separate diagrams of each).
 
-Provide each diagram in PDF, SVG or PNG format.
-Use a proper tool to draw them; e.g., draw.io, Umlet, PlantUML or others.
-Make them neat and legible!
+Provide each diagram in PDF, SVG or PNG format.
+Use a proper tool to draw them; e.g., draw.io, Umlet, PlantUML or others.
+Make them neat and legible!
 
-Your diagrams must accurately represent your actual design.
+Your diagrams must accurately represent your actual design.
 
-Bonus marks - Meaningful use of generics.
+Bonus marks - Meaningful use of generics.
 
-Up to 4 bonus marks may be awarded, but they will not be easy to get.
-To get these bonus marks:
-You need at least one class/interface with a generic type parameter, which takes on at least two different types;
-It must contribute to type-safe code reuse; and
-It must help address the actual problem statement.
+Up to 4 bonus marks may be awarded, but they will not be easy to get.
+To get these bonus marks:
+You need at least one class/interface with a generic type parameter, which takes on at least two different types;
+It must contribute to type-safe code reuse; and
+It must help address the actual problem statement.
 
-Your overall assignment mark is still capped at 100% (45/45 marks).
+Your overall assignment mark is still capped at 100% (45/45 marks).
 
-Penalty marks for code that doesn’t work, or doesn’t address the Problem Description.
+Penalty marks for code that doesn’t work, or doesn’t address the Problem Description.
 
-Up to 4 marks may be deducted for these reasons.
+Up to 4 marks may be deducted for these reasons.
 
-1.1. Your Responses to the Criteria:
-You must provide a file called criteria.txt or criteria.md, containing responses as follows:
+1.1. Your Responses to the Criteria:
+You must provide a file called criteria.txt or criteria.md, containing responses as follows:
 
-For criteria (e) and (f) in particular, you must write at least a couple of paragraphs explaining the way your design works (in regards to the Observer and State patterns), and the choices you have made. We want to know whether you can articulate your own design!
+For criteria (e) and (f) in particular, you must write at least a couple of paragraphs explaining the way your design works (in regards to the Observer and State patterns), and the choices you have made. We want to know whether you can articulate your own design!
 
-For each other criteria, you may choose to provide a response to help the marker understand what you’ve done.
+For each other criteria, you may choose to provide a response to help the marker understand what you’ve done.
 
-2. Problem Description:
-Your application will simulate a bicycle shop, which both sells and repairs bikes.
+2. Problem Description:
+Your application will simulate a bicycle shop, which both sells and repairs bikes.
 
-Start by obtaining a copy of 2024_assignment2_starter_java.zip
+Start by obtaining a copy of 2024_assignment2_starter_java.zip
 
-2.1 Basic Operation:
-The basic foundation of the simulation should be an event loop, like this:
+2.1 Basic Operation:
+The basic foundation of the simulation should be an event loop, like this:
 
 while(System.in.available() == 0)  // <-- actual Java code
 {
@@ -117,93 +117,93 @@ while(System.in.available() == 0)  // <-- actual Java code
         throw new AssertionError(e);
     }
 }
-In  other  words:
+In  other  words:
 
-Loop until the user presses Enter;
-Perform one simulation “step” on each loop iteration;
-Wait 1 second between steps.
-
-Note:
-The method “System.in.available()” returns the number of bytes in the console input buffer. This is 0 until there’s any console input, and the user must press Enter to send any console input to the program. Thus, this event loop runs until the user presses Enter.
-
-We can’t just write scanner.nextLine() (for instance), because this waits for the input while doing nothing, and we want to actually run the simulation in the meantime.
-
-Apart from this, we don’t need any console user input. Your application will take input from another source, as explained below:
-
-2.2. Simulation Input:
-There is a pre-existing class called BikeShopInput, from which your simulation must obtain input.
-
-You must create a BikeShopInput object, and then call nextMessage(), which returns a string (or null) indicating that something has just happened. It will supply different messages at different points in time. There could be multiple messages available, so when you call it, you should call nextMessage() repeatedly until it returns null, which means there are no further messages at the present time.
-
-Each valid message string begins with one of “DELIVERY”, “DROP-OFF”, "PURCHASE-ONLINE”, “PURCHASE-IN-STORE” or “PICK-UP”. If the message starts with “DROP-OFF”, “PURCHASE-ONLINE” or “PICK-UP”, then it must also contain a space, then an email address. The “DELIVERY” and “PURCHASE-IN-STORE” messages contain no further information.
-
-You do need to validate messages. BikeShopInput will return invalid messages from time to time! You don’t need to perform any real validation on email addresses specifically (though you can if you want).
+Loop until the user presses Enter;
+Perform one simulation “step” on each loop iteration;
+Wait 1 second between steps.
 
 Note:
-Treat BikeShopInput itself as a library, not as a template. Your program must work with the original, unmodified version of this file (and potentially with another marker-supplied version).
+The method “System.in.available()” returns the number of bytes in the console input buffer. This is 0 until there’s any console input, and the user must press Enter to send any console input to the program. Thus, this event loop runs until the user presses Enter.
+
+We can’t just write scanner.nextLine() (for instance), because this waits for the input while doing nothing, and we want to actually run the simulation in the meantime.
+
+Apart from this, we don’t need any console user input. Your application will take input from another source, as explained below:
+
+2.2. Simulation Input:
+There is a pre-existing class called BikeShopInput, from which your simulation must obtain input.
+
+You must create a BikeShopInput object, and then call nextMessage(), which returns a string (or null) indicating that something has just happened. It will supply different messages at different points in time. There could be multiple messages available, so when you call it, you should call nextMessage() repeatedly until it returns null, which means there are no further messages at the present time.
+
+Each valid message string begins with one of “DELIVERY”, “DROP-OFF”, "PURCHASE-ONLINE”, “PURCHASE-IN-STORE” or “PICK-UP”. If the message starts with “DROP-OFF”, “PURCHASE-ONLINE” or “PICK-UP”, then it must also contain a space, then an email address. The “DELIVERY” and “PURCHASE-IN-STORE” messages contain no further information.
+
+You do need to validate messages. BikeShopInput will return invalid messages from time to time! You don’t need to perform any real validation on email addresses specifically (though you can if you want).
+
+Note:
+Treat BikeShopInput itself as a library, not as a template. Your program must work with the original, unmodified version of this file (and potentially with another marker-supplied version).
 
 So…
 
-DON’T add your own methods or other design elements to this file. This would be BAD.
-DON’T count this file towards your use of patterns.
-But do (if you want) modify it to help test your program under different conditions.
+DON’T add your own methods or other design elements to this file. This would be BAD.
+DON’T count this file towards your use of patterns.
+But do (if you want) modify it to help test your program under different conditions.
 
-2.3. Messages and Simulation Logic:
-The simulation must treat 1 actual second as 1 simulated day (Each second of real time equates to 1 day for the bike shop).
+2.3. Messages and Simulation Logic:
+The simulation must treat 1 actual second as 1 simulated day (Each second of real time equates to 1 day for the bike shop).
 
-The bike shop begins with $15,000 in cash (in a bank account), and 50 bikes, all available for purchase. It has space for 100 bikes total. All bikes are physically the same, but (at any given point in time) some will be being serviced or awaiting pick-up by customers, and these will be associated with certain customers’ email addresses. Bikes being serviced or awaiting pick-up are not available for purchase, but still count towards the 100-bike limit.
+The bike shop begins with $15,000 in cash (in a bank account), and 50 bikes, all available for purchase. It has space for 100 bikes total. All bikes are physically the same, but (at any given point in time) some will be being serviced or awaiting pick-up by customers, and these will be associated with certain customers’ email addresses. Bikes being serviced or awaiting pick-up are not available for purchase, but still count towards the 100-bike limit.
 
-The shop has a single employee, who is paid $1000 every 7 days simulated time (7 seconds actual time) from the shop’s bank account. The shop’s bank account balance can become negative, if necessary.
+The shop has a single employee, who is paid $1000 every 7 days simulated time (7 seconds actual time) from the shop’s bank account. The shop’s bank account balance can become negative, if necessary.
 
-The various messages should be handled as follows:
+The various messages should be handled as follows:
 
-A “DELIVERY” message indicates that 10 more bikes are available for immediate (instantaneous) delivery from the manufacturer to the bike shop. The bike shop accepts delivery only if it has space for 10 more bikes (i.e., it currently has <= 90 bikes), and it has at least $10,000 in cash. The 10 bikes cost $5000 total ($500 per bike). Thus, if it accepts delivery, the appropriate values must be adjusted. If the bike shop rejects delivery, then nothing changes.
+A “DELIVERY” message indicates that 10 more bikes are available for immediate (instantaneous) delivery from the manufacturer to the bike shop. The bike shop accepts delivery only if it has space for 10 more bikes (i.e., it currently has <= 90 bikes), and it has at least $10,000 in cash. The 10 bikes cost $5000 total ($500 per bike). Thus, if it accepts delivery, the appropriate values must be adjusted. If the bike shop rejects delivery, then nothing changes.
 
-A “DROP-OFF” message (including an email address) indicates that a customer is attempting to have their bike serviced (repaired). The bike is accepted for servicing only if the shop has space for 1 more bike (i.e., it currently has <= 99 bikes). No cash is exchanged at this point. The bike shop takes 2 simulated days (2 seconds of real time) to service the bike, and then holds onto it until it is picked up.
+A “DROP-OFF” message (including an email address) indicates that a customer is attempting to have their bike serviced (repaired). The bike is accepted for servicing only if the shop has space for 1 more bike (i.e., it currently has <= 99 bikes). No cash is exchanged at this point. The bike shop takes 2 simulated days (2 seconds of real time) to service the bike, and then holds onto it until it is picked up.
 
-A “PURCHASE-ONLINE” message (including an email address) indicates that a customer is offering to buy a bike via the shop’s website. To do this, there must be at least 1 bike in the shop that is available for purchase. A bike is not available for purchase if (a) it has already been purchased online but not yet picked up, or (b) it is being serviced. Bikes cost $1000 to buy, so if a bike is available, then the appropriate values must be adjusted. The bike shop holds onto the bike until it is picked up.
+A “PURCHASE-ONLINE” message (including an email address) indicates that a customer is offering to buy a bike via the shop’s website. To do this, there must be at least 1 bike in the shop that is available for purchase. A bike is not available for purchase if (a) it has already been purchased online but not yet picked up, or (b) it is being serviced. Bikes cost $1000 to buy, so if a bike is available, then the appropriate values must be adjusted. The bike shop holds onto the bike until it is picked up.
 
-A “PURCHASE-IN-STORE” message indicates that a customer is physically in the shop, and wants to buy a bike. This works like purchasing online, except that the customer immediately takes the bike (if available).
+A “PURCHASE-IN-STORE” message indicates that a customer is physically in the shop, and wants to buy a bike. This works like purchasing online, except that the customer immediately takes the bike (if available).
 
-A “PICK-UP” message (including an email address) indicates that a customer is physically in the shop and asking to take away their bike, after either (a) having it serviced, or (b) purchasing it online. The customer’s email address must match one previously supplied in a “DROP-OFF” or “PURCHASE-ONLINE” message. If the bike was being serviced, then (a) at least 2 days of simulated time (2 seconds actual time) must have elapsed since the drop-off (as noted above), and (b) the shop receives the $100 cost of servicing at this point.
+A “PICK-UP” message (including an email address) indicates that a customer is physically in the shop and asking to take away their bike, after either (a) having it serviced, or (b) purchasing it online. The customer’s email address must match one previously supplied in a “DROP-OFF” or “PURCHASE-ONLINE” message. If the bike was being serviced, then (a) at least 2 days of simulated time (2 seconds actual time) must have elapsed since the drop-off (as noted above), and (b) the shop receives the $100 cost of servicing at this point.
 
-For bikes purchased online or dropped-off for servicing, several may share the same email address. That is, a single customer can have multiple bikes being serviced and/or awaiting pick-up at the same time. However, each message concerns only one bike at a time.
+For bikes purchased online or dropped-off for servicing, several may share the same email address. That is, a single customer can have multiple bikes being serviced and/or awaiting pick-up at the same time. However, each message concerns only one bike at a time.
 
-Notice that each of these messages may result in failure, under certain conditions. The simulation must keep going regardless. Any error when parsing a message must be treated likewise.
+Notice that each of these messages may result in failure, under certain conditions. The simulation must keep going regardless. Any error when parsing a message must be treated likewise.
 
-2.4. Outputs:
-The simulation must output information as follows:
+2.4. Outputs:
+The simulation must output information as follows:
 
-Each simulated day (actual second), it must display the bike shop’s statistics on the screen, including:
+Each simulated day (actual second), it must display the bike shop’s statistics on the screen, including:
 
-Number of days elapsed;
-Total cash in the bank account;
-Number of bikes available for purchase;
-Number of bikes being serviced;
-Number of bikes awaiting pick-up.
+Number of days elapsed;
+Total cash in the bank account;
+Number of bikes available for purchase;
+Number of bikes being serviced;
+Number of bikes awaiting pick-up.
 
-For any attempt at delivery, drop-off, purchase (online or in-store) or pick-up, the message must be shown on the screen.
+For any attempt at delivery, drop-off, purchase (online or in-store) or pick-up, the message must be shown on the screen.
 
-In the event of failure, the on-screen message must be accompanied by the word “FAILURE”, followed by the cause:
+In the event of failure, the on-screen message must be accompanied by the word “FAILURE”, followed by the cause:
 
-Not enough space (to store more bikes);
-Not enough cash (for the shop to purchase new bikes);
-No bikes left (for a customer to purchase);
-No bike matching customer email (for pick-up);
-Bike not ready (still being serviced);
-Invalid message (parsing error).
+Not enough space (to store more bikes);
+Not enough cash (for the shop to purchase new bikes);
+No bikes left (for a customer to purchase);
+No bike matching customer email (for pick-up);
+Bike not ready (still being serviced);
+Invalid message (parsing error).
 
-All of the above must also be written to an output file called “sim_results.txt”. Messages should be written “in real time”, so that the file can be examined during the simulation (not just afterwards).
+All of the above must also be written to an output file called “sim_results.txt”. Messages should be written “in real time”, so that the file can be examined during the simulation (not just afterwards).
 
-Finally, at the very end of the simulation (after the user presses Enter), the program must display overall simulation statistics, including:
+Finally, at the very end of the simulation (after the user presses Enter), the program must display overall simulation statistics, including:
 
-The total number of input messages; and
-The total number of failures.
+The total number of input messages; and
+The total number of failures.
 
-File writing
+File writing
 
-Ensure that you call the flush() method on your Writer object immediately after writing a line of text. Alternatively, you can open and close the file for each line of text, provided that you use the “append” parameter; e.g.:
+Ensure that you call the flush() method on your Writer object immediately after writing a line of text. Alternatively, you can open and close the file for each line of text, provided that you use the “append” parameter; e.g.:
 
 try(var writer = new FileWriter("sim_results.txt", true))
 {...}
-(The   default,  false,  causes   the   file to  be  overwritten).
+(The   default,  false,  causes   the   file to  be  overwritten).
