@@ -1,6 +1,9 @@
 package edu.curtin.oose2024s1.assignment2.view;
 
-import edu.curtin.oose2024s1.assignment2.model.*;
+import edu.curtin.oose2024s1.assignment2.model.BankAccount;
+import edu.curtin.oose2024s1.assignment2.model.Inventory;
+import edu.curtin.oose2024s1.assignment2.observer.Observer;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,13 +16,20 @@ Role:
     - Acts as the presentation layer of the application, showing the current state of the bike shop to the user and ensuring that all output is logged appropriately.
  */
 // Displays shop statistics and messages.
-public class BikeShopView
+public class BikeShopView implements Observer
 {
     private static final Logger logger = Logger.getLogger(BikeShopView.class.getName());
     private PrintWriter writer;
+    private BankAccount bankAccount;
+    private Inventory inventory;
+    private int daysElapsed;
 
-    public BikeShopView()
+    public BikeShopView(BankAccount bankAccount, Inventory inventory)
     {
+        this.bankAccount = bankAccount;
+        this.inventory = inventory;
+        this.daysElapsed = 0;
+
         try
         {
             writer = new PrintWriter(new FileWriter("sim_results.txt", true));
@@ -28,9 +38,12 @@ public class BikeShopView
         {
             logger.severe("Error opening sim_results.txt: " + e.getMessage());
         }
+
+        this.bankAccount.addObserver(this);
+        this.inventory.addObserver(this);
     }
 
-    public void displayStatus(int daysElapsed, BankAccount bankAccount, Inventory inventory)
+    public void displayStatus()
     {
         String status = "Day " + daysElapsed +
                 "\nBank Account Balance: $" + bankAccount.getBalance() +
@@ -66,5 +79,16 @@ public class BikeShopView
         {
             writer.close();
         }
+    }
+
+    @Override
+    public void update()
+    {
+        displayStatus();
+    }
+
+    public void incrementDay()
+    {
+        daysElapsed++;
     }
 }
