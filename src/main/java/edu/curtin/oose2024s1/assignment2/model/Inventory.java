@@ -18,17 +18,17 @@ Responsibilities:
 public class Inventory implements Observable
 {
     private static final Logger logger = Logger.getLogger(Inventory.class.getName());
+
     private List<Bike> availableBikes;
     private List<Bike> servicedBikes;
     private List<Bike> awaitingPickupBikes;
-    private List<Observer> observers;
+    private List<Observer> observers = new ArrayList<>();
 
     public Inventory()
     {
         availableBikes = new ArrayList<>();
         servicedBikes = new ArrayList<>();
         awaitingPickupBikes = new ArrayList<>();
-        observers = new ArrayList<>();
     }
 
     public List<Bike> getAvailableBikes()

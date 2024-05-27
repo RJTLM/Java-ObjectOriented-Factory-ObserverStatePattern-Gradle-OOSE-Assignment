@@ -19,12 +19,11 @@ public class BankAccount implements Observable
 {
     private static final Logger logger = Logger.getLogger(BankAccount.class.getName());
     private double balance;
-    private List<Observer> observers;
+    private List<Observer> observers = new ArrayList<>();
 
     public BankAccount(double initialBalance)
     {
         this.balance = initialBalance;
-        this.observers = new ArrayList<>();
     }
 
     public double getBalance()

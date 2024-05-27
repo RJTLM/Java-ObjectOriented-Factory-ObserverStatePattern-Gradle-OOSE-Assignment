@@ -22,13 +22,13 @@ public class BikeShopView implements Observer
     private PrintWriter writer;
     private BankAccount bankAccount;
     private Inventory inventory;
-    private int daysElapsed;
 
     public BikeShopView(BankAccount bankAccount, Inventory inventory)
     {
         this.bankAccount = bankAccount;
         this.inventory = inventory;
-        this.daysElapsed = 0;
+        bankAccount.addObserver(this);
+        inventory.addObserver(this);
 
         try
         {
@@ -38,15 +38,17 @@ public class BikeShopView implements Observer
         {
             logger.severe("Error opening sim_results.txt: " + e.getMessage());
         }
+    }
 
-        this.bankAccount.addObserver(this);
-        this.inventory.addObserver(this);
+    @Override
+    public void update()
+    {
+        displayStatus();
     }
 
     public void displayStatus()
     {
-        String status = "Day " + daysElapsed +
-                "\nBank Account Balance: $" + bankAccount.getBalance() +
+        String status = "Bank Account Balance: $" + bankAccount.getBalance() +
                 "\nBikes Available: " + inventory.getAvailableBikeCount() +
                 "\nBikes Being Serviced: " + inventory.getServicedBikeCount() +
                 "\nBikes Awaiting Pickup: " + inventory.getAwaitingPickupBikeCount();
@@ -79,16 +81,5 @@ public class BikeShopView implements Observer
         {
             writer.close();
         }
-    }
-
-    @Override
-    public void update()
-    {
-        displayStatus();
-    }
-
-    public void incrementDay()
-    {
-        daysElapsed++;
     }
 }

@@ -1,5 +1,8 @@
 package edu.curtin.oose2024s1.assignment2.observer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Purpose:
     - Defines the contract for the subject that maintains a list of observers and notifies them of changes.
