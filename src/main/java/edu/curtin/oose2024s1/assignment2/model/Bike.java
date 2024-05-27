@@ -1,12 +1,18 @@
 package edu.curtin.oose2024s1.assignment2.model;
 
+import edu.curtin.oose2024s1.assignment2.state.BikeState;
+import edu.curtin.oose2024s1.assignment2.state.AvailableState;
+
 /*
 Purpose:
     - Represents an individual bike in the shop.
+    - Maintain the current state of the bike and delegate state-specific behavior.
 Responsibilities:
-    - Track the status of the bike (available, being serviced, awaiting pickup).
-    - Associate the bike with a customer if it is being serviced or has been purchased online.
- */
+    - Track the status and associated customer email of the bike.
+    - Manage state transitions and delegate behavior to the current state.
+Role:
+    - Act as the context in the State Pattern, holding a reference to the current state.
+*/
 // Represents a bike.
 public class Bike
 {
@@ -17,10 +23,12 @@ public class Bike
 
     private Status status;
     private String associatedEmail;
+    private BikeState state;
 
-    public Bike(Status status)
+    public Bike(Status available)
     {
-        this.status = status;
+        this.state = new AvailableState();
+        this.status = Status.AVAILABLE;
     }
 
     public Status getStatus()
@@ -41,6 +49,26 @@ public class Bike
     public void setAssociatedEmail(String email)
     {
         this.associatedEmail = email;
+    }
+
+    public void setState(BikeState state)
+    {
+        this.state = state;
+    }
+
+    public void dropOff()
+    {
+        state.dropOff(this);
+    }
+
+    public void pickUp()
+    {
+        state.pickUp(this);
+    }
+
+    public void purchase()
+    {
+        state.purchase(this);
     }
 
     @Override

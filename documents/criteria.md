@@ -383,3 +383,241 @@ public class BikeShopView implements Observer
    - It implements the `Observer` interface and registers itself with the observables.
 
 By implementing the Observer pattern this way, you ensure that your views always reflect the current state of the models, adhering to the principles of the MVC architecture and the Observer pattern.
+
+
+
+
+
+------------------------------------------------------------------------
+### State Pattern Overview
+
+The State Pattern is a behavioral design pattern that allows an object to change its behavior when its internal state changes. This pattern is particularly useful when an object needs to exhibit different behaviors based on its current state.
+
+**Key Components of the State Pattern:**
+1. **Context**: The object that contains a state.
+2. **State Interface**: An interface that defines the behavior associated with a state.
+3. **Concrete State Classes**: Implementations of the state interface that provide behavior for different states.
+4. **State Transitions**: The context delegates state-specific behavior to the current state object, and state transitions are handled by changing the current state.
+
+### Implementation in the Bike Shop Project
+
+For this project, the `Bike` class will serve as the context, with different states representing its status: `Available`, `BeingServiced`, and `AwaitingPickup`. The state pattern will allow the `Bike` class to change its behavior based on its current state.
+
+#### Steps to Implement the State Pattern
+
+1. **Define the State Interface (`BikeState`)**:
+   - This interface will declare methods that each state must implement. These methods will define the behavior that varies depending on the bike's state.
+
+2. **Implement Concrete State Classes**:
+   - Create concrete classes for each state (`AvailableState`, `BeingServicedState`, `AwaitingPickupState`). Each class will implement the `BikeState` interface and provide specific behavior for that state.
+
+3. **Modify the `Bike` Class**:
+   - Add a `BikeState` field to represent the current state of the bike.
+   - Implement methods to set the current state and delegate state-specific behavior to the state object.
+
+4. **Handle State Transitions**:
+   - Ensure that state transitions (e.g., from `Available` to `BeingServiced`) are handled correctly by changing the current state object.
+
+### Code Implementation
+
+#### 1. State Interface (`BikeState`)
+```java
+package edu.curtin.oose2024s1.assignment2.state;
+
+import edu.curtin.oose2024s1.assignment2.model.Bike;
+
+// Interface for bike states.
+public interface BikeState
+{
+    void dropOff(Bike bike);
+    void pickUp(Bike bike);
+    void purchase(Bike bike);
+}
+```
+
+#### 2. Concrete State Classes
+
+**AvailableState**
+```java
+package edu.curtin.oose2024s1.assignment2.state;
+
+import edu.curtin.oose2024s1.assignment2.model.Bike;
+
+// Concrete state for bikes that are available.
+public class AvailableState implements BikeState
+{
+    @Override
+    public void dropOff(Bike bike)
+    {
+        bike.setState(new BeingServicedState());
+        bike.setStatus(Bike.Status.BEING_SERVICED);
+        // Additional logic for drop-off can be added here
+    }
+
+    @Override
+    public void pickUp(Bike bike)
+    {
+        // Bikes cannot be picked up if they are available
+        throw new UnsupportedOperationException("Bike is already available.");
+    }
+
+    @Override
+    public void purchase(Bike bike)
+    {
+        bike.setState(new AwaitingPickupState());
+        bike.setStatus(Bike.Status.AWAITING_PICKUP);
+        // Additional logic for purchase can be added here
+    }
+}
+```
+
+**BeingServicedState**
+```java
+package edu.curtin.oose2024s1.assignment2.state;
+
+import edu.curtin.oose2024s1.assignment2.model.Bike;
+
+// Concrete state for bikes that are being serviced.
+public class BeingServicedState implements BikeState
+{
+    @Override
+    public void dropOff(Bike bike)
+    {
+        // Bikes cannot be dropped off if they are already being serviced
+        throw new UnsupportedOperationException("Bike is already being serviced.");
+    }
+
+    @Override
+    public void pickUp(Bike bike)
+    {
+        bike.setState(new AvailableState());
+        bike.setStatus(Bike.Status.AVAILABLE);
+        // Additional logic for pick-up can be added here
+    }
+
+    @Override
+    public void purchase(Bike bike)
+    {
+        // Bikes cannot be purchased if they are being serviced
+        throw new UnsupportedOperationException("Bike is being serviced.");
+    }
+}
+```
+
+**AwaitingPickupState**
+```java
+package edu.curtin.oose2024s1.assignment2.state;
+
+import edu.curtin.oose2024s1.assignment2.model.Bike;
+
+// Concrete state for bikes that are awaiting pickup.
+public class AwaitingPickupState implements BikeState
+{
+    @Override
+    public void dropOff(Bike bike)
+    {
+        // Bikes cannot be dropped off if they are awaiting pickup
+        throw new UnsupportedOperationException("Bike is awaiting pickup.");
+    }
+
+    @Override
+    public void pickUp(Bike bike)
+    {
+        bike.setState(new AvailableState());
+        bike.setStatus(Bike.Status.AVAILABLE);
+        // Additional logic for pick-up can be added here
+    }
+
+    @Override
+    public void purchase(Bike bike)
+    {
+        // Bikes cannot be purchased if they are awaiting pickup
+        throw new UnsupportedOperationException("Bike is awaiting pickup.");
+    }
+}
+```
+
+#### 3. Modify the `Bike` Class
+```java
+package edu.curtin.oose2024s1.assignment2.model;
+
+import edu.curtin.oose2024s1.assignment2.state.BikeState;
+import edu.curtin.oose2024s1.assignment2.state.AvailableState;
+
+// Represents a bike.
+public class Bike
+{
+    public enum Status
+    {
+        AVAILABLE, BEING_SERVICED, AWAITING_PICKUP
+    }
+
+    private Status status;
+    private String associatedEmail;
+    private BikeState state;
+
+    public Bike()
+    {
+        this.state = new AvailableState();
+        this.status = Status.AVAILABLE;
+    }
+
+    public Status getStatus()
+    {
+        return status;
+    }
+
+    public void setStatus(Status status)
+    {
+        this.status = status;
+    }
+
+    public String getAssociatedEmail()
+    {
+        return associatedEmail;
+    }
+
+    public void setAssociatedEmail(String email)
+    {
+        this.associatedEmail = email;
+    }
+
+    public void setState(BikeState state)
+    {
+        this.state = state;
+    }
+
+    public void dropOff()
+    {
+        state.dropOff(this);
+    }
+
+    public void pickUp()
+    {
+        state.pickUp(this);
+    }
+
+    public void purchase()
+    {
+        state.purchase(this);
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Bike{" +
+                "status=" + status +
+                ", associatedEmail='" + associatedEmail + '\'' +
+                '}';
+    }
+}
+```
+
+### How it All Fits Together
+
+1. **Bike (Context)**: The `Bike` class maintains a reference to a `BikeState` object, representing its current state. It delegates state-specific behavior to this state object.
+2. **BikeState (State Interface)**: Defines the operations that each state must implement.
+3. **AvailableState, BeingServicedState, AwaitingPickupState (Concrete States)**: Each class implements the `BikeState` interface and provides behavior specific to the state it represents.
+4. **State Transitions**: The `Bike` class handles state transitions by changing its current state object. For example, calling `dropOff()` on a bike in the `AvailableState` transitions it to the `BeingServicedState`.
+
+By implementing the State Pattern, you ensure that the `Bike` class can change its behavior dynamically based on its current state, leading to a more flexible and maintainable design.
