@@ -621,3 +621,8 @@ public class Bike
 4. **State Transitions**: The `Bike` class handles state transitions by changing its current state object. For example, calling `dropOff()` on a bike in the `AvailableState` transitions it to the `BeingServicedState`.
 
 By implementing the State Pattern, you ensure that the `Bike` class can change its behavior dynamically based on its current state, leading to a more flexible and maintainable design.
+
+
+
+## References
+1. https://www.cs.unc.edu/~carterjl/teaching/notes/15_MVC_Notes.pdf - Used to help understand and implement observer pattern (only used for contextual based knowledge and further understanding of observer pattern).

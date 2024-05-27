@@ -1,7 +1,9 @@
 package edu.curtin.oose2024s1.assignment2.controller;
 
 import edu.curtin.oose2024s1.assignment2.BikeShopInput;
-import edu.curtin.oose2024s1.assignment2.model.*;
+import edu.curtin.oose2024s1.assignment2.model.BankAccount;
+import edu.curtin.oose2024s1.assignment2.model.Inventory;
+
 import java.io.IOException;
 import java.util.logging.Logger;
 
@@ -32,11 +34,14 @@ public class EventLoop
     public void run() throws IOException
     {
         int daysElapsed = 0;
+        logger.info("Starting event loop.");
 
         while(System.in.available() == 0)
         {
             // Simulate one day
             daysElapsed++;
+            int finalDaysElapsed = daysElapsed;
+            logger.fine(() -> "Simulated day: " + finalDaysElapsed);
 
             // Process all messages for this day
             String message = bikeShopInput.nextMessage();
@@ -56,12 +61,14 @@ public class EventLoop
             }
             catch(InterruptedException e)
             {
+                logger.severe(() -> "Thread interrupted: " + e.getMessage());
                 throw new AssertionError(e);
             }
         }
 
         // Final statistics
         displayFinalStatistics();
+        logger.info("Event loop ended.");
     }
 
     private void displayStatus(int daysElapsed)
