@@ -15,22 +15,28 @@ public class ServicingState implements BikeState
     @Override
     public void dropOff(Bike bike)
     {
-        // Bikes cannot be dropped off if they are already being serviced
-        throw new UnsupportedOperationException("Bike is already being serviced.");
+        // This operation is not valid in this state
+        throw new IllegalStateException("Bike is already being serviced.");
     }
 
     @Override
     public void pickUp(Bike bike)
     {
+        // Transition to available state
         bike.setState(new AvailableState());
-        bike.setStatus(Bike.Status.AVAILABLE);
-        // Additional logic for pick-up can be added here
+        bike.setAssociatedEmail(null);
     }
 
     @Override
     public void purchase(Bike bike)
     {
-        // Bikes cannot be purchased if they are being serviced
-        throw new UnsupportedOperationException("Bike is being serviced.");
+        // This operation is not valid in this state
+        throw new IllegalStateException("Bike cannot be purchased when it is being serviced.");
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Being Serviced";
     }
 }

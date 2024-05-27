@@ -1,7 +1,6 @@
 package edu.curtin.oose2024s1.assignment2.view;
 
-import edu.curtin.oose2024s1.assignment2.model.BankAccount;
-import edu.curtin.oose2024s1.assignment2.model.Inventory;
+import edu.curtin.oose2024s1.assignment2.model.*;
 import edu.curtin.oose2024s1.assignment2.observer.Observer;
 
 import java.io.FileWriter;
@@ -20,16 +19,9 @@ public class BikeShopView implements Observer
 {
     private static final Logger logger = Logger.getLogger(BikeShopView.class.getName());
     private PrintWriter writer;
-    private BankAccount bankAccount;
-    private Inventory inventory;
 
-    public BikeShopView(BankAccount bankAccount, Inventory inventory)
+    public BikeShopView()
     {
-        this.bankAccount = bankAccount;
-        this.inventory = inventory;
-        bankAccount.addObserver(this);
-        inventory.addObserver(this);
-
         try
         {
             writer = new PrintWriter(new FileWriter("sim_results.txt", true));
@@ -40,15 +32,16 @@ public class BikeShopView implements Observer
         }
     }
 
-    @Override
-    public void update()
+    public void registerObservers(BankAccount bankAccount, Inventory inventory)
     {
-        displayStatus();
+        bankAccount.addObserver(this);
+        inventory.addObserver(this);
     }
 
-    public void displayStatus()
+    public void displayStatus(int daysElapsed, BankAccount bankAccount, Inventory inventory)
     {
-        String status = "Bank Account Balance: $" + bankAccount.getBalance() +
+        String status = "Day " + daysElapsed +
+                "\nBank Account Balance: $" + bankAccount.getBalance() +
                 "\nBikes Available: " + inventory.getAvailableBikeCount() +
                 "\nBikes Being Serviced: " + inventory.getServicedBikeCount() +
                 "\nBikes Awaiting Pickup: " + inventory.getAwaitingPickupBikeCount();
@@ -81,5 +74,11 @@ public class BikeShopView implements Observer
         {
             writer.close();
         }
+    }
+
+    @Override
+    public void update()
+    {
+        // Logic to update the view
     }
 }

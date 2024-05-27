@@ -14,8 +14,8 @@ public class BikeShopController
 {
     private static final Logger logger = Logger.getLogger(BikeShopController.class.getName());
 
-    private Inventory inventory;
-    private BankAccount bankAccount;
+    private final Inventory inventory;
+    private final BankAccount bankAccount;
 
     public BikeShopController(Inventory inventory, BankAccount bankAccount)
     {
@@ -65,7 +65,7 @@ public class BikeShopController
         {
             for(int i = 0; i < 10; i++)
             {
-                inventory.addAvailableBike(new Bike(Bike.Status.AVAILABLE));
+                inventory.addAvailableBike(new Bike());
             }
             bankAccount.withdraw(5000);
             logger.info("Delivery accepted: 10 bikes added.");
@@ -80,8 +80,9 @@ public class BikeShopController
     {
         if(email != null && inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() <= 99)
         {
-            Bike bike = new Bike(Bike.Status.BEING_SERVICED);
+            Bike bike = new Bike();
             bike.setAssociatedEmail(email);
+            bike.dropOff();
             inventory.addServicedBike(bike);
             logger.info("Drop-off accepted: Bike added for servicing.");
         }
@@ -95,9 +96,9 @@ public class BikeShopController
     {
         if(email != null && inventory.getAvailableBikeCount() > 0)
         {
-            Bike bike = inventory.getAvailableBikes().remove(0);
-            bike.setStatus(Bike.Status.AWAITING_PICKUP);
+            Bike bike = inventory.getAvailableBikes().removeFirst();
             bike.setAssociatedEmail(email);
+            bike.purchase();
             inventory.addAwaitingPickupBike(bike);
             bankAccount.deposit(1000);
             logger.info(() -> "Purchase online accepted: Bike sold to " + email);
@@ -112,7 +113,8 @@ public class BikeShopController
     {
         if(inventory.getAvailableBikeCount() > 0)
         {
-            inventory.removeAvailableBike(inventory.getAvailableBikes().get(0));
+            Bike bike = inventory.getAvailableBikes().removeFirst();
+            bike.purchase();
             bankAccount.deposit(1000);
             logger.info("Purchase in-store accepted: Bike sold.");
         }
@@ -130,6 +132,7 @@ public class BikeShopController
             {
                 if(bike.getAssociatedEmail().equals(email))
                 {
+                    bike.pickUp();
                     inventory.removeAwaitingPickupBike(bike);
                     logger.info(() -> "Pick-up accepted: Bike given to " + email);
                     return;

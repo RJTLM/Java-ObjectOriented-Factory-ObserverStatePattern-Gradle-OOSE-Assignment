@@ -16,29 +16,23 @@ Role:
 // Represents a bike.
 public class Bike
 {
-    public enum Status
-    {
-        AVAILABLE, BEING_SERVICED, AWAITING_PICKUP
-    }
-
-    private Status status;
-    private String associatedEmail;
     private BikeState state;
+    private String associatedEmail;
 
-    public Bike(Status available)
+    public Bike()
     {
+        // Initialize the bike with the available state
         this.state = new AvailableState();
-        this.status = Status.AVAILABLE;
     }
 
-    public Status getStatus()
+    public BikeState getState()
     {
-        return status;
+        return state;
     }
 
-    public void setStatus(Status status)
+    public void setState(BikeState state)
     {
-        this.status = status;
+        this.state = state;
     }
 
     public String getAssociatedEmail()
@@ -49,11 +43,6 @@ public class Bike
     public void setAssociatedEmail(String email)
     {
         this.associatedEmail = email;
-    }
-
-    public void setState(BikeState state)
-    {
-        this.state = state;
     }
 
     public void dropOff()
@@ -75,7 +64,7 @@ public class Bike
     public String toString()
     {
         return "Bike{" +
-                "status=" + status +
+                "state=" + state +
                 ", associatedEmail='" + associatedEmail + '\'' +
                 '}';
     }

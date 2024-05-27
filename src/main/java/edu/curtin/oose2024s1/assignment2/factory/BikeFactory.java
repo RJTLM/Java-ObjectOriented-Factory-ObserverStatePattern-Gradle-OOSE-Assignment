@@ -12,6 +12,6 @@ public class BikeFactory
 {
     public Bike createBike()
     {
-        return new Bike(Bike.Status.AVAILABLE);
+        return new Bike();
     }
 }

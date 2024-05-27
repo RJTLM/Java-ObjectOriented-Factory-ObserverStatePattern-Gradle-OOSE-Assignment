@@ -15,23 +15,28 @@ public class AvailableState implements BikeState
     @Override
     public void dropOff(Bike bike)
     {
+        // Transition to servicing state
         bike.setState(new ServicingState());
-        bike.setStatus(Bike.Status.BEING_SERVICED);
-        // Additional logic for drop-off can be added here
+        bike.setAssociatedEmail(null);
     }
 
     @Override
     public void pickUp(Bike bike)
     {
-        // Bikes cannot be picked up if they are available
-        throw new UnsupportedOperationException("Bike is already available.");
+        // This operation is not valid in this state
+        throw new IllegalStateException("Bike cannot be picked up when it is available.");
     }
 
     @Override
     public void purchase(Bike bike)
     {
+        // Transition to awaiting pickup state
         bike.setState(new AwaitingPickupState());
-        bike.setStatus(Bike.Status.AWAITING_PICKUP);
-        // Additional logic for purchase can be added here
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Available";
     }
 }

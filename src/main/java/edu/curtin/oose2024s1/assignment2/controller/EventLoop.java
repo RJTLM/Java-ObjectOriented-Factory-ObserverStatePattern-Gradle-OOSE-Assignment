@@ -1,8 +1,8 @@
 package edu.curtin.oose2024s1.assignment2.controller;
 
 import edu.curtin.oose2024s1.assignment2.BikeShopInput;
-import edu.curtin.oose2024s1.assignment2.model.BankAccount;
-import edu.curtin.oose2024s1.assignment2.model.Inventory;
+import edu.curtin.oose2024s1.assignment2.model.*;
+import edu.curtin.oose2024s1.assignment2.view.BikeShopView;
 
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -18,17 +18,22 @@ public class EventLoop
 {
     private static final Logger logger = Logger.getLogger(EventLoop.class.getName());
 
-    private BikeShopInput bikeShopInput;
-    private BikeShopController bikeShopController;
-    private Inventory inventory;
-    private BankAccount bankAccount;
+    private final BikeShopInput bikeShopInput;
+    private final BikeShopController bikeShopController;
+    private final Inventory inventory;
+    private final BankAccount bankAccount;
+    private BikeShopView bikeShopView;
 
-    public EventLoop(BikeShopInput bikeShopInput, BikeShopController bikeShopController, Inventory inventory, BankAccount bankAccount)
+    public EventLoop(BikeShopInput bikeShopInput, BikeShopController bikeShopController, Inventory inventory, BankAccount bankAccount, BikeShopView bikeShopView)
     {
         this.bikeShopInput = bikeShopInput;
         this.bikeShopController = bikeShopController;
         this.inventory = inventory;
         this.bankAccount = bankAccount;
+        this.bikeShopView = bikeShopView;
+
+        // Register observers after full initialisation
+        this.bikeShopView.registerObservers(bankAccount, inventory);
     }
 
     public void run() throws IOException
@@ -52,7 +57,7 @@ public class EventLoop
             }
 
             // Display status
-            displayStatus(daysElapsed);
+            bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
 
             // Sleep for 1 second (simulates 1 day)
             try
@@ -69,15 +74,6 @@ public class EventLoop
         // Final statistics
         displayFinalStatistics();
         logger.info("Event loop ended.");
-    }
-
-    private void displayStatus(int daysElapsed)
-    {
-        System.out.println("Day " + daysElapsed);
-        System.out.println("Bank Account Balance: $" + bankAccount.getBalance());
-        System.out.println("Bikes Available: " + inventory.getAvailableBikeCount());
-        System.out.println("Bikes Being Serviced: " + inventory.getServicedBikeCount());
-        System.out.println("Bikes Awaiting Pickup: " + inventory.getAwaitingPickupBikeCount());
     }
 
     private void displayFinalStatistics()
