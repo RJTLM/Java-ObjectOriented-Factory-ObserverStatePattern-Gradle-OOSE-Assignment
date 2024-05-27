@@ -49,42 +49,42 @@ public class Inventory implements Observable
     public void addAvailableBike(Bike bike)
     {
         availableBikes.add(bike);
-        logger.info("Bike added to available: " + bike);
+        logger.info(() -> "Bike added to available: " + bike);
         notifyObservers();
     }
 
     public void removeAvailableBike(Bike bike)
     {
         availableBikes.remove(bike);
-        logger.info("Bike removed from available: " + bike);
+        logger.info(() -> "Bike removed from available: " + bike);
         notifyObservers();
     }
 
     public void addServicedBike(Bike bike)
     {
         servicedBikes.add(bike);
-        logger.info("Bike added to serviced: " + bike);
+        logger.info(() -> "Bike added to serviced: " + bike);
         notifyObservers();
     }
 
     public void removeServicedBike(Bike bike)
     {
         servicedBikes.remove(bike);
-        logger.info("Bike removed from serviced: " + bike);
+        logger.info(() -> "Bike removed from serviced: " + bike);
         notifyObservers();
     }
 
     public void addAwaitingPickupBike(Bike bike)
     {
         awaitingPickupBikes.add(bike);
-        logger.info("Bike added to awaiting pickup: " + bike);
+        logger.info(() -> "Bike added to awaiting pickup: " + bike);
         notifyObservers();
     }
 
     public void removeAwaitingPickupBike(Bike bike)
     {
         awaitingPickupBikes.remove(bike);
-        logger.info("Bike removed from awaiting pickup: " + bike);
+        logger.info(() -> "Bike removed from awaiting pickup: " + bike);
         notifyObservers();
     }
 

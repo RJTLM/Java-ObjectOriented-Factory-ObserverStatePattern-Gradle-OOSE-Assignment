@@ -27,7 +27,7 @@ public class BikeShopController
     {
         if(message == null || message.isEmpty())
         {
-            logger.warning("Invalid message: " + message);
+            logger.warning(() -> "Invalid message: " + message);
             return;
         }
 
@@ -53,7 +53,7 @@ public class BikeShopController
                 handlePickUp(email);
                 break;
             default:
-                logger.warning("Invalid message type: " + type);
+                logger.warning(() -> "Invalid message type: " + type);
                 break;
         }
     }
@@ -100,7 +100,7 @@ public class BikeShopController
             bike.setAssociatedEmail(email);
             inventory.addAwaitingPickupBike(bike);
             bankAccount.deposit(1000);
-            logger.info("Purchase online accepted: Bike sold to " + email);
+            logger.info(() -> "Purchase online accepted: Bike sold to " + email);
         }
         else
         {
@@ -131,7 +131,7 @@ public class BikeShopController
                 if(bike.getAssociatedEmail().equals(email))
                 {
                     inventory.removeAwaitingPickupBike(bike);
-                    logger.info("Pick-up accepted: Bike given to " + email);
+                    logger.info(() -> "Pick-up accepted: Bike given to " + email);
                     return;
                 }
             }

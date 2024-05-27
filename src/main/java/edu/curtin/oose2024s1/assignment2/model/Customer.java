@@ -38,13 +38,13 @@ public class Customer
     public void addBike(Bike bike)
     {
         bikes.add(bike);
-        logger.info("Bike added to customer " + email + ": " + bike);
+        logger.info(() -> "Bike added to customer " + email + ": " + bike);
     }
 
     public void removeBike(Bike bike)
     {
         bikes.remove(bike);
-        logger.info("Bike removed from customer " + email + ": " + bike);
+        logger.info(() -> "Bike removed from customer " + email + ": " + bike);
     }
 
     @Override

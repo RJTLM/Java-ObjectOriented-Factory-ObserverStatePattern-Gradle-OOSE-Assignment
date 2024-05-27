@@ -34,7 +34,7 @@ public class BankAccount implements Observable
     public void deposit(double amount)
     {
         balance += amount;
-        logger.info("Deposited: " + amount + ", New Balance: " + balance);
+        logger.info(() -> "Deposited: " + amount + ", New Balance: " + balance);
         notifyObservers();
     }
 
@@ -43,12 +43,12 @@ public class BankAccount implements Observable
         if (balance >= amount)
         {
             balance -= amount;
-            logger.info("Withdrew: " + amount + ", New Balance: " + balance);
+            logger.info(() -> "Withdrew: " + amount + ", New Balance: " + balance);
             notifyObservers();
         }
         else
         {
-            logger.warning("Insufficient funds for withdrawal: " + amount);
+            logger.warning(() -> "Insufficient funds for withdrawal: " + amount);
         }
     }
 

@@ -36,7 +36,7 @@ public class BikeShopView implements Observer
         }
         catch(IOException e)
         {
-            logger.severe("Error opening sim_results.txt: " + e.getMessage());
+            logger.severe(() -> "Error opening sim_results.txt: " + e.getMessage());
         }
     }
 
