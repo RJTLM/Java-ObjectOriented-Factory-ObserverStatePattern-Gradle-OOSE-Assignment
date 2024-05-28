@@ -22,7 +22,7 @@ public class EventLoop
     private final BikeShopController bikeShopController;
     private final Inventory inventory;
     private final BankAccount bankAccount;
-    private BikeShopView bikeShopView;
+    private final BikeShopView bikeShopView;
 
     /*
     METHOD: EventLoop

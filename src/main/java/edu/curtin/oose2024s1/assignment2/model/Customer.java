@@ -16,8 +16,8 @@ public class Customer
 {
     private static final Logger logger = Logger.getLogger(Customer.class.getName());
 
-    private String email;
-    private List<Bike> bikes;
+    private final String email;
+    private final List<Bike> bikes;
 
     /*
     METHOD: Customer

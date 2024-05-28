@@ -135,6 +135,7 @@ public class BikeShopView implements Observer
     @Override
     public void update()
     {
-        // Logic to update the view
+        // Update the view based on changes to the bank account or inventory
+        logger.info("View updated.");
     }
 }
