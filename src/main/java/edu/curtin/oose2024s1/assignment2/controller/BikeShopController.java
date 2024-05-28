@@ -17,12 +17,26 @@ public class BikeShopController
     private final Inventory inventory;
     private final BankAccount bankAccount;
 
+    /*
+    METHOD: BikeShopController
+    IMPORT: inventory (Inventory), bankAccount (BankAccount)
+    EXPORT: None
+    ALGORITHM:
+    Constructor that initialises the inventory and bank account.
+    */
     public BikeShopController(Inventory inventory, BankAccount bankAccount)
     {
         this.inventory = inventory;
         this.bankAccount = bankAccount;
     }
 
+    /*
+    METHOD: processMessage
+    IMPORT: message (String)
+    EXPORT: None
+    ALGORITHM:
+    Processes the input message and delegates to the appropriate handler based on message type.
+    */
     public void processMessage(String message)
     {
         if(message == null || message.isEmpty())
@@ -58,6 +72,13 @@ public class BikeShopController
         }
     }
 
+    /*
+    METHOD: handleDelivery
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Handles the "DELIVERY" message by adding bikes to the inventory and deducting the cost from the bank account if conditions are met.
+    */
     private void handleDelivery()
     {
         if(inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() <= 90 &&
@@ -76,6 +97,13 @@ public class BikeShopController
         }
     }
 
+    /*
+    METHOD: handleDropOff
+    IMPORT: email (String)
+    EXPORT: None
+    ALGORITHM:
+    Handles the "DROP-OFF" message by adding a bike to the serviced bikes if conditions are met.
+    */
     private void handleDropOff(String email)
     {
         if(email != null && inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() <= 99)
@@ -92,6 +120,13 @@ public class BikeShopController
         }
     }
 
+    /*
+    METHOD: handlePurchaseOnline
+    IMPORT: email (String)
+    EXPORT: None
+    ALGORITHM:
+    Handles the "PURCHASE-ONLINE" message by selling a bike to a customer if conditions are met.
+    */
     private void handlePurchaseOnline(String email)
     {
         if(email != null && inventory.getAvailableBikeCount() > 0)
@@ -109,6 +144,13 @@ public class BikeShopController
         }
     }
 
+    /*
+    METHOD: handlePurchaseInStore
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Handles the "PURCHASE-IN-STORE" message by selling a bike to a customer if conditions are met.
+    */
     private void handlePurchaseInStore()
     {
         if(inventory.getAvailableBikeCount() > 0)
@@ -124,6 +166,13 @@ public class BikeShopController
         }
     }
 
+    /*
+    METHOD: handlePickUp
+    IMPORT: email (String)
+    EXPORT: None
+    ALGORITHM:
+    Handles the "PICK-UP" message by allowing a customer to pick up their bike if conditions are met.
+    */
     private void handlePickUp(String email)
     {
         if(email != null)

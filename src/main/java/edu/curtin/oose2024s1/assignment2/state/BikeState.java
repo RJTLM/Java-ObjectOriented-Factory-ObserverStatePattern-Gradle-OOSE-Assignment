@@ -11,7 +11,30 @@ Role:
 // Interface for bike states.
 public interface BikeState
 {
+    /*
+    METHOD: dropOff
+    IMPORT: bike (Bike)
+    EXPORT: None
+    ALGORITHM:
+    Defines the behavior for dropping off a bike in a specific state.
+    */
     void dropOff(Bike bike);
+
+    /*
+    METHOD: pickUp
+    IMPORT: bike (Bike)
+    EXPORT: None
+    ALGORITHM:
+    Defines the behavior for picking up a bike in a specific state.
+    */
     void pickUp(Bike bike);
+
+    /*
+    METHOD: purchase
+    IMPORT: bike (Bike)
+    EXPORT: None
+    ALGORITHM:
+    Defines the behavior for purchasing a bike in a specific state.
+    */
     void purchase(Bike bike);
 }

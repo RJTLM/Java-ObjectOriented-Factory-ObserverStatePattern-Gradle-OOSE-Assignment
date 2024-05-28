@@ -8,6 +8,15 @@ import java.io.*;
  */
 public class App
 {
+    /*
+    METHOD: main
+    IMPORT: args (String ARRAY)
+    EXPORT: None
+    ALGORITHM:
+    Initialises the BikeShopInput and processes messages in a loop until the user presses Enter.
+    Simulates one day per loop iteration, printing messages to the console and waiting 1 second between iterations.
+    Handles IO exceptions during input reading.
+    */
     public static void main(String[] args)
     {
         BikeShopInput inp = new BikeShopInput();

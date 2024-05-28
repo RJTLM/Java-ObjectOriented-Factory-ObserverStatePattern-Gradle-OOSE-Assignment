@@ -21,16 +21,37 @@ public class BankAccount implements Observable
     private double balance;
     private List<Observer> observers = new ArrayList<>();
 
+    /*
+    METHOD: BankAccount
+    IMPORT: initialBalance (double)
+    EXPORT: None
+    ALGORITHM:
+    Constructor initialises the bank account with an initial balance.
+    */
     public BankAccount(double initialBalance)
     {
         this.balance = initialBalance;
     }
 
+    /*
+    METHOD: getBalance
+    IMPORT: None
+    EXPORT: balance (double)
+    ALGORITHM:
+    Returns the current balance of the bank account.
+    */
     public double getBalance()
     {
         return balance;
     }
 
+    /*
+    METHOD: deposit
+    IMPORT: amount (double)
+    EXPORT: None
+    ALGORITHM:
+    Adds the specified amount to the balance and notifies observers of the change.
+    */
     public void deposit(double amount)
     {
         balance += amount;
@@ -38,6 +59,13 @@ public class BankAccount implements Observable
         notifyObservers();
     }
 
+    /*
+   METHOD: withdraw
+   IMPORT: amount (double)
+   EXPORT: None
+   ALGORITHM:
+   Subtracts the specified amount from the balance if funds are sufficient, otherwise logs a warning. Notifies observers if withdrawal is successful.
+   */
     public void withdraw(double amount)
     {
         if (balance >= amount)
@@ -52,18 +80,39 @@ public class BankAccount implements Observable
         }
     }
 
+    /*
+    METHOD: addObserver
+    IMPORT: observer (Observer)
+    EXPORT: None
+    ALGORITHM:
+    Adds an observer to the list of observers.
+    */
     @Override
     public void addObserver(Observer observer)
     {
         observers.add(observer);
     }
 
+    /*
+   METHOD: removeObserver
+   IMPORT: observer (Observer)
+   EXPORT: None
+   ALGORITHM:
+   Removes an observer from the list of observers.
+   */
     @Override
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
     }
 
+    /*
+    METHOD: notifyObservers
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Notifies all registered observers of changes by calling their update method.
+    */
     @Override
     public void notifyObservers()
     {

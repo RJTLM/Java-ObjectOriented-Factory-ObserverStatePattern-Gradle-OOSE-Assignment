@@ -10,6 +10,13 @@ Role:
 // Creates new Bike instances.
 public class BikeFactory
 {
+    /*
+    METHOD: createBike
+    IMPORT: None
+    EXPORT: bike (Bike)
+    ALGORITHM:
+    Creates and returns a new Bike instance.
+    */
     public Bike createBike()
     {
         return new Bike();

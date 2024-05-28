@@ -20,6 +20,13 @@ public class BikeShopView implements Observer
     private static final Logger logger = Logger.getLogger(BikeShopView.class.getName());
     private PrintWriter writer;
 
+    /*
+    METHOD: BikeShopView
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Constructor that initialises the PrintWriter for writing to the "sim_results.txt" file.
+    */
     public BikeShopView()
     {
         try
@@ -32,12 +39,26 @@ public class BikeShopView implements Observer
         }
     }
 
+    /*
+    METHOD: registerObservers
+    IMPORT: bankAccount (BankAccount), inventory (Inventory)
+    EXPORT: None
+    ALGORITHM:
+    Registers the BikeShopView as an observer for the BankAccount and Inventory.
+    */
     public void registerObservers(BankAccount bankAccount, Inventory inventory)
     {
         bankAccount.addObserver(this);
         inventory.addObserver(this);
     }
 
+    /*
+    METHOD: displayStatus
+    IMPORT: daysElapsed (int), bankAccount (BankAccount), inventory (Inventory)
+    EXPORT: None
+    ALGORITHM:
+    Displays the current status of the bike shop, including days elapsed, bank account balance, and bike counts.
+    */
     public void displayStatus(int daysElapsed, BankAccount bankAccount, Inventory inventory)
     {
         String status = "Day " + daysElapsed +
@@ -49,12 +70,26 @@ public class BikeShopView implements Observer
         logToFile(status);
     }
 
+    /*
+    METHOD: logMessage
+    IMPORT: message (String)
+    EXPORT: None
+    ALGORITHM:
+    Logs a message to both the console and the "sim_results.txt" file.
+    */
     public void logMessage(String message)
     {
         System.out.println(message);
         logToFile(message);
     }
 
+    /*
+    METHOD: logFailure
+    IMPORT: failureReason (String)
+    EXPORT: None
+    ALGORITHM:
+    Logs a failure message to both the console and the "sim_results.txt" file.
+    */
     public void logFailure(String failureReason)
     {
         String failureMessage = "FAILURE: " + failureReason;
@@ -62,12 +97,26 @@ public class BikeShopView implements Observer
         logToFile(failureMessage);
     }
 
+    /*
+    METHOD: logToFile
+    IMPORT: message (String)
+    EXPORT: None
+    ALGORITHM:
+    Writes a message to the "sim_results.txt" file and flushes the writer.
+    */
     private void logToFile(String message)
     {
         writer.println(message);
         writer.flush();
     }
 
+    /*
+   METHOD: close
+   IMPORT: None
+   EXPORT: None
+   ALGORITHM:
+   Closes the PrintWriter if it is not null.
+   */
     public void close()
     {
         if(writer != null)
@@ -76,6 +125,13 @@ public class BikeShopView implements Observer
         }
     }
 
+    /*
+   METHOD: update
+   IMPORT: None
+   EXPORT: None
+   ALGORITHM:
+   Updates the view. This method is called when the observable notifies its observers.
+   */
     @Override
     public void update()
     {

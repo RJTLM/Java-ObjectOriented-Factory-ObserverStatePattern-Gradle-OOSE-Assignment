@@ -24,6 +24,13 @@ public class EventLoop
     private final BankAccount bankAccount;
     private BikeShopView bikeShopView;
 
+    /*
+    METHOD: EventLoop
+    IMPORT: bikeShopInput (BikeShopInput), bikeShopController (BikeShopController), inventory (Inventory), bankAccount (BankAccount), bikeShopView (BikeShopView)
+    EXPORT: None
+    ALGORITHM:
+    Constructor that initialises the input, controller, inventory, bank account, and view, and registers observers.
+    */
     public EventLoop(BikeShopInput bikeShopInput, BikeShopController bikeShopController, Inventory inventory, BankAccount bankAccount, BikeShopView bikeShopView)
     {
         this.bikeShopInput = bikeShopInput;
@@ -36,6 +43,13 @@ public class EventLoop
         this.bikeShopView.registerObservers(bankAccount, inventory);
     }
 
+    /*
+   METHOD: run
+   IMPORT: None
+   EXPORT: None
+   ALGORITHM:
+   Executes the event loop, processing messages and updating the bike shop's state.
+   */
     public void run() throws IOException
     {
         int daysElapsed = 0;
@@ -76,6 +90,13 @@ public class EventLoop
         logger.info("Event loop ended.");
     }
 
+    /*
+    METHOD: displayFinalStatistics
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Displays final statistics at the end of the simulation.
+    */
     private void displayFinalStatistics()
     {
         // Calculate and display final statistics

@@ -8,5 +8,12 @@ Role:
  */
 // Interface for observers.
 public interface Observer {
+    /*
+    METHOD: update
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Called by the observable to notify the observer of changes.
+    */
     void update();
 }
