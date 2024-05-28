@@ -41,6 +41,11 @@ public class EventLoop
 
         // Register observers after full initialisation
         this.bikeShopView.registerObservers(bankAccount, inventory);
+
+        // Initialise the inventory with 50 bikes
+        for (int i = 0; i < 50; i++) {
+            inventory.addAvailableBike(new Bike());
+        }
     }
 
     /*

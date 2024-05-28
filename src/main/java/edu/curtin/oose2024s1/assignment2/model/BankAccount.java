@@ -18,7 +18,7 @@ Responsibilities:
 public class BankAccount implements Observable
 {
     private static final Logger logger = Logger.getLogger(BankAccount.class.getName());
-    private double balance;
+    private int balance;
     private final List<Observer> observers = new ArrayList<>();
 
     /*
@@ -28,7 +28,7 @@ public class BankAccount implements Observable
     ALGORITHM:
     Constructor initialises the bank account with an initial balance.
     */
-    public BankAccount(double initialBalance)
+    public BankAccount(int initialBalance)
     {
         this.balance = initialBalance;
     }
@@ -40,7 +40,7 @@ public class BankAccount implements Observable
     ALGORITHM:
     Returns the current balance of the bank account.
     */
-    public double getBalance()
+    public int getBalance()
     {
         return balance;
     }
@@ -52,7 +52,7 @@ public class BankAccount implements Observable
     ALGORITHM:
     Adds the specified amount to the balance and notifies observers of the change.
     */
-    public void deposit(double amount)
+    public void deposit(int amount)
     {
         balance += amount;
         logger.info(() -> "Deposited: " + amount + ", New Balance: " + balance);
@@ -66,7 +66,7 @@ public class BankAccount implements Observable
    ALGORITHM:
    Subtracts the specified amount from the balance if funds are sufficient, otherwise logs a warning. Notifies observers if withdrawal is successful.
    */
-    public void withdraw(double amount)
+    public void withdraw(int amount)
     {
         if (balance >= amount)
         {

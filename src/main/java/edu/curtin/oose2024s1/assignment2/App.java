@@ -1,11 +1,20 @@
 package edu.curtin.oose2024s1.assignment2;
 
-import java.io.*;
+import edu.curtin.oose2024s1.assignment2.controller.BikeShopController;
+import edu.curtin.oose2024s1.assignment2.controller.EventLoop;
+import edu.curtin.oose2024s1.assignment2.model.BankAccount;
+import edu.curtin.oose2024s1.assignment2.model.Inventory;
+import edu.curtin.oose2024s1.assignment2.view.BikeShopView;
+
+import java.io.IOException;
 
 /**
  * Use this code to get started on Assignment 2. You are free to modify or replace this file as
  * needed (to fulfil the assignment requirements, of course).
  */
+/*
+Note, I modified this class by centralising the event loop and message processing logic in the `EventLoop` class and refactored this class to initiate and run the `EventLoop`, making the code more modular, maintainable, and aligned with the single responsibility principle.
+*/
 public class App
 {
     /*
@@ -13,44 +22,25 @@ public class App
     IMPORT: args (String ARRAY)
     EXPORT: None
     ALGORITHM:
-    Initialises the BikeShopInput and processes messages in a loop until the user presses Enter.
-    Simulates one day per loop iteration, printing messages to the console and waiting 1 second between iterations.
-    Handles IO exceptions during input reading.
+    Initialises the simulation components and starts the event loop.
     */
     public static void main(String[] args)
     {
         BikeShopInput inp = new BikeShopInput();
-        // BikeShopInput inp = new BikeShopInput(123);  // Seed for the random number generator
+        Inventory inventory = new Inventory();
+        BankAccount bankAccount = new BankAccount(15000);
+        BikeShopView bikeShopView = new BikeShopView();
+        BikeShopController bikeShopController = new BikeShopController(inventory, bankAccount);
+
+        EventLoop eventLoop = new EventLoop(inp, bikeShopController, inventory, bankAccount, bikeShopView);
 
         try
         {
-            while(System.in.available() == 0)
-            {
-                // ... ?
-
-                // For illustration purposes -- this just prints out the messages as they come in.
-                System.out.println("---");
-                String msg = inp.nextMessage();
-                while(msg != null)
-                {
-                    System.out.println(msg);
-                    msg = inp.nextMessage();
-                }
-
-                // Wait 1 second
-                try
-                {
-                    Thread.sleep(1000);
-                }
-                catch(InterruptedException e)
-                {
-                    throw new AssertionError(e);
-                }
-            }
+            eventLoop.run();
         }
         catch(IOException e)
         {
-            System.out.println("Error reading user input");
+            System.out.println("Error running the simulation: " + e.getMessage());
         }
     }
 }

@@ -3,7 +3,7 @@ package edu.curtin.oose2024s1.assignment2.controller;
 import edu.curtin.oose2024s1.assignment2.model.*;
 import java.util.logging.Logger;
 
-/*
+/**
 Purpose:
     - This class will manage the operations of the bike shop, such as processing messages (e.g., deliveries, drop-offs, purchases), updating the model (e.g., Inventory, BankAccount), and ensuring the state transitions (e.g., bike statuses) are handled correctly.
 Role:
@@ -17,7 +17,7 @@ public class BikeShopController
     private final Inventory inventory;
     private final BankAccount bankAccount;
 
-    /*
+    /**
     METHOD: BikeShopController
     IMPORT: inventory (Inventory), bankAccount (BankAccount)
     EXPORT: None
@@ -30,7 +30,7 @@ public class BikeShopController
         this.bankAccount = bankAccount;
     }
 
-    /*
+    /**
     METHOD: processMessage
     IMPORT: message (String)
     EXPORT: None
@@ -72,7 +72,7 @@ public class BikeShopController
         }
     }
 
-    /*
+    /**
     METHOD: handleDelivery
     IMPORT: None
     EXPORT: None
@@ -81,23 +81,37 @@ public class BikeShopController
     */
     private void handleDelivery()
     {
-        if(inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() <= 90 &&
-                bankAccount.getBalance() >= 10000)
+        boolean notEnoughSpace = inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() > 90;
+        boolean notEnoughCash = bankAccount.getBalance() < 10000;
+
+        if (notEnoughSpace && notEnoughCash)
+        {
+            System.out.println("Delivery failed: Not enough space and not enough cash to purchase stock.");
+            logger.warning("Delivery failed: Not enough space and not enough cash to purchase stock.");
+        }
+        else if (notEnoughSpace)
+        {
+            System.out.println("Delivery failed: Not enough space.");
+            logger.warning("Delivery failed: Not enough space.");
+        }
+        else if (notEnoughCash)
+        {
+            System.out.println("Delivery failed: Not enough cash to purchase stock.");
+            logger.warning("Delivery failed: Not enough cash to purchase stock.");
+        }
+        else
         {
             for(int i = 0; i < 10; i++)
             {
                 inventory.addAvailableBike(new Bike());
             }
             bankAccount.withdraw(5000);
+            System.out.println("Delivery accepted: 10 bikes added.");
             logger.info("Delivery accepted: 10 bikes added.");
-        }
-        else
-        {
-            logger.warning("Delivery failed: Not enough space or cash.");
         }
     }
 
-    /*
+    /**
     METHOD: handleDropOff
     IMPORT: email (String)
     EXPORT: None
@@ -120,7 +134,7 @@ public class BikeShopController
         }
     }
 
-    /*
+    /**
     METHOD: handlePurchaseOnline
     IMPORT: email (String)
     EXPORT: None
@@ -144,7 +158,7 @@ public class BikeShopController
         }
     }
 
-    /*
+    /**
     METHOD: handlePurchaseInStore
     IMPORT: None
     EXPORT: None
@@ -166,7 +180,7 @@ public class BikeShopController
         }
     }
 
-    /*
+    /**
     METHOD: handlePickUp
     IMPORT: email (String)
     EXPORT: None
