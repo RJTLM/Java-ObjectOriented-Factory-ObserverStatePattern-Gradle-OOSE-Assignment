@@ -2,6 +2,8 @@ package edu.curtin.oose2024s1.assignment2.model;
 
 import edu.curtin.oose2024s1.assignment2.state.BikeState;
 import edu.curtin.oose2024s1.assignment2.state.AvailableState;
+import edu.curtin.oose2024s1.assignment2.state.ServicingState;
+
 
 /*
 Purpose:
@@ -18,6 +20,7 @@ public class Bike
 {
     private BikeState state;
     private String associatedEmail;
+    private int daysInServicingState;
 
     /*
     METHOD: Bike
@@ -29,6 +32,7 @@ public class Bike
     public Bike()
     {
         this.state = new AvailableState();
+        this.daysInServicingState = 0;
     }
 
     /*
@@ -89,6 +93,7 @@ public class Bike
     public void dropOff()
     {
         state.dropOff(this);
+        daysInServicingState = 0; // Reset days in servicing state
     }
 
     /*
@@ -116,6 +121,25 @@ public class Bike
     }
 
     /*
+   METHOD: incrementDaysInServicingState
+   IMPORT: None
+   EXPORT: None
+   ALGORITHM:
+   Increments the days the bike has been in the servicing state.
+   */
+    public void incrementDaysInServicingState()
+    {
+        if (state instanceof ServicingState)
+        {
+            daysInServicingState++;
+            if (daysInServicingState > 2)
+            {
+                state = new AvailableState(); // Move to available state after 2 days
+            }
+        }
+    }
+
+    /*
     METHOD: toString
     IMPORT: None
     EXPORT: String
@@ -128,6 +152,7 @@ public class Bike
         return "Bike{" +
                 "state=" + state +
                 ", associatedEmail='" + associatedEmail + '\'' +
+                ", daysInServicingState=" + daysInServicingState +
                 '}';
     }
 }

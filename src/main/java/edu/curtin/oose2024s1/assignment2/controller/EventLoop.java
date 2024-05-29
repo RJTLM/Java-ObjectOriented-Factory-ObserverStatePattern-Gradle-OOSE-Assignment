@@ -75,6 +75,9 @@ public class EventLoop
                 message = bikeShopInput.nextMessage();
             }
 
+            // Increment the days in servicing state for all serviced bikes
+            inventory.incrementDaysInServicingState();
+
             // Display status
             bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
 
