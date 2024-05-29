@@ -83,7 +83,8 @@ public class BikeShopController
         {
             for(int i = 0; i < 10; i++)
             {
-                inventory.addAvailableBike(new Bike());
+                Bike bike = new Bike();
+                inventory.addAvailableBike(bike);
             }
             bankAccount.withdraw(5000);
             return "Delivery accepted: 10 bikes added.";
@@ -188,10 +189,11 @@ public class BikeShopController
         {
             for(Bike bike : inventory.getAwaitingPickupBikes())
             {
-                if(bike.getAssociatedEmail().equals(email))
+                if(email.equals(bike.getAssociatedEmail()))
                 {
                     bike.pickUp();
                     inventory.removeAwaitingPickupBike(bike);
+                    inventory.addAvailableBike(bike);
                     return "Pick-up accepted: Bike given to " + email + ".";
                 }
             }

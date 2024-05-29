@@ -35,9 +35,7 @@ public class ServicingState implements BikeState
     @Override
     public void pickUp(Bike bike)
     {
-        // Transition to available state
-        bike.setState(new AvailableState());
-        bike.setAssociatedEmail(null);
+        bike.setState(new AwaitingPickupState());
     }
 
     /*
@@ -50,7 +48,6 @@ public class ServicingState implements BikeState
     @Override
     public void purchase(Bike bike)
     {
-        // This operation is not valid in this state
         throw new IllegalStateException("Bike cannot be purchased when it is being serviced.");
     }
 

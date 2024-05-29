@@ -1,5 +1,6 @@
 package edu.curtin.oose2024s1.assignment2.model;
 
+import edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState;
 import edu.curtin.oose2024s1.assignment2.state.BikeState;
 import edu.curtin.oose2024s1.assignment2.state.AvailableState;
 import edu.curtin.oose2024s1.assignment2.state.ServicingState;
@@ -106,7 +107,6 @@ public class Bike
     public void pickUp()
     {
         state.pickUp(this);
-        // Preserve the associated email during state transitions
     }
 
     /*
@@ -135,7 +135,8 @@ public class Bike
             daysInServicingState++;
             if (daysInServicingState > 2)
             {
-                state = new AvailableState(); // Move to available state after 2 days
+                // Transition to AwaitingPickupState after servicing
+                state = new AwaitingPickupState();
             }
         }
     }

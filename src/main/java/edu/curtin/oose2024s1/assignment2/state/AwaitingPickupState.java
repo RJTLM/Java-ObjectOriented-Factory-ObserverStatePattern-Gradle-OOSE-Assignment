@@ -36,7 +36,6 @@ public class AwaitingPickupState implements BikeState
     public void pickUp(Bike bike)
     {
         bike.setState(new AvailableState());
-        bike.setAssociatedEmail(null);
     }
 
     /*

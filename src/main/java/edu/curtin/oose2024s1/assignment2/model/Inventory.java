@@ -3,6 +3,7 @@ package edu.curtin.oose2024s1.assignment2.model;
 import edu.curtin.oose2024s1.assignment2.observer.Observable;
 import edu.curtin.oose2024s1.assignment2.observer.Observer;
 import edu.curtin.oose2024s1.assignment2.state.AvailableState;
+import edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState;
 
 
 import java.util.ArrayList;
@@ -211,21 +212,21 @@ public class Inventory implements Observable
     */
     public void incrementDaysInServicingState()
     {
-        List<Bike> bikesToBeAvailable = new ArrayList<>();
+        List<Bike> bikesToBeAwaitingPickup = new ArrayList<>();
         for (Bike bike : servicedBikes)
         {
             bike.incrementDaysInServicingState();
-            if (bike.getState() instanceof AvailableState)
+            if (bike.getState() instanceof AwaitingPickupState)
             {
-                bikesToBeAvailable.add(bike);
+                bikesToBeAwaitingPickup.add(bike);
             }
         }
 
-        for (Bike bike : bikesToBeAvailable)
+        for (Bike bike : bikesToBeAwaitingPickup)
         {
             servicedBikes.remove(bike);
-            availableBikes.add(bike);
-            logger.info(() -> "Bike transitioned from servicing to available: " + bike);
+            awaitingPickupBikes.add(bike);
+            logger.info(() -> "Bike transitioned from servicing to awaiting pickup: " + bike);
         }
         notifyObservers();
     }
