@@ -2,7 +2,10 @@ package edu.curtin.oose2024s1.assignment2.controller;
 
 import edu.curtin.oose2024s1.assignment2.factory.BikeFactory;
 import edu.curtin.oose2024s1.assignment2.model.*;
-import edu.curtin.oose2024s1.assignment2.state.ServicingState;
+import edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
 Purpose:
@@ -16,6 +19,7 @@ public class BikeShopController
     private final Inventory inventory;
     private final BankAccount bankAccount;
     private final BikeFactory bikeFactory;
+    private final Map<String, Customer> customers = new HashMap<>();
 
     /**
     METHOD: BikeShopController
@@ -110,6 +114,11 @@ public class BikeShopController
             bike.setAssociatedEmail(email);
             bike.dropOff();
             inventory.addServicedBike(bike);
+
+            // Add bike to customer
+            customers.putIfAbsent(email, new Customer(email));
+            customers.get(email).addBike(bike);
+
             return "Drop-off accepted: Bike added for servicing for " + email + ".";
         }
         else
@@ -142,6 +151,11 @@ public class BikeShopController
             bike.purchase();
             inventory.addAwaitingPickupBike(bike);
             bankAccount.deposit(1000);
+
+            // Add bike to customer
+            customers.putIfAbsent(email, new Customer(email));
+            customers.get(email).addBike(bike);
+
             return "Purchase online accepted: Bike sold to " + email + ".";
         }
         else
@@ -171,6 +185,7 @@ public class BikeShopController
         {
             Bike bike = inventory.getAvailableBikes().removeFirst();
             bike.purchase();
+            inventory.addAvailableBike(bike);
             bankAccount.deposit(1000);
             return "Purchase in-store accepted: Bike sold.";
         }
@@ -191,21 +206,26 @@ public class BikeShopController
     {
         if(email != null)
         {
-            for(Bike bike : inventory.getAwaitingPickupBikes())
+            Customer customer = customers.get(email);
+            if (customer != null)
             {
-                if(email.equals(bike.getAssociatedEmail()))
+                for (Bike bike : customer.getBikes())
                 {
-                    if (bike.getState() instanceof ServicingState)
+                    if (bike.getState() instanceof AwaitingPickupState)
                     {
-                        bankAccount.deposit(100); // $100 payment for servicing
+                        customer.removeBike(bike);
+                        bike.pickUp();
+                        inventory.removeAwaitingPickupBike(bike);
+                        inventory.addAvailableBike(bike);
+                        return "Pick-up accepted: Bike given to " + email + ".";
                     }
-                    bike.pickUp();
-                    inventory.removeAwaitingPickupBike(bike);
-                    inventory.addAvailableBike(bike);
-                    return "Pick-up accepted: Bike given to " + email + ".";
                 }
+                return "FAILURE: No bike matching customer email: " + email + ".";
             }
-            return "FAILURE: No bike matching customer email: " + email + ".";
+            else
+            {
+                return "FAILURE: No customer with email: " + email + ".";
+            }
         }
         else
         {

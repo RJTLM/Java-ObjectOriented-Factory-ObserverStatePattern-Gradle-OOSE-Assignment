@@ -1,3 +1,28 @@
+PS C:\Users\RyanM\OneDrive\CurtinUniversity\2024\Semester1\OOSE\Assessments\Assignment2\2024_assignment2_starter_java> ./gradlew build clean
+> Task :classes
+> Task :jar
+> Task :startScripts
+> Task :distTar
+> Task :distZip
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :pmdTest NO-SOURCE
+> Task :test NO-SOURCE
+> Task :pmdMain
+> Task :check
+> Task :build
+> Task :clean
+
+BUILD SUCCESSFUL in 9s
+7 actionable tasks: 7 executed
+PS C:\Users\RyanM\OneDrive\CurtinUniversity\2024\Semester1\OOSE\Assessments\Assignment2\2024_assignment2_starter_java> ./gradlew run
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :run
 Day 1
 Bank Account Balance: $15000
 Bikes Available: 50
@@ -40,6 +65,7 @@ Bank Account Balance: $17000
 Bikes Available: 50
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 3
+Employee paid $1000.
 Purchase in-store accepted: Bike sold.
 Purchase online accepted: Bike sold to wgibth@itdf.ukf.
 Purchase in-store accepted: Bike sold.
@@ -87,6 +113,7 @@ Bank Account Balance: $24000
 Bikes Available: 47
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 8
+Employee paid $1000.
 Pick-up accepted: Bike given to nbbbbwb@zsvogck.abs.
 Purchase online accepted: Bike sold to hvw@jtd.apy.
 Pick-up accepted: Bike given to xvh@vypvtrl.wdb.
@@ -142,6 +169,7 @@ Bank Account Balance: $39000
 Bikes Available: 39
 Bikes Being Serviced: 1
 Bikes Awaiting Pickup: 16
+Employee paid $1000.
 Purchase online accepted: Bike sold to vnfycu@ewgpwpq.url.
 Purchase in-store accepted: Bike sold.
 Purchase in-store accepted: Bike sold.
@@ -190,6 +218,7 @@ Bank Account Balance: $40000
 Bikes Available: 48
 Bikes Being Serviced: 1
 Bikes Awaiting Pickup: 19
+Employee paid $1000.
 Purchase in-store accepted: Bike sold.
 FAILURE: No bike matching customer email: xvh@vypvtrl.wdb.
 Day 29
@@ -244,6 +273,7 @@ Bank Account Balance: $31000
 Bikes Available: 77
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 23
+Employee paid $1000.
 Pick-up accepted: Bike given to fyiv@vdybcla.iqi.
 FAILURE: Not enough space.
 Day 36
@@ -290,6 +320,7 @@ Bank Account Balance: $35000
 Bikes Available: 76
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 24
+Employee paid $1000.
 FAILURE: Not enough space.
 Day 43
 Bank Account Balance: $34000
@@ -323,3 +354,28 @@ Bikes Awaiting Pickup: 26
 Purchase in-store accepted: Bike sold.
 Purchase in-store accepted: Bike sold.
 FAILURE: No bike matching customer email: zan@esdl.tfi.
+Exception in thread "main" java.lang.IllegalStateException: Bike is already purchased.
+        at edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState.purchase(AwaitingPickupState.java:51)
+        at edu.curtin.oose2024s1.assignment2.model.Bike.purchase(Bike.java:121)
+        at edu.curtin.oose2024s1.assignment2.controller.BikeShopController.handlePurchaseInStore(BikeShopController.java:187)
+        at edu.curtin.oose2024s1.assignment2.controller.BikeShopController.processMessage(BikeShopController.java:60)
+        at edu.curtin.oose2024s1.assignment2.controller.EventLoop.run(EventLoop.java:93)
+        at edu.curtin.oose2024s1.assignment2.App.main(App.java:38)
+
+> Task :run FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':run'.
+> Process 'command 'C:\Users\RyanM\microsoft-jdk-21.0.2-windows-x64\jdk-21.0.2+13\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 47s
+2 actionable tasks: 2 executed
+PS C:\Users\RyanM\OneDrive\CurtinUniversity\2024\Semester1\OOSE\Assessments\Assignment2\2024_assignment2_starter_java>
