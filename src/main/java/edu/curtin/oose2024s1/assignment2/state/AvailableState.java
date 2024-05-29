@@ -2,7 +2,7 @@ package edu.curtin.oose2024s1.assignment2.state;
 
 import edu.curtin.oose2024s1.assignment2.model.Bike;
 
-/*
+/**
 Purpose:
     - Implement the behavior for bikes that are available for purchase.
 Role:
@@ -12,7 +12,7 @@ Role:
 // Concrete state for bikes that are available.
 public class AvailableState implements BikeState
 {
-    /*
+    /**
     METHOD: dropOff
     IMPORT: bike (Bike)
     EXPORT: None
@@ -26,7 +26,7 @@ public class AvailableState implements BikeState
         bike.setAssociatedEmail(null);
     }
 
-    /*
+    /**
     METHOD: pickUp
     IMPORT: bike (Bike)
     EXPORT: None
@@ -39,7 +39,7 @@ public class AvailableState implements BikeState
         throw new IllegalStateException("Bike cannot be picked up when it is available.");
     }
 
-    /*
+    /**
     METHOD: purchase
     IMPORT: bike (Bike)
     EXPORT: None
@@ -52,13 +52,13 @@ public class AvailableState implements BikeState
         bike.setState(new AwaitingPickupState());
     }
 
-    /*
-   METHOD: toString
-   IMPORT: None
-   EXPORT: state (String)
-   ALGORITHM:
-   Returns the string representation of the state.
-   */
+    /**
+    METHOD: toString
+    IMPORT: None
+    EXPORT: state (String)
+    ALGORITHM:
+    Returns the string representation of the state.
+    */
     @Override
     public String toString()
     {

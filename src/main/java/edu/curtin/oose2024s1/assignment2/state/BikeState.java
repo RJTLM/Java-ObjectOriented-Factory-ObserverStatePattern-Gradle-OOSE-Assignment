@@ -2,7 +2,7 @@ package edu.curtin.oose2024s1.assignment2.state;
 
 import edu.curtin.oose2024s1.assignment2.model.Bike;
 
-/*
+/**
 Purpose:
     - Define the operations that each bike state must implement.
 Role:
@@ -11,7 +11,7 @@ Role:
 // Interface for bike states.
 public interface BikeState
 {
-    /*
+    /**
     METHOD: dropOff
     IMPORT: bike (Bike)
     EXPORT: None
@@ -20,7 +20,7 @@ public interface BikeState
     */
     void dropOff(Bike bike);
 
-    /*
+    /**
     METHOD: pickUp
     IMPORT: bike (Bike)
     EXPORT: None
@@ -29,7 +29,7 @@ public interface BikeState
     */
     void pickUp(Bike bike);
 
-    /*
+    /**
     METHOD: purchase
     IMPORT: bike (Bike)
     EXPORT: None

@@ -2,7 +2,7 @@ package edu.curtin.oose2024s1.assignment2.state;
 
 import edu.curtin.oose2024s1.assignment2.model.Bike;
 
-/*
+/**
 Purpose:
     - Implement the behavior for bikes that are awaiting pickup.
 Role:
@@ -12,7 +12,7 @@ Role:
 // Concrete state for bikes that are awaiting pickup.
 public class AwaitingPickupState implements BikeState
 {
-    /*
+    /**
     METHOD: dropOff
     IMPORT: bike (Bike)
     EXPORT: None
@@ -25,20 +25,20 @@ public class AwaitingPickupState implements BikeState
         throw new IllegalStateException("Bike cannot be dropped off when it is awaiting pickup.");
     }
 
-    /*
-   METHOD: pickUp
-   IMPORT: bike (Bike)
-   EXPORT: None
-   ALGORITHM:
-   Transitions the bike to the available state and disassociates any email.
-   */
+    /**
+    METHOD: pickUp
+    IMPORT: bike (Bike)
+    EXPORT: None
+    ALGORITHM:
+    Transitions the bike to the available state and disassociates any email.
+    */
     @Override
     public void pickUp(Bike bike)
     {
         bike.setState(new AvailableState());
     }
 
-    /*
+    /**
     METHOD: purchase
     IMPORT: bike (Bike)
     EXPORT: None
@@ -51,7 +51,7 @@ public class AwaitingPickupState implements BikeState
         throw new IllegalStateException("Bike is already purchased.");
     }
 
-    /*
+    /**
     METHOD: toString
     IMPORT: None
     EXPORT: state (String)

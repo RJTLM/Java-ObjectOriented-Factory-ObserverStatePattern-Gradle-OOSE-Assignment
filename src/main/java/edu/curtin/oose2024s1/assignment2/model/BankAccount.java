@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-/*
+/**
 Purpose:
     - Represents the financial state of the bike shop, including the balance and financial transactions.
 Responsibilities:
     - Track the current balance.
     - Handle transactions such as paying the employee and purchasing bikes.
- */
+*/
 // Manages the shop's bank account.
 public class BankAccount implements Observable
 {
@@ -21,7 +21,7 @@ public class BankAccount implements Observable
     private int balance;
     private final List<Observer> observers = new ArrayList<>();
 
-    /*
+    /**
     METHOD: BankAccount
     IMPORT: initialBalance (double)
     EXPORT: None
@@ -33,7 +33,7 @@ public class BankAccount implements Observable
         this.balance = initialBalance;
     }
 
-    /*
+    /**
     METHOD: getBalance
     IMPORT: None
     EXPORT: balance (double)
@@ -45,7 +45,7 @@ public class BankAccount implements Observable
         return balance;
     }
 
-    /*
+    /**
     METHOD: deposit
     IMPORT: amount (double)
     EXPORT: None
@@ -59,13 +59,13 @@ public class BankAccount implements Observable
         notifyObservers();
     }
 
-    /*
-   METHOD: withdraw
-   IMPORT: amount (double)
-   EXPORT: None
-   ALGORITHM:
-   Subtracts the specified amount from the balance if funds are sufficient, otherwise logs a warning. Notifies observers if withdrawal is successful.
-   */
+    /**
+    METHOD: withdraw
+    IMPORT: amount (double)
+    EXPORT: None
+    ALGORITHM:
+    Subtracts the specified amount from the balance if funds are sufficient, otherwise logs a warning. Notifies observers if withdrawal is successful.
+    */
     public void withdraw(int amount)
     {
         if (balance >= amount)
@@ -80,7 +80,7 @@ public class BankAccount implements Observable
         }
     }
 
-    /*
+    /**
     METHOD: addObserver
     IMPORT: observer (Observer)
     EXPORT: None
@@ -93,20 +93,20 @@ public class BankAccount implements Observable
         observers.add(observer);
     }
 
-    /*
-   METHOD: removeObserver
-   IMPORT: observer (Observer)
-   EXPORT: None
-   ALGORITHM:
-   Removes an observer from the list of observers.
-   */
+    /**
+    METHOD: removeObserver
+    IMPORT: observer (Observer)
+    EXPORT: None
+    ALGORITHM:
+    Removes an observer from the list of observers.
+    */
     @Override
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
     }
 
-    /*
+    /**
     METHOD: notifyObservers
     IMPORT: None
     EXPORT: None

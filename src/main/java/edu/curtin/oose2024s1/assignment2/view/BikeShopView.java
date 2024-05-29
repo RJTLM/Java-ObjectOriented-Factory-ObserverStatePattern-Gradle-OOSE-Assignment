@@ -8,19 +8,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Logger;
 
-/*
+/**
 Purpose:
     - This class will manage the display of the bike shop's status, such as the number of bikes available, being serviced, and awaiting pickup, as well as the bank account balance. It will also handle logging messages to the console and writing them to the "sim_results.txt" file.
 Role:
     - Acts as the presentation layer of the application, showing the current state of the bike shop to the user and ensuring that all output is logged appropriately.
- */
+*/
 // Displays shop statistics and messages.
 public class BikeShopView implements Observer
 {
     private static final Logger logger = Logger.getLogger(BikeShopView.class.getName());
     private PrintWriter writer;
 
-    /*
+    /**
     METHOD: BikeShopView
     IMPORT: None
     EXPORT: None
@@ -39,7 +39,7 @@ public class BikeShopView implements Observer
         }
     }
 
-    /*
+    /**
     METHOD: registerObservers
     IMPORT: bankAccount (BankAccount), inventory (Inventory)
     EXPORT: None
@@ -52,7 +52,7 @@ public class BikeShopView implements Observer
         inventory.addObserver(this);
     }
 
-    /*
+    /**
     METHOD: displayStatus
     IMPORT: daysElapsed (int), bankAccount (BankAccount), inventory (Inventory)
     EXPORT: None
@@ -70,7 +70,7 @@ public class BikeShopView implements Observer
         logToFile(status);
     }
 
-    /*
+    /**
     METHOD: logMessage
     IMPORT: message (String)
     EXPORT: None
@@ -83,7 +83,7 @@ public class BikeShopView implements Observer
         logToFile(message);
     }
 
-    /*
+    /**
     METHOD: logFailure
     IMPORT: failureReason (String)
     EXPORT: None
@@ -97,7 +97,7 @@ public class BikeShopView implements Observer
         logToFile(failureMessage);
     }
 
-    /*
+    /**
     METHOD: logToFile
     IMPORT: message (String)
     EXPORT: None
@@ -110,13 +110,13 @@ public class BikeShopView implements Observer
         writer.flush();
     }
 
-    /*
-   METHOD: close
-   IMPORT: None
-   EXPORT: None
-   ALGORITHM:
-   Closes the PrintWriter if it is not null.
-   */
+    /**
+    METHOD: close
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Closes the PrintWriter if it is not null.
+    */
     public void close()
     {
         if(writer != null)
@@ -125,13 +125,13 @@ public class BikeShopView implements Observer
         }
     }
 
-    /*
-   METHOD: update
-   IMPORT: None
-   EXPORT: None
-   ALGORITHM:
-   Updates the view. This method is called when the observable notifies its observers.
-   */
+    /**
+    METHOD: update
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Updates the view. This method is called when the observable notifies its observers.
+    */
     @Override
     public void update()
     {

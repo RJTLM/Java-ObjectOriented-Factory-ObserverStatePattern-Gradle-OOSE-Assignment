@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-/*
+/**
 Purpose:
     - Manages the collection of bikes in the shop.
 Responsibilities:
     - Keep track of all bikes in different states (available, being serviced, awaiting pickup).
     - Manage adding and removing bikes from the inventory.
- */
+*/
 // Manages the bike inventory.
 public class Inventory implements Observable
 {
@@ -27,7 +27,7 @@ public class Inventory implements Observable
     private final List<Bike> awaitingPickupBikes;
     private final List<Observer> observers = new ArrayList<>();
 
-    /*
+    /**
     METHOD: Inventory
     IMPORT: None
     EXPORT: None
@@ -41,7 +41,7 @@ public class Inventory implements Observable
         awaitingPickupBikes = new ArrayList<>();
     }
 
-    /*
+    /**
     METHOD: getAvailableBikes
     IMPORT: None
     EXPORT: availableBikes (List<Bike>)
@@ -53,7 +53,7 @@ public class Inventory implements Observable
         return availableBikes;
     }
 
-    /*
+    /**
     METHOD: getServicedBikes
     IMPORT: None
     EXPORT: servicedBikes (List<Bike>)
@@ -65,7 +65,7 @@ public class Inventory implements Observable
         return servicedBikes;
     }
 
-    /*
+    /**
     METHOD: getAwaitingPickupBikes
     IMPORT: None
     EXPORT: awaitingPickupBikes (List<Bike>)
@@ -77,7 +77,7 @@ public class Inventory implements Observable
         return awaitingPickupBikes;
     }
 
-    /*
+    /**
     METHOD: addAvailableBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -92,7 +92,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: removeAvailableBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -107,7 +107,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: addServicedBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -122,7 +122,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: removeServicedBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -137,7 +137,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: addAwaitingPickupBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -152,7 +152,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: removeAwaitingPickupBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -167,7 +167,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: getAvailableBikeCount
     IMPORT: None
     EXPORT: int
@@ -179,7 +179,7 @@ public class Inventory implements Observable
         return availableBikes.size();
     }
 
-    /*
+    /**
     METHOD: getServicedBikeCount
     IMPORT: None
     EXPORT: int
@@ -191,7 +191,7 @@ public class Inventory implements Observable
         return servicedBikes.size();
     }
 
-    /*
+    /**
     METHOD: getAwaitingPickupBikeCount
     IMPORT: None
     EXPORT: int
@@ -203,7 +203,7 @@ public class Inventory implements Observable
         return awaitingPickupBikes.size();
     }
 
-    /*
+    /**
     METHOD: incrementDaysInServicingState
     IMPORT: None
     EXPORT: None
@@ -231,7 +231,7 @@ public class Inventory implements Observable
         notifyObservers();
     }
 
-    /*
+    /**
     METHOD: addObserver
     IMPORT: observer (Observer)
     EXPORT: None
@@ -244,20 +244,20 @@ public class Inventory implements Observable
         observers.add(observer);
     }
 
-    /*
-   METHOD: removeObserver
-   IMPORT: observer (Observer)
-   EXPORT: None
-   ALGORITHM:
-   Removes an observer from the list of observers.
-   */
+    /**
+    METHOD: removeObserver
+    IMPORT: observer (Observer)
+    EXPORT: None
+    ALGORITHM:
+    Removes an observer from the list of observers.
+    */
     @Override
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
     }
 
-    /*
+    /**
     METHOD: notifyObservers
     IMPORT: None
     EXPORT: None

@@ -7,7 +7,7 @@ import edu.curtin.oose2024s1.assignment2.view.BikeShopView;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-/*
+/**
 Purpose:
     - This class will handle the simulation loop, controlling the flow of the simulation based on time (1 second = 1 day in the simulation). It will interact with the BikeShopController to process incoming messages and update the state of the bike shop.
 Role:
@@ -27,7 +27,7 @@ public class EventLoop
     private int totalMessages = 0;
     private int totalFailures = 0;
 
-    /*
+    /**
     METHOD: EventLoop
     IMPORT: bikeShopInput (BikeShopInput), bikeShopController (BikeShopController), inventory (Inventory), bankAccount (BankAccount), bikeShopView (BikeShopView)
     EXPORT: None
@@ -51,7 +51,7 @@ public class EventLoop
         }
     }
 
-    /*
+    /**
    METHOD: run
    IMPORT: None
    EXPORT: None
@@ -65,7 +65,7 @@ public class EventLoop
 
         while(System.in.available() == 0)
         {
-            // Clear the console (platform-dependent; works on most Unix-like systems)
+            // Clear the console for better UX
             System.out.print("\033[H\033[2J");
             System.out.flush();
 
@@ -76,6 +76,14 @@ public class EventLoop
 
             // Display status
             bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
+
+            // Pay the employee every 7 days
+            if (daysElapsed % 7 == 0)
+            {
+                bankAccount.withdraw(1000); // $1000 payment to the employee
+                System.out.println("Employee paid $1000.");
+                logger.info("Employee paid $1000.");
+            }
 
             // Process all messages for this day
             String message = bikeShopInput.nextMessage();
@@ -112,7 +120,7 @@ public class EventLoop
         logger.info("Event loop ended.");
     }
 
-    /*
+    /**
     METHOD: displayFinalStatistics
     IMPORT: totalMessages (int), totalFailures (int)
     EXPORT: None

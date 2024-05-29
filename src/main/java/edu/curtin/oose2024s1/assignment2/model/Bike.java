@@ -6,7 +6,7 @@ import edu.curtin.oose2024s1.assignment2.state.AvailableState;
 import edu.curtin.oose2024s1.assignment2.state.ServicingState;
 
 
-/*
+/**
 Purpose:
     - Represents an individual bike in the shop.
     - Maintain the current state of the bike and delegate state-specific behavior.
@@ -23,7 +23,7 @@ public class Bike
     private String associatedEmail;
     private int daysInServicingState;
 
-    /*
+    /**
     METHOD: Bike
     IMPORT: None
     EXPORT: None
@@ -36,7 +36,7 @@ public class Bike
         this.daysInServicingState = 0;
     }
 
-    /*
+    /**
     METHOD: getState
     IMPORT: None
     EXPORT: state (BikeState)
@@ -48,7 +48,7 @@ public class Bike
         return state;
     }
 
-    /*
+    /**
     METHOD: setState
     IMPORT: state (BikeState)
     EXPORT: None
@@ -60,7 +60,7 @@ public class Bike
         this.state = state;
     }
 
-    /*
+    /**
     METHOD: getAssociatedEmail
     IMPORT: None
     EXPORT: associatedEmail (String)
@@ -72,7 +72,7 @@ public class Bike
         return associatedEmail;
     }
 
-    /*
+    /**
     METHOD: setAssociatedEmail
     IMPORT: email (String)
     EXPORT: None
@@ -84,7 +84,7 @@ public class Bike
         this.associatedEmail = email;
     }
 
-    /*
+    /**
     METHOD: dropOff
     IMPORT: None
     EXPORT: None
@@ -97,7 +97,7 @@ public class Bike
         daysInServicingState = 0; // Reset days in servicing state
     }
 
-    /*
+    /**
     METHOD: pickUp
     IMPORT: None
     EXPORT: None
@@ -109,7 +109,7 @@ public class Bike
         state.pickUp(this);
     }
 
-    /*
+    /**
     METHOD: purchase
     IMPORT: None
     EXPORT: None
@@ -121,13 +121,13 @@ public class Bike
         state.purchase(this);
     }
 
-    /*
-   METHOD: incrementDaysInServicingState
-   IMPORT: None
-   EXPORT: None
-   ALGORITHM:
-   Increments the days the bike has been in the servicing state.
-   */
+    /**
+    METHOD: incrementDaysInServicingState
+    IMPORT: None
+    EXPORT: None
+    ALGORITHM:
+    Increments the days the bike has been in the servicing state.
+    */
     public void incrementDaysInServicingState()
     {
         if (state instanceof ServicingState)
@@ -141,7 +141,7 @@ public class Bike
         }
     }
 
-    /*
+    /**
     METHOD: toString
     IMPORT: None
     EXPORT: String

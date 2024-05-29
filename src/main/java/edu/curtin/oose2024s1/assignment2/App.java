@@ -11,13 +11,12 @@ import java.io.IOException;
 /**
  * Use this code to get started on Assignment 2. You are free to modify or replace this file as
  * needed (to fulfil the assignment requirements, of course).
- */
-/*
-Note, I modified this class by centralising the event loop and message processing logic in the `EventLoop` class and refactored this class to initiate and run the `EventLoop`, making the code more modular, maintainable, and aligned with the single responsibility principle.
+
+ * Note, I modified this class by centralising the event loop and message processing logic in the `EventLoop` class and refactored this class to initiate and run the `EventLoop`, making the code more modular, maintainable, and aligned with the single responsibility principle.
 */
 public class App
 {
-    /*
+    /**
     METHOD: main
     IMPORT: args (String ARRAY)
     EXPORT: None

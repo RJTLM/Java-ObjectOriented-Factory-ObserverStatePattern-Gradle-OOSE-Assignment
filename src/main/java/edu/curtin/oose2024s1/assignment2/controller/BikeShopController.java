@@ -1,6 +1,8 @@
 package edu.curtin.oose2024s1.assignment2.controller;
 
+import edu.curtin.oose2024s1.assignment2.factory.BikeFactory;
 import edu.curtin.oose2024s1.assignment2.model.*;
+import edu.curtin.oose2024s1.assignment2.state.ServicingState;
 
 /**
 Purpose:
@@ -13,6 +15,7 @@ public class BikeShopController
 {
     private final Inventory inventory;
     private final BankAccount bankAccount;
+    private final BikeFactory bikeFactory;
 
     /**
     METHOD: BikeShopController
@@ -25,6 +28,7 @@ public class BikeShopController
     {
         this.inventory = inventory;
         this.bankAccount = bankAccount;
+        this.bikeFactory = new BikeFactory();
     }
 
     /**
@@ -83,7 +87,7 @@ public class BikeShopController
         {
             for(int i = 0; i < 10; i++)
             {
-                Bike bike = new Bike();
+                Bike bike = bikeFactory.createBike(); // Use factory to create bikes
                 inventory.addAvailableBike(bike);
             }
             bankAccount.withdraw(5000);
@@ -102,7 +106,7 @@ public class BikeShopController
     {
         if(email != null && inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() <= 99)
         {
-            Bike bike = new Bike();
+            Bike bike = bikeFactory.createBike();
             bike.setAssociatedEmail(email);
             bike.dropOff();
             inventory.addServicedBike(bike);
@@ -191,6 +195,10 @@ public class BikeShopController
             {
                 if(email.equals(bike.getAssociatedEmail()))
                 {
+                    if (bike.getState() instanceof ServicingState)
+                    {
+                        bankAccount.deposit(100); // $100 payment for servicing
+                    }
                     bike.pickUp();
                     inventory.removeAwaitingPickupBike(bike);
                     inventory.addAvailableBike(bike);

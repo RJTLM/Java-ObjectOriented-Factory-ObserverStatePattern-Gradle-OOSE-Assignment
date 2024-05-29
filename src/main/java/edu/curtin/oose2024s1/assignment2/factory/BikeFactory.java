@@ -1,7 +1,7 @@
 package edu.curtin.oose2024s1.assignment2.factory;
 
 import edu.curtin.oose2024s1.assignment2.model.Bike;
-/*
+/**
 Purpose:
     - The BikeFactory class will manage the creation of Bike instances. This centralises the object creation process, ensuring that all Bike objects are created in a consistent manner.
 Role:
@@ -10,7 +10,7 @@ Role:
 // Creates new Bike instances.
 public class BikeFactory
 {
-    /*
+    /**
     METHOD: createBike
     IMPORT: None
     EXPORT: bike (Bike)

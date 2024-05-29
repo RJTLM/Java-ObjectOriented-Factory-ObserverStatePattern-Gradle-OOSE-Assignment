@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-/*
+/**
 Purpose:
     - Represents a customer who interacts with the bike shop.
 Responsibilities:
     - Store customer information, such as email address.
     - Track bikes associated with the customer (dropped off for service or purchased online).
- */
+*/
 // Represents a customer.
 public class Customer
 {
@@ -19,7 +19,7 @@ public class Customer
     private final String email;
     private final List<Bike> bikes;
 
-    /*
+    /**
     METHOD: Customer
     IMPORT: email (String)
     EXPORT: None
@@ -32,7 +32,7 @@ public class Customer
         this.bikes = new ArrayList<>();
     }
 
-    /*
+    /**
     METHOD: getEmail
     IMPORT: None
     EXPORT: email (String)
@@ -44,7 +44,7 @@ public class Customer
         return email;
     }
 
-    /*
+    /**
     METHOD: getBikes
     IMPORT: None
     EXPORT: bikes (List<Bike>)
@@ -56,7 +56,7 @@ public class Customer
         return bikes;
     }
 
-    /*
+    /**
     METHOD: addBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -70,7 +70,7 @@ public class Customer
         logger.info(() -> "Bike added to customer " + email + ": " + bike);
     }
 
-    /*
+    /**
     METHOD: removeBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -84,7 +84,7 @@ public class Customer
         logger.info(() -> "Bike removed from customer " + email + ": " + bike);
     }
 
-    /*
+    /**
     METHOD: toString
     IMPORT: None
     EXPORT: String

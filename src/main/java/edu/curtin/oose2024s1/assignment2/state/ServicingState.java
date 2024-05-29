@@ -2,7 +2,7 @@ package edu.curtin.oose2024s1.assignment2.state;
 
 import edu.curtin.oose2024s1.assignment2.model.Bike;
 
-/*
+/**
 Purpose:
     - Implement the behavior for bikes that are being serviced.
 Role:
@@ -12,7 +12,7 @@ Role:
 // Concrete state for bikes that are being serviced.
 public class ServicingState implements BikeState
 {
-    /*
+    /**
     METHOD: dropOff
     IMPORT: bike (Bike)
     EXPORT: None
@@ -25,7 +25,7 @@ public class ServicingState implements BikeState
         throw new IllegalStateException("Bike is already being serviced.");
     }
 
-    /*
+    /**
     METHOD: pickUp
     IMPORT: bike (Bike)
     EXPORT: None
@@ -38,7 +38,7 @@ public class ServicingState implements BikeState
         bike.setState(new AwaitingPickupState());
     }
 
-    /*
+    /**
     METHOD: purchase
     IMPORT: bike (Bike)
     EXPORT: None
@@ -51,7 +51,7 @@ public class ServicingState implements BikeState
         throw new IllegalStateException("Bike cannot be purchased when it is being serviced.");
     }
 
-    /*
+    /**
     METHOD: toString
     IMPORT: None
     EXPORT: state (String)
