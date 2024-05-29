@@ -104,7 +104,7 @@ public class BikeShopView implements Observer
     ALGORITHM:
     Writes a message to the "sim_results.txt" file and flushes the writer.
     */
-    private void logToFile(String message)
+    public void logToFile(String message)
     {
         writer.println(message);
         writer.flush();
@@ -136,6 +136,6 @@ public class BikeShopView implements Observer
     public void update()
     {
         // Update the view based on changes to the bank account or inventory
-        logger.info("View updated.");
+        //logger.info("View updated.");
     }
 }

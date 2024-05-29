@@ -4,192 +4,440 @@ Bikes Available: 50
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 0
 Day 2
-Bank Account Balance: $17000
-Bikes Available: 48
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 0
-Day 3
-Bank Account Balance: $19000
-Bikes Available: 46
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 1
-Day 4
-Bank Account Balance: $19000
-Bikes Available: 46
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 1
-Day 5
-Bank Account Balance: $20000
-Bikes Available: 45
-Bikes Being Serviced: 3
-Bikes Awaiting Pickup: 1
-Day 1
 Bank Account Balance: $15000
 Bikes Available: 50
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 0
-Day 2
-Bank Account Balance: $17000
-Bikes Available: 48
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 2
 Day 3
-Bank Account Balance: $17000
-Bikes Available: 48
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 2
-Day 4
-Bank Account Balance: $14000
-Bikes Available: 56
-Bikes Being Serviced: 2
-Bikes Awaiting Pickup: 4
-Day 5
-Bank Account Balance: $14000
-Bikes Available: 58
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 6
-Bank Account Balance: $14000
-Bikes Available: 58
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 7
-Bank Account Balance: $14000
-Bikes Available: 58
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 8
-Bank Account Balance: $14000
-Bikes Available: 58
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 9
-Bank Account Balance: $14000
-Bikes Available: 58
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 4
-Day 10
-Bank Account Balance: $14000
-Bikes Available: 59
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 11
-Bank Account Balance: $14000
-Bikes Available: 59
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 12
-Bank Account Balance: $18000
-Bikes Available: 55
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 5
-Day 13
-Bank Account Balance: $20000
-Bikes Available: 54
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 6
-Day 14
-Bank Account Balance: $20000
-Bikes Available: 54
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 6
-Day 15
-Bank Account Balance: $20000
-Bikes Available: 54
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 6
-Day 16
-Bank Account Balance: $22000
-Bikes Available: 52
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 6
-Day 1
 Bank Account Balance: $15000
 Bikes Available: 50
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 0
-Day 2
+Day 4
 Bank Account Balance: $16000
 Bikes Available: 49
 Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 1
-Day 3
-Bank Account Balance: $19000
-Bikes Available: 46
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 2
-Day 4
+Bikes Awaiting Pickup: 0
+Day 5
+Bank Account Balance: $18000
+Bikes Available: 47
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 0
+Day 6
 Bank Account Balance: $21000
 Bikes Available: 44
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 2
-Day 5
-Bank Account Balance: $24000
-Bikes Available: 41
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 2
-Day 6
-Bank Account Balance: $25000
-Bikes Available: 41
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 3
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 1
 Day 7
-Bank Account Balance: $27000
-Bikes Available: 39
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 3
-Day 8
-Bank Account Balance: $32000
-Bikes Available: 35
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 3
-Day 9
-Bank Account Balance: $32000
-Bikes Available: 35
-Bikes Being Serviced: 1
-Bikes Awaiting Pickup: 3
-Day 10
-Bank Account Balance: $32000
-Bikes Available: 36
+Bank Account Balance: $21000
+Bikes Available: 46
 Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 3
+Bikes Awaiting Pickup: 1
+Day 8
+Bank Account Balance: $23000
+Bikes Available: 44
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 1
+Day 9
+Bank Account Balance: $20000
+Bikes Available: 52
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 0
+Day 10
+Bank Account Balance: $20000
+Bikes Available: 53
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 0
 Day 11
-Bank Account Balance: $34000
-Bikes Available: 34
+Bank Account Balance: $23000
+Bikes Available: 51
 Bikes Being Serviced: 0
 Bikes Awaiting Pickup: 3
 Day 12
-Bank Account Balance: $35000
-Bikes Available: 33
+Bank Account Balance: $23000
+Bikes Available: 51
 Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 2
+Bikes Awaiting Pickup: 3
 Day 13
-Bank Account Balance: $35000
-Bikes Available: 33
+Bank Account Balance: $23000
+Bikes Available: 51
 Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 2
+Bikes Awaiting Pickup: 3
 Day 14
-Bank Account Balance: $35000
-Bikes Available: 33
+Bank Account Balance: $25000
+Bikes Available: 49
 Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 2
+Bikes Awaiting Pickup: 3
 Day 15
-Bank Account Balance: $37000
-Bikes Available: 31
-Bikes Being Serviced: 0
-Bikes Awaiting Pickup: 4
-Day 16
-Bank Account Balance: $38000
-Bikes Available: 30
+Bank Account Balance: $27000
+Bikes Available: 47
 Bikes Being Serviced: 2
-Bikes Awaiting Pickup: 5
+Bikes Awaiting Pickup: 3
+Day 16
+Bank Account Balance: $29000
+Bikes Available: 45
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 4
 Day 17
-Bank Account Balance: $39000
-Bikes Available: 29
-Bikes Being Serviced: 3
-Bikes Awaiting Pickup: 5
+Bank Account Balance: $27000
+Bikes Available: 54
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 7
 Day 18
-Bank Account Balance: $42000
-Bikes Available: 28
+Bank Account Balance: $28000
+Bikes Available: 53
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 7
+Day 19
+Bank Account Balance: $28000
+Bikes Available: 53
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 7
+Day 20
+Bank Account Balance: $28000
+Bikes Available: 53
+Bikes Being Serviced: 3
+Bikes Awaiting Pickup: 7
+Day 21
+Bank Account Balance: $28000
+Bikes Available: 55
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 7
+Day 22
+Bank Account Balance: $23000
+Bikes Available: 66
 Bikes Being Serviced: 1
 Bikes Awaiting Pickup: 6
+Day 23
+Bank Account Balance: $27000
+Bikes Available: 63
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 8
+Day 24
+Bank Account Balance: $29000
+Bikes Available: 61
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 8
+Day 25
+Bank Account Balance: $30000
+Bikes Available: 60
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 9
+Day 26
+Bank Account Balance: $32000
+Bikes Available: 58
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 9
+Day 27
+Bank Account Balance: $33000
+Bikes Available: 58
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 10
+Day 28
+Bank Account Balance: $39000
+Bikes Available: 52
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 15
+Day 29
+Bank Account Balance: $40000
+Bikes Available: 51
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 16
+Day 30
+Bank Account Balance: $41000
+Bikes Available: 50
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 17
+Day 31
+Bank Account Balance: $45000
+Bikes Available: 46
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 20
+Day 32
+Bank Account Balance: $47000
+Bikes Available: 44
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 20
+Day 33
+Bank Account Balance: $50000
+Bikes Available: 41
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 23
+Day 34
+Bank Account Balance: $52000
+Bikes Available: 39
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 24
+Day 35
+Bank Account Balance: $52000
+Bikes Available: 39
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 23
+Day 36
+Bank Account Balance: $54000
+Bikes Available: 39
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 23
+Day 37
+Bank Account Balance: $54000
+Bikes Available: 39
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 23
+Day 38
+Bank Account Balance: $50000
+Bikes Available: 48
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 23
+Day 39
+Bank Account Balance: $50000
+Bikes Available: 48
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 23
+Day 40
+Bank Account Balance: $51000
+Bikes Available: 47
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 23
+Day 41
+Bank Account Balance: $47000
+Bikes Available: 57
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 24
+Day 42
+Bank Account Balance: $47000
+Bikes Available: 57
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 24
+Day 43
+Bank Account Balance: $48000
+Bikes Available: 57
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 24
+Day 44
+Bank Account Balance: $49000
+Bikes Available: 56
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 25
+Day 45
+Bank Account Balance: $53000
+Bikes Available: 52
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 27
+Day 46
+Bank Account Balance: $57000
+Bikes Available: 48
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 31
+Day 47
+Bank Account Balance: $57000
+Bikes Available: 49
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 31
+Day 48
+Bank Account Balance: $57000
+Bikes Available: 49
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 30
+Day 49
+Bank Account Balance: $57000
+Bikes Available: 49
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 30
+Day 50
+Bank Account Balance: $59000
+Bikes Available: 48
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 32
+Day 51
+Bank Account Balance: $61000
+Bikes Available: 47
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 31
+Day 52
+Bank Account Balance: $61000
+Bikes Available: 47
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 30
+Day 53
+Bank Account Balance: $59000
+Bikes Available: 55
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 30
+Day 54
+Bank Account Balance: $60000
+Bikes Available: 54
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 30
+Day 55
+Bank Account Balance: $55000
+Bikes Available: 64
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 30
+Day 56
+Bank Account Balance: $55000
+Bikes Available: 65
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 30
+Day 57
+Bank Account Balance: $55000
+Bikes Available: 65
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 30
+Day 58
+Bank Account Balance: $55000
+Bikes Available: 65
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 29
+Day 59
+Bank Account Balance: $55000
+Bikes Available: 65
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 29
+Day 60
+Bank Account Balance: $56000
+Bikes Available: 64
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 29
+Day 61
+Bank Account Balance: $57000
+Bikes Available: 64
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 30
+Day 62
+Bank Account Balance: $61000
+Bikes Available: 60
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 34
+Day 63
+Bank Account Balance: $61000
+Bikes Available: 60
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 34
+Day 64
+Bank Account Balance: $65000
+Bikes Available: 58
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 34
+Day 65
+Bank Account Balance: $65000
+Bikes Available: 58
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 34
+Day 66
+Bank Account Balance: $67000
+Bikes Available: 56
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 34
+Day 67
+Bank Account Balance: $67000
+Bikes Available: 57
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 34
+Day 68
+Bank Account Balance: $67000
+Bikes Available: 57
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 34
+Day 69
+Bank Account Balance: $67000
+Bikes Available: 57
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 34
+Day 70
+Bank Account Balance: $69000
+Bikes Available: 55
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 36
+Day 71
+Bank Account Balance: $70000
+Bikes Available: 54
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 36
+Day 72
+Bank Account Balance: $72000
+Bikes Available: 52
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 37
+Day 73
+Bank Account Balance: $75000
+Bikes Available: 49
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 40
+Day 74
+Bank Account Balance: $75000
+Bikes Available: 50
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 40
+Day 75
+Bank Account Balance: $75000
+Bikes Available: 50
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 40
+Day 76
+Bank Account Balance: $77000
+Bikes Available: 48
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 41
+Day 77
+Bank Account Balance: $78000
+Bikes Available: 47
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 42
+Day 78
+Bank Account Balance: $78000
+Bikes Available: 47
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 42
+Day 79
+Bank Account Balance: $79000
+Bikes Available: 46
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 43
+Day 80
+Bank Account Balance: $77000
+Bikes Available: 53
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 46
+Day 81
+Bank Account Balance: $77000
+Bikes Available: 53
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 46
+Day 82
+Bank Account Balance: $79000
+Bikes Available: 51
+Bikes Being Serviced: 3
+Bikes Awaiting Pickup: 46
+Day 83
+Bank Account Balance: $79000
+Bikes Available: 51
+Bikes Being Serviced: 3
+Bikes Awaiting Pickup: 46
+Day 84
+Bank Account Balance: $80000
+Bikes Available: 53
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 46
+Day 85
+Bank Account Balance: $80000
+Bikes Available: 53
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 46
+Day 86
+Bank Account Balance: $81000
+Bikes Available: 52
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 46
+Day 87
+Bank Account Balance: $83000
+Bikes Available: 51
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 47
+Day 88
+Bank Account Balance: $83000
+Bikes Available: 51
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 47
+Simulation Ended
+Total number of input messages: 171
+Total number of failures: 4

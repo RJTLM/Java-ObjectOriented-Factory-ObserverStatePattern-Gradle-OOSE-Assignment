@@ -24,6 +24,9 @@ public class EventLoop
     private final BankAccount bankAccount;
     private final BikeShopView bikeShopView;
 
+    private int totalMessages = 0;
+    private int totalFailures = 0;
+
     /*
     METHOD: EventLoop
     IMPORT: bikeShopInput (BikeShopInput), bikeShopController (BikeShopController), inventory (Inventory), bankAccount (BankAccount), bikeShopView (BikeShopView)
@@ -62,24 +65,32 @@ public class EventLoop
 
         while(System.in.available() == 0)
         {
+            // Clear the console (platform-dependent; works on most Unix-like systems)
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+
             // Simulate one day
             daysElapsed++;
             int finalDaysElapsed = daysElapsed;
             logger.fine(() -> "Simulated day: " + finalDaysElapsed);
 
+            // Display status
+            bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
+
             // Process all messages for this day
             String message = bikeShopInput.nextMessage();
             while(message != null)
             {
-                bikeShopController.processMessage(message);
+                totalMessages++;
+                if(!bikeShopController.processMessage(message))
+                {
+                    totalFailures++;
+                }
                 message = bikeShopInput.nextMessage();
             }
 
             // Increment the days in servicing state for all serviced bikes
             inventory.incrementDaysInServicingState();
-
-            // Display status
-            bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
 
             // Sleep for 1 second (simulates 1 day)
             try
@@ -94,20 +105,24 @@ public class EventLoop
         }
 
         // Final statistics
-        displayFinalStatistics();
+        displayFinalStatistics(totalMessages, totalFailures);
         logger.info("Event loop ended.");
     }
 
     /*
     METHOD: displayFinalStatistics
-    IMPORT: None
+    IMPORT: totalMessages (int), totalFailures (int)
     EXPORT: None
     ALGORITHM:
-    Displays final statistics at the end of the simulation.
+    Displays final statistics at the end of the simulation and logs them to the file.
     */
-    private void displayFinalStatistics()
+    private void displayFinalStatistics(int totalMessages, int totalFailures)
     {
-        // Calculate and display final statistics
-        System.out.println("Simulation Ended");
+        String finalStats = "Simulation Ended\n" +
+                "Total number of input messages: " + totalMessages + "\n" +
+                "Total number of failures: " + totalFailures;
+        System.out.println(finalStats);
+        bikeShopView.logToFile(finalStats);
+        bikeShopView.close();
     }
 }

@@ -33,22 +33,23 @@ public class BikeShopController
     /**
     METHOD: processMessage
     IMPORT: message (String)
-    EXPORT: None
+    EXPORT: boolean (indicating success or failure)
     ALGORITHM:
     Processes the input message and delegates to the appropriate handler based on message type.
     */
-    public void processMessage(String message)
+    public boolean processMessage(String message)
     {
         if(message == null || message.isEmpty())
         {
             logger.warning(() -> "Invalid message: " + message);
-            return;
+            return false;
         }
 
         String[] parts = message.split(" ", 2);
         String type = parts[0];
         String email = parts.length > 1 ? parts[1] : null;
 
+        boolean success = true;
         switch(type)
         {
             case "DELIVERY":
@@ -68,8 +69,10 @@ public class BikeShopController
                 break;
             default:
                 logger.warning(() -> "Invalid message type: " + type);
+                success = false;
                 break;
         }
+        return success;
     }
 
     /**
@@ -126,11 +129,21 @@ public class BikeShopController
             bike.setAssociatedEmail(email);
             bike.dropOff();
             inventory.addServicedBike(bike);
+            System.out.println("Drop-off accepted: Bike added for servicing.");
             logger.info("Drop-off accepted: Bike added for servicing.");
         }
         else
         {
-            logger.warning("Drop-off failed: Not enough space or invalid email.");
+            if(email == null)
+            {
+                System.out.println("FAILURE: Invalid email.");
+                logger.warning("Drop-off failed: Invalid email.");
+            }
+            if(inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() > 99)
+            {
+                System.out.println("FAILURE: Not enough space.");
+                logger.warning("Drop-off failed: Not enough space.");
+            }
         }
     }
 
@@ -150,11 +163,21 @@ public class BikeShopController
             bike.purchase();
             inventory.addAwaitingPickupBike(bike);
             bankAccount.deposit(1000);
+            System.out.println("Purchase online accepted: Bike sold to " + email);
             logger.info(() -> "Purchase online accepted: Bike sold to " + email);
         }
         else
         {
-            logger.warning("Purchase online failed: No bikes available or invalid email.");
+            if(email == null)
+            {
+                System.out.println("FAILURE: Invalid email.");
+                logger.warning("Purchase online failed: Invalid email.");
+            }
+            if(inventory.getAvailableBikeCount() == 0)
+            {
+                System.out.println("FAILURE: No bikes available.");
+                logger.warning("Purchase online failed: No bikes available.");
+            }
         }
     }
 
@@ -172,10 +195,12 @@ public class BikeShopController
             Bike bike = inventory.getAvailableBikes().removeFirst();
             bike.purchase();
             bankAccount.deposit(1000);
+            System.out.println("Purchase in-store accepted: Bike sold.");
             logger.info("Purchase in-store accepted: Bike sold.");
         }
         else
         {
+            System.out.println("FAILURE: No bikes available.");
             logger.warning("Purchase in-store failed: No bikes available.");
         }
     }
@@ -197,14 +222,17 @@ public class BikeShopController
                 {
                     bike.pickUp();
                     inventory.removeAwaitingPickupBike(bike);
+                    System.out.println("Pick-up accepted: Bike given to " + email);
                     logger.info(() -> "Pick-up accepted: Bike given to " + email);
                     return;
                 }
             }
+            System.out.println("FAILURE: No bike matching customer email.");
             logger.warning("Pick-up failed: No bike matching customer email.");
         }
         else
         {
+            System.out.println("FAILURE: Invalid email.");
             logger.warning("Pick-up failed: Invalid email.");
         }
     }
