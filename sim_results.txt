@@ -441,3 +441,299 @@ Bikes Awaiting Pickup: 47
 Simulation Ended
 Total number of input messages: 171
 Total number of failures: 4
+Day 1
+Bank Account Balance: $15000
+Bikes Available: 50
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 0
+Day 2
+Bank Account Balance: $15000
+Bikes Available: 50
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 0
+Day 3
+Bank Account Balance: $15000
+Bikes Available: 50
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 0
+Purchase in-store accepted: Bike sold.
+Day 4
+Bank Account Balance: $16000
+Bikes Available: 49
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 0
+Purchase online accepted: Bike sold to dujb@ooz.wsj
+Purchase online accepted: Bike sold to jzepm@dhlo.fhw
+Purchase online accepted: Bike sold to gsgu@ana.qpx
+Pick-up accepted: Bike given to gsgu@ana.qpx
+Purchase online accepted: Bike sold to kfhbci@zwlzxhi.udw
+Day 5
+Bank Account Balance: $20000
+Bikes Available: 45
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 3
+Purchase in-store accepted: Bike sold.
+Day 6
+Bank Account Balance: $21000
+Bikes Available: 44
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 3
+Drop-off accepted: Bike added for servicing.
+Drop-off accepted: Bike added for servicing.
+Day 7
+Bank Account Balance: $21000
+Bikes Available: 44
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 3
+Pick-up accepted: Bike given to kfhbci@zwlzxhi.udw
+Purchase in-store accepted: Bike sold.
+Day 8
+Bank Account Balance: $22000
+Bikes Available: 43
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 2
+Day 9
+Bank Account Balance: $22000
+Bikes Available: 45
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 2
+Pick-up accepted: Bike given to jzepm@dhlo.fhw
+Drop-off accepted: Bike added for servicing.
+Purchase in-store accepted: Bike sold.
+Day 10
+Bank Account Balance: $23000
+Bikes Available: 44
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 1
+Day 11
+Bank Account Balance: $23000
+Bikes Available: 44
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 1
+Purchase online accepted: Bike sold to uqgcn@wzekf.eqe
+FAILURE: Invalid message type.
+Day 12
+Bank Account Balance: $24000
+Bikes Available: 44
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 2
+Purchase in-store accepted: Bike sold.
+Day 13
+Bank Account Balance: $25000
+Bikes Available: 43
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 2
+FAILURE: No bike matching customer email.
+FAILURE: Invalid message type.
+Drop-off accepted: Bike added for servicing.
+Purchase in-store accepted: Bike sold.
+Purchase online accepted: Bike sold to vtpivtu@pku.qxa
+Day 14
+Bank Account Balance: $27000
+Bikes Available: 41
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 3
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Day 15
+Bank Account Balance: $29000
+Bikes Available: 39
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 3
+Purchase in-store accepted: Bike sold.
+FAILURE: Invalid message type.
+Drop-off accepted: Bike added for servicing.
+Day 16
+Bank Account Balance: $30000
+Bikes Available: 39
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 3
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Purchase online accepted: Bike sold to tyout@jyhv.fif
+Day 17
+Bank Account Balance: $33000
+Bikes Available: 36
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 4
+Day 18
+Bank Account Balance: $33000
+Bikes Available: 37
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 4
+Purchase online accepted: Bike sold to vafn@toiyc.wlo
+Purchase online accepted: Bike sold to lgs@oxgbacm.woz
+Purchase online accepted: Bike sold to rbsfzjv@jutp.xct
+Purchase online accepted: Bike sold to zex@hefesuu.okw
+Day 19
+Bank Account Balance: $37000
+Bikes Available: 33
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 8
+Day 20
+Bank Account Balance: $37000
+Bikes Available: 33
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 8
+Purchase online accepted: Bike sold to hgujrso@uwfsb.zoh
+Purchase online accepted: Bike sold to blvvc@goqq.kva
+Day 21
+Bank Account Balance: $39000
+Bikes Available: 31
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 10
+Pick-up accepted: Bike given to lgs@oxgbacm.woz
+Day 22
+Bank Account Balance: $39000
+Bikes Available: 31
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 9
+FAILURE: Invalid message type.
+Purchase in-store accepted: Bike sold.
+Day 23
+Bank Account Balance: $40000
+Bikes Available: 30
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 9
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Purchase online accepted: Bike sold to lcfc@dkn.hjf
+Purchase online accepted: Bike sold to ybqxjy@poua.hlf
+Purchase online accepted: Bike sold to yir@lrcbhib.opf
+Purchase in-store accepted: Bike sold.
+Day 24
+Bank Account Balance: $47000
+Bikes Available: 23
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 12
+Purchase in-store accepted: Bike sold.
+FAILURE: No bike matching customer email.
+Delivery accepted: 10 bikes added.
+FAILURE: No bike matching customer email.
+Pick-up accepted: Bike given to dujb@ooz.wsj
+Day 25
+Bank Account Balance: $43000
+Bikes Available: 32
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 11
+FAILURE: No bike matching customer email.
+Purchase in-store accepted: Bike sold.
+Pick-up accepted: Bike given to rbsfzjv@jutp.xct
+Day 26
+Bank Account Balance: $44000
+Bikes Available: 31
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 10
+Purchase online accepted: Bike sold to rtp@oow.lab
+Drop-off accepted: Bike added for servicing.
+Drop-off accepted: Bike added for servicing.
+Drop-off accepted: Bike added for servicing.
+FAILURE: No bike matching customer email.
+Pick-up accepted: Bike given to rtp@oow.lab
+Day 27
+Bank Account Balance: $45000
+Bikes Available: 30
+Bikes Being Serviced: 3
+Bikes Awaiting Pickup: 10
+Drop-off accepted: Bike added for servicing.
+Purchase in-store accepted: Bike sold.
+Drop-off accepted: Bike added for servicing.
+Day 28
+Bank Account Balance: $46000
+Bikes Available: 29
+Bikes Being Serviced: 5
+Bikes Awaiting Pickup: 10
+Purchase online accepted: Bike sold to nmjif@wselbgt.ybl
+FAILURE: No bike matching customer email.
+Purchase online accepted: Bike sold to otizix@qqcxkwm.kda
+Day 29
+Bank Account Balance: $48000
+Bikes Available: 30
+Bikes Being Serviced: 2
+Bikes Awaiting Pickup: 12
+Purchase online accepted: Bike sold to rkt@duoiv.wgh
+Day 30
+Bank Account Balance: $49000
+Bikes Available: 31
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 13
+Purchase online accepted: Bike sold to aduuv@wsbq.tds
+Day 31
+Bank Account Balance: $50000
+Bikes Available: 30
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 14
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Day 32
+Bank Account Balance: $52000
+Bikes Available: 28
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 14
+Purchase online accepted: Bike sold to wrgiy@dhotcr.bsm
+Purchase online accepted: Bike sold to smtyst@kajb.byz
+Day 33
+Bank Account Balance: $54000
+Bikes Available: 26
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 16
+Drop-off accepted: Bike added for servicing.
+Purchase online accepted: Bike sold to pvs@bznfrk.wjj
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Day 34
+Bank Account Balance: $57000
+Bikes Available: 23
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 17
+Purchase online accepted: Bike sold to tvrjdu@dmo.obz
+Purchase in-store accepted: Bike sold.
+Purchase online accepted: Bike sold to jugbahg@jhh.mqv
+Day 35
+Bank Account Balance: $60000
+Bikes Available: 20
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 19
+Purchase online accepted: Bike sold to smzkt@ppgv.iqm
+Delivery accepted: 10 bikes added.
+Purchase online accepted: Bike sold to vfjkhq@czjog.ujl
+Day 36
+Bank Account Balance: $57000
+Bikes Available: 29
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 21
+Drop-off accepted: Bike added for servicing.
+Day 37
+Bank Account Balance: $57000
+Bikes Available: 29
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 21
+Purchase online accepted: Bike sold to ozkrvc@luxbuj.pag
+Purchase online accepted: Bike sold to zbaaugf@buifyj.tic
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Purchase in-store accepted: Bike sold.
+Day 38
+Bank Account Balance: $64000
+Bikes Available: 22
+Bikes Being Serviced: 1
+Bikes Awaiting Pickup: 23
+Day 39
+Bank Account Balance: $64000
+Bikes Available: 23
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 23
+Purchase in-store accepted: Bike sold.
+Pick-up accepted: Bike given to jugbahg@jhh.mqv
+Day 40
+Bank Account Balance: $65000
+Bikes Available: 22
+Bikes Being Serviced: 0
+Bikes Awaiting Pickup: 22
+Drop-off accepted: Bike added for servicing.
+Simulation Ended
+Total number of input messages: 93
+Total number of failures: 10

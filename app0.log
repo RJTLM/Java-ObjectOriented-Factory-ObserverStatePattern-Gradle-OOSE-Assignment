@@ -1,1256 +1,474 @@
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
 INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 INFO: Starting event loop.
-May 29, 2024 11:44:18 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:10 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 1
-May 29, 2024 11:44:19 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:11 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 2
-May 29, 2024 11:44:20 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:12 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 3
-May 29, 2024 11:44:20 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:12 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 16000
-May 29, 2024 11:44:20 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 4
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='dujb@ooz.wsj', daysInServicingState=0}
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 17000
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='jzepm@dhlo.fhw', daysInServicingState=0}
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 18000
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 5
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='axlsh@dvmufxr.oki', daysInServicingState=0}
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='gsgu@ana.qpx', daysInServicingState=0}
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 19000
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to axlsh@dvmufxr.oki
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='kfhbci@zwlzxhi.udw', daysInServicingState=0}
+May 29, 2024 12:24:13 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 20000
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController processMessage
-WARNING: Invalid message type: =|JXd9V
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:14 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 5
+May 29, 2024 12:24:14 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 21000
-May 29, 2024 11:44:22 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:23 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:15 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 6
-May 29, 2024 11:44:23 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:44:23 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:23 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:15 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:15 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:16 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 7
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:16 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:16 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 22000
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 23000
-May 29, 2024 11:44:24 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:17 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 8
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 24000
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 25000
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 20000
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:25 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to axlsh@dvmufxr.oki
-May 29, 2024 11:44:26 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:17 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:17 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:18 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 9
-May 29, 2024 11:44:26 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 10
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='fgvw@shhd.oyf', daysInServicingState=0}
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 21000
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to fgvw@shhd.oyf
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='nwzm@bcsfthu.woz', daysInServicingState=0}
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 22000
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to nwzm@bcsfthu.woz
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='nunrbe@keohw.eqa', daysInServicingState=0}
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:18 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:18 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:18 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 23000
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to nunrbe@keohw.eqa
-May 29, 2024 11:44:27 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:28 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:19 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 10
+May 29, 2024 12:24:20 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 11
-May 29, 2024 11:44:29 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:20 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='uqgcn@wzekf.eqe', daysInServicingState=0}
+May 29, 2024 12:24:20 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 24000
+May 29, 2024 12:24:20 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:21 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 12
-May 29, 2024 11:44:30 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:21 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 25000
+May 29, 2024 12:24:22 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 13
-May 29, 2024 11:44:30 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 24000
-May 29, 2024 11:44:30 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:30 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 25000
-May 29, 2024 11:44:30 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:22 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:22 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 26000
+May 29, 2024 12:24:22 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='vtpivtu@pku.qxa', daysInServicingState=0}
+May 29, 2024 12:24:22 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 27000
+May 29, 2024 12:24:23 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 14
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 26000
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 27000
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:44:31 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:44:32 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:23 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 28000
+May 29, 2024 12:24:23 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 29000
+May 29, 2024 12:24:24 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 15
-May 29, 2024 11:44:32 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 28000
-May 29, 2024 11:44:32 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:32 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='iokhtif@oiko.fog', daysInServicingState=0}
-May 29, 2024 11:44:32 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 29000
-May 29, 2024 11:44:32 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to iokhtif@oiko.fog
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:24 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 30000
+May 29, 2024 12:24:24 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:24 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:25 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 16
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='fawtl@iupxkqz.qgo', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 30000
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to fawtl@iupxkqz.qgo
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 25000
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='kfngab@zci.zri', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 26000
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to kfngab@zci.zri
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='okci@wrt.woo', daysInServicingState=0}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 27000
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to okci@wrt.woo
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:34 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 17
-May 29, 2024 11:44:34 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 28000
-May 29, 2024 11:44:34 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:35 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 18
-May 29, 2024 11:44:35 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:35 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:35 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:35 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:36 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 19
-May 29, 2024 11:44:36 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController processMessage
-WARNING: Invalid message type: hT'3$5:J}(?skvWcp*4(8T}|
-May 29, 2024 11:44:36 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:36 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:37 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 20
-May 29, 2024 11:44:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:37 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 21
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 23000
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to iokhtif@oiko.fog
-May 29, 2024 11:44:38 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 22
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 24000
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 25000
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='fwhtgqh@irabp.xeo', daysInServicingState=0}
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 26000
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to fwhtgqh@irabp.xeo
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='tvm@rigd.eat', daysInServicingState=0}
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 27000
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to tvm@rigd.eat
-May 29, 2024 11:44:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:40 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 23
-May 29, 2024 11:44:40 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 28000
-May 29, 2024 11:44:40 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:40 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 29000
-May 29, 2024 11:44:40 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:41 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 24
-May 29, 2024 11:44:41 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='onwi@lzz.llu', daysInServicingState=0}
-May 29, 2024 11:44:41 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 30000
-May 29, 2024 11:44:41 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to onwi@lzz.llu
-May 29, 2024 11:44:41 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:41 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:42 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 25
-May 29, 2024 11:44:42 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:44:42 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:25 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 31000
-May 29, 2024 11:44:42 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:42 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:25 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 32000
-May 29, 2024 11:44:42 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:43 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 26
-May 29, 2024 11:44:43 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='osk@khlrp.hst', daysInServicingState=0}
-May 29, 2024 11:44:43 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:25 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='tyout@jyhv.fif', daysInServicingState=0}
+May 29, 2024 12:24:25 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 33000
-May 29, 2024 11:44:43 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to osk@khlrp.hst
-May 29, 2024 11:44:43 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+May 29, 2024 12:24:26 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 17
+May 29, 2024 12:24:26 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
 INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 27
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='hkretqd@tzcxims.jaw', daysInServicingState=0}
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 18
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='vafn@toiyc.wlo', daysInServicingState=0}
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 34000
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to hkretqd@tzcxims.jaw
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='lgs@oxgbacm.woz', daysInServicingState=0}
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 35000
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='jwqhny@jxmcvx.rgw', daysInServicingState=0}
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='rbsfzjv@jutp.xct', daysInServicingState=0}
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 36000
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to jwqhny@jxmcvx.rgw
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='mnmr@kjt.lcx', daysInServicingState=0}
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='zex@hefesuu.okw', daysInServicingState=0}
+May 29, 2024 12:24:27 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 37000
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to mnmr@kjt.lcx
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='peceuih@xetynb.ymt', daysInServicingState=0}
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:28 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 19
+May 29, 2024 12:24:29 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 20
+May 29, 2024 12:24:29 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='hgujrso@uwfsb.zoh', daysInServicingState=0}
+May 29, 2024 12:24:29 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 38000
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to peceuih@xetynb.ymt
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='bnye@vwlwla.cdf', daysInServicingState=0}
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:29 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='blvvc@goqq.kva', daysInServicingState=0}
+May 29, 2024 12:24:29 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 39000
-May 29, 2024 11:44:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to bnye@vwlwla.cdf
-May 29, 2024 11:44:45 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 28
-May 29, 2024 11:44:45 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='rmdyj@ujjtkg.kpi', daysInServicingState=0}
-May 29, 2024 11:44:45 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:30 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 21
+May 29, 2024 12:24:30 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:31 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 22
+May 29, 2024 12:24:31 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 40000
-May 29, 2024 11:44:45 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to rmdyj@ujjtkg.kpi
-May 29, 2024 11:44:46 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 29
-May 29, 2024 11:44:46 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='wzccw@dfzuf.bqu', daysInServicingState=0}
-May 29, 2024 11:44:46 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 23
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 41000
-May 29, 2024 11:44:46 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to wzccw@dfzuf.bqu
-May 29, 2024 11:44:46 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 30
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 42000
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='auodh@roh.ybe', daysInServicingState=0}
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 43000
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to auodh@roh.ybe
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='fumfep@sjcykx.fkm', daysInServicingState=0}
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='lcfc@dkn.hjf', daysInServicingState=0}
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 44000
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to fumfep@sjcykx.fkm
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='ajokyq@aqnikg.siw', daysInServicingState=0}
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='ybqxjy@poua.hlf', daysInServicingState=0}
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 45000
-May 29, 2024 11:44:47 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to ajokyq@aqnikg.siw
-May 29, 2024 11:44:48 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 31
-May 29, 2024 11:44:48 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='yir@lrcbhib.opf', daysInServicingState=0}
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 46000
-May 29, 2024 11:44:48 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:48 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:32 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 47000
-May 29, 2024 11:44:48 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 24
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 48000
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
+INFO: Withdrew: 5000, New Balance: 43000
+May 29, 2024 12:24:33 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:34 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 25
+May 29, 2024 12:24:34 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 44000
+May 29, 2024 12:24:34 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 26
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='rtp@oow.lab', daysInServicingState=0}
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 45000
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:35 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:36 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 27
+May 29, 2024 12:24:36 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:36 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 46000
+May 29, 2024 12:24:36 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 28
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='nmjif@wselbgt.ybl', daysInServicingState=0}
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 47000
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='otizix@qqcxkwm.kda', daysInServicingState=0}
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 48000
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:37 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:38 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 29
+May 29, 2024 12:24:38 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='rkt@duoiv.wgh', daysInServicingState=0}
+May 29, 2024 12:24:38 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 49000
+May 29, 2024 12:24:38 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:38 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:39 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 30
+May 29, 2024 12:24:39 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='aduuv@wsbq.tds', daysInServicingState=0}
+May 29, 2024 12:24:39 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 50000
+May 29, 2024 12:24:40 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 31
+May 29, 2024 12:24:40 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 51000
+May 29, 2024 12:24:40 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 52000
+May 29, 2024 12:24:41 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 32
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='pctnw@aco.psb', daysInServicingState=0}
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 48000
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to pctnw@aco.psb
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='krclvg@idbnn.bno', daysInServicingState=0}
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 49000
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to krclvg@idbnn.bno
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='zzmrw@arswtq.shr', daysInServicingState=0}
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 50000
-May 29, 2024 11:44:49 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to zzmrw@arswtq.shr
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:41 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='wrgiy@dhotcr.bsm', daysInServicingState=0}
+May 29, 2024 12:24:41 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 53000
+May 29, 2024 12:24:41 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='smtyst@kajb.byz', daysInServicingState=0}
+May 29, 2024 12:24:41 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 54000
+May 29, 2024 12:24:42 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 33
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='zeky@pbl.qpp', daysInServicingState=3}
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 51000
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to zeky@pbl.qpp
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+May 29, 2024 12:24:42 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
 INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 52000
-May 29, 2024 11:44:50 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:51 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:42 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='pvs@bznfrk.wjj', daysInServicingState=0}
+May 29, 2024 12:24:42 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 55000
+May 29, 2024 12:24:42 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 56000
+May 29, 2024 12:24:42 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 57000
+May 29, 2024 12:24:43 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 34
-May 29, 2024 11:44:51 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:51 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to fawtl@iupxkqz.qgo
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:43 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='tvrjdu@dmo.obz', daysInServicingState=0}
+May 29, 2024 12:24:43 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 58000
+May 29, 2024 12:24:43 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 59000
+May 29, 2024 12:24:43 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='jugbahg@jhh.mqv', daysInServicingState=0}
+May 29, 2024 12:24:43 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 60000
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 35
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 53000
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 54000
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='smzkt@ppgv.iqm', daysInServicingState=3}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 61000
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
+INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
+INFO: Withdrew: 5000, New Balance: 56000
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='vfjkhq@czjog.ujl', daysInServicingState=3}
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 57000
+May 29, 2024 12:24:44 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
 INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:52 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:53 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:46 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 36
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:46 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 37
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 55000
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 50000
-May 29, 2024 11:44:55 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:44:56 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='ozkrvc@luxbuj.pag', daysInServicingState=3}
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 58000
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
+INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='zbaaugf@buifyj.tic', daysInServicingState=3}
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 59000
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 60000
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 61000
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 62000
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 63000
+May 29, 2024 12:24:47 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+INFO: Deposited: 1000, New Balance: 64000
+May 29, 2024 12:24:48 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 38
-May 29, 2024 11:44:56 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:56 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:57 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:48 PM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
+INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
+May 29, 2024 12:24:49 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 FINE: Simulated day: 39
-May 29, 2024 11:44:57 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 51000
-May 29, 2024 11:44:57 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 40
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 46000
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='kdergu@ung.mtr', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 47000
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to kdergu@ung.mtr
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:44:58 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:44:59 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 41
-May 29, 2024 11:45:00 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 42
-May 29, 2024 11:45:00 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 48000
-May 29, 2024 11:45:00 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:00 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:01 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 43
-May 29, 2024 11:45:01 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='kckccxu@tmurjt.jsr', daysInServicingState=0}
-May 29, 2024 11:45:01 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 49000
-May 29, 2024 11:45:01 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to kckccxu@tmurjt.jsr
-May 29, 2024 11:45:01 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 44
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='vhftdz@fxvrrz.uax', daysInServicingState=0}
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 50000
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to vhftdz@fxvrrz.uax
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='cooop@jwj.hxe', daysInServicingState=0}
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 51000
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to cooop@jwj.hxe
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 52000
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 53000
-May 29, 2024 11:45:02 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 45
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='lkmwx@upoyh.yus', daysInServicingState=3}
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 54000
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to lkmwx@upoyh.yus
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='yjghcsl@ubtooc.ujh', daysInServicingState=0}
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 55000
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to yjghcsl@ubtooc.ujh
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='hir@eublb.bii', daysInServicingState=0}
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 56000
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to hir@eublb.bii
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='nwm@dkvvac.tva', daysInServicingState=0}
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 57000
-May 29, 2024 11:45:03 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to nwm@dkvvac.tva
-May 29, 2024 11:45:04 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 46
-May 29, 2024 11:45:04 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController processMessage
-WARNING: Invalid message type: ,LJWLKFj%
-May 29, 2024 11:45:04 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:05 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 47
-May 29, 2024 11:45:05 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:05 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to bnye@vwlwla.cdf
-May 29, 2024 11:45:05 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:05 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:06 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 48
-May 29, 2024 11:45:06 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:06 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 49
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='wqocdb@rbivdh.yvb', daysInServicingState=0}
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 58000
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to wqocdb@rbivdh.yvb
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='myshsgc@dlobdof.gri', daysInServicingState=0}
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 59000
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to myshsgc@dlobdof.gri
-May 29, 2024 11:45:07 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 50
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 60000
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 61000
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to hkretqd@tzcxims.jaw
-May 29, 2024 11:45:08 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:09 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 51
-May 29, 2024 11:45:09 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:09 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to fumfep@sjcykx.fkm
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 52
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 62000
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 63000
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 64000
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 59000
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:45:10 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:11 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 53
-May 29, 2024 11:45:11 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 60000
-May 29, 2024 11:45:11 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:11 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:11 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 54
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 55000
-May 29, 2024 11:45:12 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:45:13 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 55
-May 29, 2024 11:45:13 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:14 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 56
-May 29, 2024 11:45:15 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 57
-May 29, 2024 11:45:15 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
-INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:15 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to nunrbe@keohw.eqa
-May 29, 2024 11:45:16 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 58
-May 29, 2024 11:45:16 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController processMessage
-WARNING: Invalid message type: ;"tdnVMk~X.V7sQe;864[
-May 29, 2024 11:45:16 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:16 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:16 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:45:16 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:45:17 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 59
-May 29, 2024 11:45:17 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 56000
-May 29, 2024 11:45:17 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:18 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 60
-May 29, 2024 11:45:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='akzsrb@bzsuy.izc', daysInServicingState=3}
-May 29, 2024 11:45:18 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 57000
-May 29, 2024 11:45:18 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to akzsrb@bzsuy.izc
-May 29, 2024 11:45:18 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 61
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='pgiwcaf@pyuyz.hxl', daysInServicingState=3}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 58000
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to pgiwcaf@pyuyz.hxl
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='fkcfoyr@stykj.son', daysInServicingState=0}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 59000
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to fkcfoyr@stykj.son
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='etxp@xiwt.vgj', daysInServicingState=0}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 60000
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to etxp@xiwt.vgj
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='srvu@wyckdl.bhr', daysInServicingState=0}
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 61000
-May 29, 2024 11:45:19 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to srvu@wyckdl.bhr
-May 29, 2024 11:45:20 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 62
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 63
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 62000
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 63000
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 64000
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
+May 29, 2024 12:24:49 PM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
 INFO: Deposited: 1000, New Balance: 65000
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:21 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:22 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 64
-May 29, 2024 11:45:22 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:22 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:23 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 65
-May 29, 2024 11:45:23 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 66000
-May 29, 2024 11:45:23 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:23 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 67000
-May 29, 2024 11:45:23 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:24 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 66
-May 29, 2024 11:45:24 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:25 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 67
-May 29, 2024 11:45:26 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 68
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 69
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='gevkzxv@jnde.hnz', daysInServicingState=0}
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 68000
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to gevkzxv@jnde.hnz
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='gpfq@ndsejzi.wax', daysInServicingState=3}
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 69000
-May 29, 2024 11:45:27 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to gpfq@ndsejzi.wax
-May 29, 2024 11:45:28 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 70
-May 29, 2024 11:45:28 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 70000
-May 29, 2024 11:45:28 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 71
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 71000
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='ujb@agg.hlb', daysInServicingState=3}
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 72000
-May 29, 2024 11:45:29 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to ujb@agg.hlb
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 72
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='avtrml@mhvebe.oqk', daysInServicingState=3}
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 73000
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to avtrml@mhvebe.oqk
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='uizpgt@fcpedpb.mgl', daysInServicingState=0}
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 74000
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to uizpgt@fcpedpb.mgl
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='rzo@wdevzm.yvs', daysInServicingState=0}
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 75000
-May 29, 2024 11:45:30 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to rzo@wdevzm.yvs
-May 29, 2024 11:45:31 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 73
-May 29, 2024 11:45:31 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:32 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 74
-May 29, 2024 11:45:33 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 75
-May 29, 2024 11:45:33 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='dopwb@wpmbnq.hhb', daysInServicingState=0}
-May 29, 2024 11:45:33 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 76000
-May 29, 2024 11:45:33 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to dopwb@wpmbnq.hhb
-May 29, 2024 11:45:33 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 77000
-May 29, 2024 11:45:33 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:34 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 76
-May 29, 2024 11:45:34 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='cvpd@mwyj.fvz', daysInServicingState=0}
-May 29, 2024 11:45:34 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 78000
-May 29, 2024 11:45:34 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to cvpd@mwyj.fvz
-May 29, 2024 11:45:35 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 77
-May 29, 2024 11:45:36 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 78
-May 29, 2024 11:45:36 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='fdtdobx@gkpd.rqm', daysInServicingState=0}
-May 29, 2024 11:45:36 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 79000
-May 29, 2024 11:45:36 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to fdtdobx@gkpd.rqm
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 79
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAvailableBike
-INFO: Bike added to available: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.BankAccount withdraw
-INFO: Withdrew: 5000, New Balance: 74000
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-INFO: Delivery accepted: 10 bikes added.
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='rfe@mbdd.cgu', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 75000
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to rfe@mbdd.cgu
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='smdhns@pevjfn.tjc', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 76000
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to smdhns@pevjfn.tjc
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='tnx@zrm.bzv', daysInServicingState=0}
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 77000
-May 29, 2024 11:45:37 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to tnx@zrm.bzv
-May 29, 2024 11:45:38 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 80
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 81
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 78000
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
+May 29, 2024 12:24:49 PM edu.curtin.oose2024s1.assignment2.model.Inventory removeAwaitingPickupBike
 INFO: Bike removed from awaiting pickup: Bike{state=Available, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-INFO: Pick-up accepted: Bike given to wqocdb@rbivdh.yvb
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='bvyligp@beaagtx.tpq', daysInServicingState=0}
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 79000
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to bvyligp@beaagtx.tpq
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
+May 29, 2024 12:24:50 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+FINE: Simulated day: 40
+May 29, 2024 12:24:50 PM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
 INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:39 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:40 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 82
-May 29, 2024 11:45:41 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 83
-May 29, 2024 11:45:41 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 80000
-May 29, 2024 11:45:41 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:41 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:41 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:41 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:42 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 84
-May 29, 2024 11:45:42 AM edu.curtin.oose2024s1.assignment2.model.Inventory addServicedBike
-INFO: Bike added to serviced: Bike{state=Being Serviced, associatedEmail='null', daysInServicingState=0}
-May 29, 2024 11:45:42 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-INFO: Drop-off accepted: Bike added for servicing.
-May 29, 2024 11:45:42 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePickUp
-WARNING: Pick-up failed: No bike matching customer email.
-May 29, 2024 11:45:43 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 85
-May 29, 2024 11:45:43 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDropOff
-WARNING: Drop-off failed: Not enough space.
-May 29, 2024 11:45:43 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-WARNING: Delivery failed: Not enough space.
-May 29, 2024 11:45:43 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 81000
-May 29, 2024 11:45:43 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:43 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handleDelivery
-WARNING: Delivery failed: Not enough space.
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 86
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 82000
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseInStore
-INFO: Purchase in-store accepted: Bike sold.
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory addAwaitingPickupBike
-INFO: Bike added to awaiting pickup: Bike{state=Awaiting Pickup, associatedEmail='qomqhzk@jgffwfz.aoj', daysInServicingState=0}
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.model.BankAccount deposit
-INFO: Deposited: 1000, New Balance: 83000
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.controller.BikeShopController handlePurchaseOnline
-INFO: Purchase online accepted: Bike sold to qomqhzk@jgffwfz.aoj
-May 29, 2024 11:45:44 AM edu.curtin.oose2024s1.assignment2.model.Inventory incrementDaysInServicingState
-INFO: Bike transitioned from servicing to available: Bike{state=Available, associatedEmail='null', daysInServicingState=3}
-May 29, 2024 11:45:45 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 87
-May 29, 2024 11:45:46 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
-FINE: Simulated day: 88
-May 29, 2024 11:45:47 AM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
+May 29, 2024 12:24:51 PM edu.curtin.oose2024s1.assignment2.controller.EventLoop run
 INFO: Event loop ended.

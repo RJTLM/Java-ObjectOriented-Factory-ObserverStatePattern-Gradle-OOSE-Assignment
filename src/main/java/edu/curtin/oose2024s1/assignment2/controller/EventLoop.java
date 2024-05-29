@@ -82,10 +82,13 @@ public class EventLoop
             while(message != null)
             {
                 totalMessages++;
-                if(!bikeShopController.processMessage(message))
+                String result = bikeShopController.processMessage(message);
+                if(result.startsWith("FAILURE"))
                 {
                     totalFailures++;
                 }
+                System.out.println(result);
+                bikeShopView.logToFile(result);
                 message = bikeShopInput.nextMessage();
             }
 
@@ -118,7 +121,7 @@ public class EventLoop
     */
     private void displayFinalStatistics(int totalMessages, int totalFailures)
     {
-        String finalStats = "Simulation Ended\n" +
+        String finalStats = "\nSimulation Ended\n" +
                 "Total number of input messages: " + totalMessages + "\n" +
                 "Total number of failures: " + totalFailures;
         System.out.println(finalStats);
