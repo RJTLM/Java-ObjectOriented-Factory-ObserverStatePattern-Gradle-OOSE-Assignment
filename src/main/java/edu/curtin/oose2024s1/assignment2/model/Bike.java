@@ -106,6 +106,7 @@ public class Bike
     public void pickUp()
     {
         state.pickUp(this);
+        // Preserve the associated email during state transitions
     }
 
     /*

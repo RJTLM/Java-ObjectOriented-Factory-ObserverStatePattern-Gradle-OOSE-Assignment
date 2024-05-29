@@ -105,7 +105,7 @@ public class BikeShopController
             bike.setAssociatedEmail(email);
             bike.dropOff();
             inventory.addServicedBike(bike);
-            return "Drop-off accepted: Bike added for servicing.";
+            return "Drop-off accepted: Bike added for servicing for " + email + ".";
         }
         else
         {
@@ -137,7 +137,7 @@ public class BikeShopController
             bike.purchase();
             inventory.addAwaitingPickupBike(bike);
             bankAccount.deposit(1000);
-            return "Purchase online accepted: Bike sold to " + email;
+            return "Purchase online accepted: Bike sold to " + email + ".";
         }
         else
         {
@@ -192,10 +192,10 @@ public class BikeShopController
                 {
                     bike.pickUp();
                     inventory.removeAwaitingPickupBike(bike);
-                    return "Pick-up accepted: Bike given to " + email;
+                    return "Pick-up accepted: Bike given to " + email + ".";
                 }
             }
-            return "FAILURE: No bike matching customer email.";
+            return "FAILURE: No bike matching customer email: " + email + ".";
         }
         else
         {
