@@ -25,6 +25,7 @@ public class Inventory implements Observable
     private final List<Bike> servicedBikes;
     private final List<Bike> awaitingPickupBikes;
     private final List<Observer> observers = new ArrayList<>();
+    private final BankAccount bankAccount;
 
     /**
     METHOD: Inventory
@@ -33,11 +34,13 @@ public class Inventory implements Observable
     ALGORITHM:
     Constructor initialises the inventory lists for available bikes, serviced bikes, and bikes awaiting pickup.
     */
-    public Inventory()
+    public Inventory(BankAccount bankAccount)
     {
         availableBikes = new ArrayList<>();
         servicedBikes = new ArrayList<>();
         awaitingPickupBikes = new ArrayList<>();
+        this.bankAccount = bankAccount;
+
     }
 
     /**
@@ -220,6 +223,8 @@ public class Inventory implements Observable
             {
                 iterator.remove();
                 addAwaitingPickupBike(bike);
+                bankAccount.deposit(100); // Charge for servicing
+                System.out.println("$100 SERVICE FEE RECEIVED");
                 logger.info(() -> "Bike transitioned from servicing to awaiting pickup: " + bike);
             }
         }

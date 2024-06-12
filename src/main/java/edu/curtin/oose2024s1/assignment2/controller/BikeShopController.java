@@ -2,7 +2,9 @@ package edu.curtin.oose2024s1.assignment2.controller;
 
 import edu.curtin.oose2024s1.assignment2.factory.BikeFactory;
 import edu.curtin.oose2024s1.assignment2.model.*;
+import edu.curtin.oose2024s1.assignment2.state.AvailableState;
 import edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState;
+import edu.curtin.oose2024s1.assignment2.state.ServicingState;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -144,27 +146,32 @@ public class BikeShopController
      */
     private String handlePurchaseOnline(String email)
     {
-        if(email != null && inventory.getAvailableBikeCount() > 0)
+        if (email != null && inventory.getAvailableBikeCount() > 0)
         {
             Bike bike = inventory.getAvailableBikes().removeFirst();
-            bike.setAssociatedEmail(email);
-            bike.purchase();
-            inventory.addAwaitingPickupBike(bike);
-            bankAccount.deposit(1000);
+            if (bike.getState() instanceof AvailableState) {
+                bike.setAssociatedEmail(email);
+                bike.purchase();
+                inventory.removeAvailableBike(bike); // Ensure bike is removed from the available list
+                inventory.addAwaitingPickupBike(bike);
+                bankAccount.deposit(1000);
 
-            // Add bike to customer
-            customers.putIfAbsent(email, new Customer(email));
-            customers.get(email).addBike(bike);
+                // Add bike to customer
+                customers.putIfAbsent(email, new Customer(email));
+                customers.get(email).addBike(bike);
 
-            return "Purchase online accepted: Bike sold to " + email + ".";
+                return "Purchase online accepted: Bike sold to " + email + ".";
+            } else {
+                return "FAILURE: Bike is not available for purchase.";
+            }
         }
         else
         {
-            if(email == null)
+            if (email == null)
             {
                 return "FAILURE: Invalid email.";
             }
-            if(inventory.getAvailableBikeCount() == 0)
+            if (inventory.getAvailableBikeCount() == 0)
             {
                 return "FAILURE: No bikes available.";
             }
@@ -181,13 +188,17 @@ public class BikeShopController
      */
     private String handlePurchaseInStore()
     {
-        if(inventory.getAvailableBikeCount() > 0)
+        if (inventory.getAvailableBikeCount() > 0)
         {
-            Bike bike = inventory.getAvailableBikes().removeFirst();
-            bike.purchase();
-            inventory.addAvailableBike(bike);
-            bankAccount.deposit(1000);
-            return "Purchase in-store accepted: Bike sold.";
+            Bike bike = inventory.getAvailableBikes().removeFirst(); // Correctly remove the bike from the list
+            if (bike.getState() instanceof AvailableState) {
+                bike.purchase();
+                inventory.removeAvailableBike(bike); // Ensure bike is removed from the available list
+                bankAccount.deposit(1000);
+                return "Purchase in-store accepted: Bike sold.";
+            } else {
+                return "FAILURE: Bike is not available for purchase.";
+            }
         }
         else
         {
@@ -204,7 +215,7 @@ public class BikeShopController
      */
     private String handlePickUp(String email)
     {
-        if(email != null)
+        if (email != null)
         {
             Customer customer = customers.get(email);
             if (customer != null)
@@ -216,7 +227,12 @@ public class BikeShopController
                         customer.removeBike(bike);
                         bike.pickUp();
                         inventory.removeAwaitingPickupBike(bike);
-                        inventory.addAvailableBike(bike);
+
+                        if (bike.getState() instanceof ServicingState) {
+                            bankAccount.deposit(100); // Charge for servicing
+                            System.out.println("$100 SERVICE FEE RECEIVED");
+                        }
+
                         return "Pick-up accepted: Bike given to " + email + ".";
                     }
                 }
