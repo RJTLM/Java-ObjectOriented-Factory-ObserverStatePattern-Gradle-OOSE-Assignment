@@ -10,12 +10,12 @@ import java.util.List;
 import java.util.logging.Logger;
 
 /**
-Purpose:
-    - Manages the collection of bikes in the shop.
-Responsibilities:
-    - Keep track of all bikes in different states (available, being serviced, awaiting pickup).
-    - Manage adding and removing bikes from the inventory.
-*/
+ Purpose:
+ - Manages the collection of bikes in the shop.
+ Responsibilities:
+ - Keep track of all bikes in different states (available, being serviced, awaiting pickup).
+ - Manage adding and removing bikes from the inventory.
+ */
 // Manages the bike inventory.
 public class Inventory implements Observable
 {
@@ -27,41 +27,40 @@ public class Inventory implements Observable
     private final List<Observer> observers = new ArrayList<>();
 
     /**
-    METHOD: Inventory
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Constructor initialises the inventory lists for available bikes, serviced bikes, and bikes awaiting pickup.
-    */
+     METHOD: Inventory
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Constructor initialises the inventory lists for available bikes, serviced bikes, and bikes awaiting pickup.
+     */
     public Inventory()
     {
         availableBikes = new ArrayList<>();
         servicedBikes = new ArrayList<>();
         awaitingPickupBikes = new ArrayList<>();
-
-
+        logger.info("Inventory initialised.");
     }
 
     /**
-    METHOD: getAvailableBikes
-    IMPORT: None
-    EXPORT: availableBikes (List<Bike>)
-    ALGORITHM:
-    Returns the list of available bikes.
-    */
+     METHOD: getAvailableBikes
+     IMPORT: None
+     EXPORT: availableBikes (List<Bike>)
+     ALGORITHM:
+     Returns the list of available bikes.
+     */
     public List<Bike> getAvailableBikes()
     {
         return availableBikes;
     }
 
     /**
-    METHOD: addAvailableBike
-    IMPORT: bike (Bike)
-    EXPORT: None
-    ALGORITHM:
-    Adds a bike to the available bikes list.
-    Logs the action and notifies observers.
-    */
+     METHOD: addAvailableBike
+     IMPORT: bike (Bike)
+     EXPORT: None
+     ALGORITHM:
+     Adds a bike to the available bikes list.
+     Logs the action and notifies observers.
+     */
     public void addAvailableBike(Bike bike)
     {
         availableBikes.add(bike);
@@ -70,13 +69,13 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: removeAvailableBike
-    IMPORT: bike (Bike)
-    EXPORT: None
-    ALGORITHM:
-    Removes a bike from the available bikes list.
-    Logs the action and notifies observers.
-    */
+     METHOD: removeAvailableBike
+     IMPORT: bike (Bike)
+     EXPORT: None
+     ALGORITHM:
+     Removes a bike from the available bikes list.
+     Logs the action and notifies observers.
+     */
     public void removeAvailableBike(Bike bike)
     {
         availableBikes.remove(bike);
@@ -85,13 +84,13 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: addServicedBike
-    IMPORT: bike (Bike)
-    EXPORT: None
-    ALGORITHM:
-    Adds a bike to the serviced bikes list.
-    Logs the action and notifies observers.
-    */
+     METHOD: addServicedBike
+     IMPORT: bike (Bike)
+     EXPORT: None
+     ALGORITHM:
+     Adds a bike to the serviced bikes list.
+     Logs the action and notifies observers.
+     */
     public void addServicedBike(Bike bike)
     {
         servicedBikes.add(bike);
@@ -100,13 +99,13 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: addAwaitingPickupBike
-    IMPORT: bike (Bike)
-    EXPORT: None
-    ALGORITHM:
-    Adds a bike to the awaiting pickup bikes list.
-    Logs the action and notifies observers.
-    */
+     METHOD: addAwaitingPickupBike
+     IMPORT: bike (Bike)
+     EXPORT: None
+     ALGORITHM:
+     Adds a bike to the awaiting pickup bikes list.
+     Logs the action and notifies observers.
+     */
     public void addAwaitingPickupBike(Bike bike)
     {
         awaitingPickupBikes.add(bike);
@@ -115,13 +114,13 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: removeAwaitingPickupBike
-    IMPORT: bike (Bike)
-    EXPORT: None
-    ALGORITHM:
-    Removes a bike from the awaiting pickup bikes list.
-    Logs the action and notifies observers.
-    */
+     METHOD: removeAwaitingPickupBike
+     IMPORT: bike (Bike)
+     EXPORT: None
+     ALGORITHM:
+     Removes a bike from the awaiting pickup bikes list.
+     Logs the action and notifies observers.
+     */
     public void removeAwaitingPickupBike(Bike bike)
     {
         awaitingPickupBikes.remove(bike);
@@ -130,48 +129,48 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: getAvailableBikeCount
-    IMPORT: None
-    EXPORT: int
-    ALGORITHM:
-    Returns the number of available bikes.
-    */
+     METHOD: getAvailableBikeCount
+     IMPORT: None
+     EXPORT: int
+     ALGORITHM:
+     Returns the number of available bikes.
+     */
     public int getAvailableBikeCount()
     {
         return availableBikes.size();
     }
 
     /**
-    METHOD: getServicedBikeCount
-    IMPORT: None
-    EXPORT: int
-    ALGORITHM:
-    Returns the number of bikes being serviced.
-    */
+     METHOD: getServicedBikeCount
+     IMPORT: None
+     EXPORT: int
+     ALGORITHM:
+     Returns the number of bikes being serviced.
+     */
     public int getServicedBikeCount()
     {
         return servicedBikes.size();
     }
 
     /**
-    METHOD: getAwaitingPickupBikeCount
-    IMPORT: None
-    EXPORT: int
-    ALGORITHM:
-    Returns the number of bikes awaiting pickup.
-    */
+     METHOD: getAwaitingPickupBikeCount
+     IMPORT: None
+     EXPORT: int
+     ALGORITHM:
+     Returns the number of bikes awaiting pickup.
+     */
     public int getAwaitingPickupBikeCount()
     {
         return awaitingPickupBikes.size();
     }
 
     /**
-    METHOD: incrementDaysInServicingState
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Increments the days in servicing state for all serviced bikes.
-    */
+     METHOD: incrementDaysInServicingState
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Increments the days in servicing state for all serviced bikes.
+     */
     public void incrementDaysInServicingState()
     {
         Iterator<Bike> iterator = servicedBikes.iterator();
@@ -190,41 +189,44 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: addObserver
-    IMPORT: observer (Observer)
-    EXPORT: None
-    ALGORITHM:
-    Adds an observer to the list of observers.
-    */
+     METHOD: addObserver
+     IMPORT: observer (Observer)
+     EXPORT: None
+     ALGORITHM:
+     Adds an observer to the list of observers.
+     */
     @Override
     public void addObserver(Observer observer)
     {
         observers.add(observer);
+        logger.info(() -> "Observer added: " + observer);
     }
 
     /**
-    METHOD: removeObserver
-    IMPORT: observer (Observer)
-    EXPORT: None
-    ALGORITHM:
-    Removes an observer from the list of observers.
-    */
+     METHOD: removeObserver
+     IMPORT: observer (Observer)
+     EXPORT: None
+     ALGORITHM:
+     Removes an observer from the list of observers.
+     */
     @Override
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
+        logger.info(() -> "Observer removed: " + observer);
     }
 
     /**
-    METHOD: notifyObservers
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Notifies all observers of changes to the inventory.
-    */
+     METHOD: notifyObservers
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Notifies all observers of changes to the inventory.
+     */
     @Override
     public void notifyObservers()
     {
+        logger.fine("Notifying observers of inventory change.");
         for (Observer observer : observers)
         {
             observer.update();
