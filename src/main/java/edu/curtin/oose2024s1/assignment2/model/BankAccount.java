@@ -61,14 +61,27 @@ public class BankAccount implements Observable
 
     /**
     METHOD: withdraw
-    IMPORT: amount (double)
+    IMPORT: amount (int)
     EXPORT: None
     ALGORITHM:
-    Subtracts the specified amount from the balance if funds are sufficient, otherwise logs a warning. Notifies observers if withdrawal is successful.
+    Calls the withdraw method with isEmployeePayment set to false.
     */
     public void withdraw(int amount)
     {
-        if (balance >= amount)
+        withdraw(amount, false); // Default case, not employee payment
+    }
+
+    /**
+    METHOD: withdraw
+    IMPORT: amount (int), isEmployeePayment (boolean)
+    EXPORT: None
+    ALGORITHM:
+    Subtracts the specified amount from the balance. If the amount is for employee payment, it allows the balance to go negative.
+    Otherwise, it logs a warning if funds are insufficient. Notifies observers if withdrawal is successful.
+    */
+    public void withdraw(int amount, boolean isEmployeePayment)
+    {
+        if (isEmployeePayment || balance >= amount)
         {
             balance -= amount;
             logger.info(() -> "Withdrew: " + amount + ", New Balance: " + balance);

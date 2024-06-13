@@ -142,6 +142,18 @@ public class Bike
     }
 
     /**
+    METHOD: getDaysInServicingState
+    IMPORT: None
+    EXPORT: daysInServicingState (int)
+    ALGORITHM:
+    Returns the number of days the bike has been in the servicing state.
+    */
+    public int getDaysInServicingState()
+    {
+        return daysInServicingState;
+    }
+
+    /**
     METHOD: toString
     IMPORT: None
     EXPORT: String

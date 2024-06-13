@@ -4,7 +4,6 @@ import edu.curtin.oose2024s1.assignment2.factory.BikeFactory;
 import edu.curtin.oose2024s1.assignment2.model.*;
 import edu.curtin.oose2024s1.assignment2.state.AvailableState;
 import edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState;
-import edu.curtin.oose2024s1.assignment2.state.ServicingState;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -228,7 +227,8 @@ public class BikeShopController
                         bike.pickUp();
                         inventory.removeAwaitingPickupBike(bike);
 
-                        if (bike.getState() instanceof ServicingState) {
+                        // Charge the $100 service fee if the bike was serviced
+                        if (bike.getState() instanceof AvailableState && bike.getDaysInServicingState() > 0) {
                             bankAccount.deposit(100); // Charge for servicing
                             System.out.println("$100 SERVICE FEE RECEIVED");
                         }

@@ -80,7 +80,7 @@ public class EventLoop
             // Pay the employee every 7 days
             if (daysElapsed % 7 == 0)
             {
-                bankAccount.withdraw(1000); // $1000 payment to the employee
+                bankAccount.withdraw(1000, true); // $1000 payment to the employee
                 System.out.println("Employee paid $1000.");
                 logger.info("Employee paid $1000.");
             }

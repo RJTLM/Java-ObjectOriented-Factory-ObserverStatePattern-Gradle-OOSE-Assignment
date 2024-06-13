@@ -27,7 +27,7 @@ public class App
     {
         BikeShopInput inp = new BikeShopInput();
         BankAccount bankAccount = new BankAccount(15000);
-        Inventory inventory = new Inventory(bankAccount);
+        Inventory inventory = new Inventory();
         BikeShopView bikeShopView = new BikeShopView();
         BikeShopController bikeShopController = new BikeShopController(inventory, bankAccount);
 
