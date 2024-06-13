@@ -7,6 +7,7 @@ import edu.curtin.oose2024s1.assignment2.model.Inventory;
 import edu.curtin.oose2024s1.assignment2.view.BikeShopView;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 /**
  * Use this code to get started on Assignment 2. You are free to modify or replace this file as
@@ -16,6 +17,8 @@ import java.io.IOException;
 */
 public class App
 {
+    private static final Logger logger = Logger.getLogger(App.class.getName());
+
     /**
     METHOD: main
     IMPORT: args (String ARRAY)
@@ -25,6 +28,8 @@ public class App
     */
     public static void main(String[] args)
     {
+        logger.info("Starting Bike Shop Simulation...");
+
         BikeShopInput inp = new BikeShopInput();
         BankAccount bankAccount = new BankAccount(15000);
         Inventory inventory = new Inventory();
@@ -39,6 +44,7 @@ public class App
         }
         catch(IOException e)
         {
+            logger.severe(() -> "Error running the simulation: " + e.getMessage());
             System.out.println("Error running the simulation: " + e.getMessage());
         }
     }
