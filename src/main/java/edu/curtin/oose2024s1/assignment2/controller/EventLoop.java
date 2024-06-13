@@ -63,56 +63,75 @@ public class EventLoop
         int daysElapsed = 0;
         logger.info("Starting event loop.");
 
-        while(System.in.available() == 0)
+        try
         {
-            // Clear the console for better UX
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
-
-            // Simulate one day
-            daysElapsed++;
-            int finalDaysElapsed = daysElapsed;
-            logger.fine(() -> "Simulated day: " + finalDaysElapsed);
-
-            // Display status
-            bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
-
-            // Pay the employee every 7 days
-            if (daysElapsed % 7 == 0)
+            while(System.in.available() == 0)
             {
-                bankAccount.withdraw(1000, true); // $1000 payment to the employee
-                System.out.println("Employee paid $1000.");
-                logger.info("Employee paid $1000.");
-            }
+                // Clear the console for better UX
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
 
-            // Process all messages for this day
-            String message = bikeShopInput.nextMessage();
-            while(message != null)
-            {
-                totalMessages++;
-                String result = bikeShopController.processMessage(message);
-                if(result.startsWith("FAILURE"))
+                // Simulate one day
+                daysElapsed++;
+                int finalDaysElapsed = daysElapsed;
+                logger.fine(() -> "Simulated day: " + finalDaysElapsed);
+
+                // Display status
+                bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
+
+                // Pay the employee every 7 days
+                if (daysElapsed % 7 == 0)
                 {
-                    totalFailures++;
+                    bankAccount.withdraw(1000, true); // $1000 payment to the employee
+                    System.out.println("Employee paid $1000.");
+                    int finalDaysElapsed1 = daysElapsed;
+                    logger.info(() -> "Employee paid $1000 on day " + finalDaysElapsed1 + ".");
                 }
-                System.out.println(result);
-                bikeShopView.logToFile(result);
-                message = bikeShopInput.nextMessage();
-            }
 
-            // Increment the days in servicing state for all serviced bikes
-            inventory.incrementDaysInServicingState();
+                // Process all messages for this day
+                String message = bikeShopInput.nextMessage();
+                while(message != null)
+                {
+                    totalMessages++;
+                    String result = bikeShopController.processMessage(message);
+                    if(result.startsWith("FAILURE"))
+                    {
+                        totalFailures++;
+                        logger.warning(() -> "Processing failed: " + result);
+                    }
+                    else
+                    {
+                        logger.info(() -> "Processing succeeded: " + result);
+                    }
+                    System.out.println(result);
+                    bikeShopView.logToFile(result);
+                    message = bikeShopInput.nextMessage();
+                }
 
-            // Sleep for 1 second (simulates 1 day)
-            try
-            {
-                Thread.sleep(1000);
+                // Increment the days in servicing state for all serviced bikes
+                inventory.incrementDaysInServicingState();
+
+                // Sleep for 1 second (simulates 1 day)
+                try
+                {
+                    Thread.sleep(1000);
+                }
+                catch(InterruptedException e)
+                {
+                    logger.severe(() -> "Thread interrupted: " + e.getMessage());
+                    throw new AssertionError(e);
+                }
             }
-            catch(InterruptedException e)
-            {
-                logger.severe(() -> "Thread interrupted: " + e.getMessage());
-                throw new AssertionError(e);
-            }
+        }
+        catch (IOException e)
+        {
+            logger.severe(() -> "I/O error during event loop: " + e.getMessage());
+            throw e;
+        }
+        catch (Exception e)
+        {
+            logger.severe(() -> "Unexpected error: " + e.getMessage());
+            throw new RuntimeException(e);
         }
 
         // Final statistics
@@ -139,5 +158,6 @@ public class EventLoop
         System.out.println(finalStats);
         bikeShopView.logToFile(finalStats);
         bikeShopView.close();
+        logger.info(() -> "Final statistics: " + finalStats);
     }
 }
