@@ -7,6 +7,7 @@ import edu.curtin.oose2024s1.assignment2.state.AwaitingPickupState;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
 Purpose:
@@ -17,6 +18,8 @@ Role:
 // Handles the main simulation logic and message processing.
 public class BikeShopController
 {
+    private static final Logger logger = Logger.getLogger(BikeShopController.class.getName());
+
     private final Inventory inventory;
     private final BankAccount bankAccount;
     private final BikeFactory bikeFactory;
@@ -47,6 +50,7 @@ public class BikeShopController
     {
         if(message == null || message.isEmpty())
         {
+            logger.warning("Received invalid message.");
             return "FAILURE: Invalid message.";
         }
 
@@ -54,7 +58,7 @@ public class BikeShopController
         String type = parts[0];
         String email = parts.length > 1 ? parts[1] : null;
 
-        return switch (type) {
+        String result = switch (type) {
             case "DELIVERY" -> handleDelivery();
             case "DROP-OFF" -> handleDropOff(email);
             case "PURCHASE-ONLINE" -> handlePurchaseOnline(email);
@@ -62,6 +66,17 @@ public class BikeShopController
             case "PICK-UP" -> handlePickUp(email);
             default -> "FAILURE: Invalid message type.";
         };
+
+        if(result.startsWith("FAILURE"))
+        {
+            logger.warning(result);
+        }
+        else
+        {
+            logger.info(result);
+        }
+
+        return result;
     }
 
     /**
@@ -96,6 +111,7 @@ public class BikeShopController
                 inventory.addAvailableBike(bike);
             }
             bankAccount.withdraw(5000);
+            logger.info("Delivery accepted: 10 bikes added.");
             return "Delivery accepted: 10 bikes added.";
         }
     }
@@ -120,19 +136,23 @@ public class BikeShopController
             customers.putIfAbsent(email, new Customer(email));
             customers.get(email).addBike(bike);
 
+            logger.info(() -> "Drop-off accepted: Bike added for servicing for " + email + ".");
             return "Drop-off accepted: Bike added for servicing for " + email + ".";
         }
         else
         {
             if(email == null)
             {
+                logger.warning("Invalid email for drop-off.");
                 return "FAILURE: Invalid email.";
             }
             if(inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() > 99)
             {
+                logger.warning("Not enough space for drop-off.");
                 return "FAILURE: Not enough space.";
             }
         }
+        logger.warning("Unknown drop-off error.");
         return "FAILURE: Unknown drop-off error.";
     }
 
@@ -159,8 +179,10 @@ public class BikeShopController
                 customers.putIfAbsent(email, new Customer(email));
                 customers.get(email).addBike(bike);
 
+                logger.info(() -> "Purchase online accepted: Bike sold to " + email + ".");
                 return "Purchase online accepted: Bike sold to " + email + ".";
             } else {
+                logger.warning("Bike is not available for purchase.");
                 return "FAILURE: Bike is not available for purchase.";
             }
         }
@@ -168,13 +190,16 @@ public class BikeShopController
         {
             if (email == null)
             {
+                logger.warning("Invalid email for online purchase.");
                 return "FAILURE: Invalid email.";
             }
             if (inventory.getAvailableBikeCount() == 0)
             {
+                logger.warning("No bikes available for online purchase.");
                 return "FAILURE: No bikes available.";
             }
         }
+        logger.warning("Unknown online purchase error.");
         return "FAILURE: Unknown online purchase error.";
     }
 
@@ -194,13 +219,16 @@ public class BikeShopController
                 bike.purchase();
                 inventory.removeAvailableBike(bike); // Ensure bike is removed from the available list
                 bankAccount.deposit(1000);
+                logger.info("Purchase in-store accepted: Bike sold.");
                 return "Purchase in-store accepted: Bike sold.";
             } else {
+                logger.warning("Bike is not available for purchase.");
                 return "FAILURE: Bike is not available for purchase.";
             }
         }
         else
         {
+            logger.warning("No bikes available for in-store purchase.");
             return "FAILURE: No bikes available.";
         }
     }
@@ -231,20 +259,25 @@ public class BikeShopController
                         if (bike.getState() instanceof AvailableState && bike.getDaysInServicingState() > 0) {
                             bankAccount.deposit(100); // Charge for servicing
                             System.out.println("$100 SERVICE FEE RECEIVED");
+                            logger.info("$100 SERVICE FEE RECEIVED");
                         }
 
+                        logger.info(() -> "Pick-up accepted: Bike given to " + email + ".");
                         return "Pick-up accepted: Bike given to " + email + ".";
                     }
                 }
+                logger.warning(() -> "No bike matching customer email: " + email + ".");
                 return "FAILURE: No bike matching customer email: " + email + ".";
             }
             else
             {
+                logger.warning(() -> "No customer with email: " + email + ".");
                 return "FAILURE: No customer with email: " + email + ".";
             }
         }
         else
         {
+            logger.warning("Invalid email for pick-up.");
             return "FAILURE: Invalid email.";
         }
     }
