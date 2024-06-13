@@ -1,6 +1,9 @@
 package edu.curtin.oose2024s1.assignment2.factory;
 
 import edu.curtin.oose2024s1.assignment2.model.Bike;
+
+import java.util.logging.Logger;
+
 /**
 Purpose:
     - The BikeFactory class will manage the creation of Bike instances. This centralises the object creation process, ensuring that all Bike objects are created in a consistent manner.
@@ -10,6 +13,8 @@ Role:
 // Creates new Bike instances.
 public class BikeFactory
 {
+    private static final Logger logger = Logger.getLogger(BikeFactory.class.getName());
+
     /**
     METHOD: createBike
     IMPORT: None
@@ -19,6 +24,8 @@ public class BikeFactory
     */
     public Bike createBike()
     {
+        Bike bike = new Bike();
+        logger.info(() -> "Created new bike: " + bike);
         return new Bike();
     }
 }
