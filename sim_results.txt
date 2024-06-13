@@ -723,3 +723,55 @@ DROP-OFF rsyx@alfx.yzc
 Simulation Ended
 Total number of input messages: 187
 Total number of failures: 22
+
+Number of days elapsed: 1
+Total cash in the bank account: $15000
+Number of bikes available for purchase: 50
+Number of bikes being serviced: 0
+Number of bikes awaiting pick-up: 0
+
+Number of days elapsed: 2
+Total cash in the bank account: $15000
+Number of bikes available for purchase: 50
+Number of bikes being serviced: 0
+Number of bikes awaiting pick-up: 0
+FAILURE: Invalid message type.
+
+Number of days elapsed: 3
+Total cash in the bank account: $15000
+Number of bikes available for purchase: 50
+Number of bikes being serviced: 0
+Number of bikes awaiting pick-up: 0
+PURCHASE-IN-STORE
+PURCHASE-ONLINE pskvdw@saouhlk.nps
+PURCHASE-IN-STORE
+PURCHASE-IN-STORE
+
+Number of days elapsed: 4
+Total cash in the bank account: $19000
+Number of bikes available for purchase: 46
+Number of bikes being serviced: 0
+Number of bikes awaiting pick-up: 1
+FAILURE: Invalid message type.
+PURCHASE-ONLINE bwqk@zojvd.cxa
+DELIVERY
+
+Number of days elapsed: 5
+Total cash in the bank account: $15000
+Number of bikes available for purchase: 55
+Number of bikes being serviced: 0
+Number of bikes awaiting pick-up: 2
+PURCHASE-ONLINE elpwczu@zqxbgco.lwv
+PURCHASE-ONLINE badloqy@fhls.hkt
+PURCHASE-ONLINE muubir@rvozij.xvn
+
+Number of days elapsed: 6
+Total cash in the bank account: $18000
+Number of bikes available for purchase: 52
+Number of bikes being serviced: 0
+Number of bikes awaiting pick-up: 5
+DELIVERY
+
+Simulation Ended
+Total number of input messages: 12
+Total number of failures: 2
