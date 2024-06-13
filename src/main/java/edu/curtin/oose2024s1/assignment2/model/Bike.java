@@ -5,149 +5,160 @@ import edu.curtin.oose2024s1.assignment2.state.BikeState;
 import edu.curtin.oose2024s1.assignment2.state.AvailableState;
 import edu.curtin.oose2024s1.assignment2.state.ServicingState;
 
+import java.util.logging.Logger;
 
 /**
-Purpose:
-    - Represents an individual bike in the shop.
-    - Maintain the current state of the bike and delegate state-specific behavior.
-Responsibilities:
-    - Track the status and associated customer email of the bike.
-    - Manage state transitions and delegate behavior to the current state.
-Role:
-    - Act as the context in the State Pattern, holding a reference to the current state.
-*/
+ Purpose:
+ - Represents an individual bike in the shop.
+ - Maintain the current state of the bike and delegate state-specific behavior.
+ Responsibilities:
+ - Track the status and associated customer email of the bike.
+ - Manage state transitions and delegate behavior to the current state.
+ Role:
+ - Act as the context in the State Pattern, holding a reference to the current state.
+ */
 // Represents a bike.
 public class Bike
 {
+    private static final Logger logger = Logger.getLogger(Bike.class.getName());
+
     private BikeState state;
     private String associatedEmail;
     private int daysInServicingState;
 
     /**
-    METHOD: Bike
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Constructor initialises the bike with the available state.
-    */
+     METHOD: Bike
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Constructor initialises the bike with the available state.
+     */
     public Bike()
     {
         this.state = new AvailableState();
         this.daysInServicingState = 0;
+        logger.info(() -> "New bike created with state: " + state);
     }
 
     /**
-    METHOD: getState
-    IMPORT: None
-    EXPORT: state (BikeState)
-    ALGORITHM:
-    Returns the current state of the bike.
-    */
+     METHOD: getState
+     IMPORT: None
+     EXPORT: state (BikeState)
+     ALGORITHM:
+     Returns the current state of the bike.
+     */
     public BikeState getState()
     {
         return state;
     }
 
     /**
-    METHOD: setState
-    IMPORT: state (BikeState)
-    EXPORT: None
-    ALGORITHM:
-    Sets the state of the bike to the given state.
-    */
+     METHOD: setState
+     IMPORT: state (BikeState)
+     EXPORT: None
+     ALGORITHM:
+     Sets the state of the bike to the given state.
+     */
     public void setState(BikeState state)
     {
         this.state = state;
+        logger.info(() -> "Bike state changed to: " + state);
     }
 
     /**
-    METHOD: setAssociatedEmail
-    IMPORT: email (String)
-    EXPORT: None
-    ALGORITHM:
-    Sets the email associated with the bike to the given email.
-    */
+     METHOD: setAssociatedEmail
+     IMPORT: email (String)
+     EXPORT: None
+     ALGORITHM:
+     Sets the email associated with the bike to the given email.
+     */
     public void setAssociatedEmail(String email)
     {
         this.associatedEmail = email;
+        logger.info(() -> "Bike associated with email: " + email);
     }
 
     /**
-    METHOD: dropOff
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Delegates the drop-off action to the current state.
-    */
+     METHOD: dropOff
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Delegates the drop-off action to the current state.
+     */
     public void dropOff()
     {
         state.dropOff(this);
         daysInServicingState = 0; // Reset days in servicing state
+        logger.info(() -> "Bike dropped off for service. State: " + state);
     }
 
     /**
-    METHOD: pickUp
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Delegates the pick-up action to the current state.
-    */
+     METHOD: pickUp
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Delegates the pick-up action to the current state.
+     */
     public void pickUp()
     {
         state.pickUp(this);
+        logger.info(() -> "Bike picked up. State: " + state);
     }
 
     /**
-    METHOD: purchase
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Delegates the purchase action to the current state.
-    */
+     METHOD: purchase
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Delegates the purchase action to the current state.
+     */
     public void purchase()
     {
         state.purchase(this);
+        logger.info(() -> "Bike purchased. State: " + state);
     }
 
     /**
-    METHOD: incrementDaysInServicingState
-    IMPORT: None
-    EXPORT: None
-    ALGORITHM:
-    Increments the days the bike has been in the servicing state.
-    */
+     METHOD: incrementDaysInServicingState
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Increments the days the bike has been in the servicing state.
+     */
     public void incrementDaysInServicingState()
     {
         if (state instanceof ServicingState)
         {
             daysInServicingState++;
+            logger.fine(() -> "Incremented days in servicing state: " + daysInServicingState);
             if (daysInServicingState > 2)
             {
                 // Transition to AwaitingPickupState after servicing
                 state = new AwaitingPickupState();
+                logger.info(() -> "Bike state changed to AwaitingPickupState after servicing. State: " + state);
             }
         }
     }
 
     /**
-    METHOD: getDaysInServicingState
-    IMPORT: None
-    EXPORT: daysInServicingState (int)
-    ALGORITHM:
-    Returns the number of days the bike has been in the servicing state.
-    */
+     METHOD: getDaysInServicingState
+     IMPORT: None
+     EXPORT: daysInServicingState (int)
+     ALGORITHM:
+     Returns the number of days the bike has been in the servicing state.
+     */
     public int getDaysInServicingState()
     {
         return daysInServicingState;
     }
 
     /**
-    METHOD: toString
-    IMPORT: None
-    EXPORT: String
-    ALGORITHM:
-    Returns a string representation of the bike, including its state and associated email.
-    */
+     METHOD: toString
+     IMPORT: None
+     EXPORT: String
+     ALGORITHM:
+     Returns a string representation of the bike, including its state and associated email.
+     */
     @Override
     public String toString()
     {
