@@ -18,6 +18,7 @@ Responsibilities:
 public class BankAccount implements Observable
 {
     private static final Logger logger = Logger.getLogger(BankAccount.class.getName());
+
     private int balance;
     private final List<Observer> observers = new ArrayList<>();
 
@@ -31,6 +32,7 @@ public class BankAccount implements Observable
     public BankAccount(int initialBalance)
     {
         this.balance = initialBalance;
+        logger.info(() -> "Bank account created with initial balance: " + initialBalance);
     }
 
     /**
@@ -102,8 +104,10 @@ public class BankAccount implements Observable
     */
     @Override
     public void addObserver(Observer observer)
+
     {
         observers.add(observer);
+        logger.info(() -> "Observer added: " + observer);
     }
 
     /**
@@ -117,6 +121,7 @@ public class BankAccount implements Observable
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
+        logger.info(() -> "Observer removed: " + observer);
     }
 
     /**
@@ -129,6 +134,7 @@ public class BankAccount implements Observable
     @Override
     public void notifyObservers()
     {
+        logger.fine("Notifying observers of balance change.");
         for (Observer observer : observers)
         {
             observer.update();
