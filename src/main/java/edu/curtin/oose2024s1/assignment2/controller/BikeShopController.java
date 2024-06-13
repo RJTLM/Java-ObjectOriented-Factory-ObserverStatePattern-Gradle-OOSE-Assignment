@@ -14,6 +14,8 @@ Purpose:
     - This class will manage the operations of the bike shop, such as processing messages (e.g., deliveries, drop-offs, purchases), updating the model (e.g., Inventory, BankAccount), and ensuring the state transitions (e.g., bike statuses) are handled correctly.
 Role:
     - Acts as an intermediary between the model (e.g., Inventory, Customer, BankAccount) and the inputs (e.g., messages from BikeShopInput).
+Reference:
+ - JavaGuides. (2020, March 6). Factory design pattern [Video]. YouTube. https://www.youtube.com/watch?v=zgf8QD7n5qI - Used to help understand and implement bike factory in handleDelivery and handleDropOff methods (only used for contextual based knowledge and further understanding of factories).
  */
 // Handles the main simulation logic and message processing.
 public class BikeShopController
@@ -127,7 +129,7 @@ public class BikeShopController
     {
         if(email != null && inventory.getAvailableBikeCount() + inventory.getServicedBikeCount() + inventory.getAwaitingPickupBikeCount() <= 99)
         {
-            Bike bike = bikeFactory.createBike();
+            Bike bike = bikeFactory.createBike(); // Use factory to create bikes
             bike.setAssociatedEmail(email);
             bike.dropOff();
             inventory.addServicedBike(bike);

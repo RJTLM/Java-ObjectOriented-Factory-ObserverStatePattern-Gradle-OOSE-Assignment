@@ -5,6 +5,8 @@ Purpose:
     - Defines the contract for the subject that maintains a list of observers and notifies them of changes.
 Role:
     - Provides methods to add, remove, and notify observers.
+ Reference:
+ - Dewan, P. (2000). 15. Model-View-Controller (MVC) and Observer. University of North Carolina Computer Science at Chapel Hill. https://www.cs.unc.edu/~carterjl/teaching/notes/15_MVC_Notes.pdf - Used to help understand and implement observer pattern (only used for contextual based knowledge and further understanding of observer pattern).
 */
 // Interface for observable objects.
 public interface Observable

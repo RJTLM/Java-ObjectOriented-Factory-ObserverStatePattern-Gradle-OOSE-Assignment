@@ -31,10 +31,12 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 ├── documents
 │   ├── Brief.txt
 │   ├── criteria.md
+│   ├── ObserverPatternDirectory.JPG
+│   ├── PackageDirectory.JPG
 │   ├── Plan.md
-│   ├── UMLClassDiagram.png
 │   ├── UMLGeneralBikeStateChart.png
 │   ├── UMLBikeDropOffStateChart.png
+│   ├── UMLClassDiagram.png
 │   └── UMLBikePickUpStateChart.png
 │
 ├── gradle

@@ -601,4 +601,9 @@ public class BikeFactory
 - **Note**: Generics were not implemented in this project.
 
 ## References
-1. https://www.cs.unc.edu/~carterjl/teaching/notes/15_MVC_Notes.pdf - Used to help understand and implement observer pattern (only used for contextual based knowledge and further understanding of observer pattern).
+
+The primary sources of inspiration for this assignment were OOSE lecture and workshop material. It has not been directly referenced in my program as there wasn't any code directly used. All other sources have been cited below using APA 7th Edition referencing style and have also been included as comment blocks where appropriate.
+
+- Dewan, P. (2000). 15. Model-View-Controller (MVC) and Observer. University of North Carolina Computer Science at Chapel Hill. https://www.cs.unc.edu/~carterjl/teaching/notes/15_MVC_Notes.pdf
+- Geekific. (2020, June 6). Observer design pattern – Design patterns in plain English [Video]. YouTube. https://www.youtube.com/watch?v=abX4xzaAsoc
+- JavaGuides. (2020, March 6). Factory design pattern [Video]. YouTube. https://www.youtube.com/watch?v=zgf8QD7n5qI

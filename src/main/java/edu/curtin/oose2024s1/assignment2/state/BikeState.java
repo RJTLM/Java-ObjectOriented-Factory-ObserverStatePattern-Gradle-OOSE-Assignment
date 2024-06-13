@@ -7,6 +7,8 @@ Purpose:
     - Define the operations that each bike state must implement.
 Role:
     - Provide a contract for state-specific behavior in the Bike class.
+Reference:
+    - Geekific. (2020, June 6). Observer design pattern – Design patterns in plain English [Video]. YouTube. https://www.youtube.com/watch?v=abX4xzaAsoc - Used to help understand and implement state pattern (only used for contextual based knowledge and further understanding of state pattern).
 */
 // Interface for bike states.
 public interface BikeState

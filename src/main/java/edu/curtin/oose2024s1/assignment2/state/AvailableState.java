@@ -10,6 +10,8 @@ import java.util.logging.Logger;
  Role:
  - Handle state-specific logic for available bikes.
  - Transition bikes to BeingServiced or AwaitingPickup states.
+ Reference:
+ - Geekific. (2020, June 6). Observer design pattern – Design patterns in plain English [Video]. YouTube. https://www.youtube.com/watch?v=abX4xzaAsoc - Used to help understand and implement state pattern (only used for contextual based knowledge and further understanding of state pattern).
  */
 // Concrete state for bikes that are available.
 public class AvailableState implements BikeState
