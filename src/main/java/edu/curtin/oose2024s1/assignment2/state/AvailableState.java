@@ -56,7 +56,6 @@ public class AvailableState implements BikeState
     public void purchase(Bike bike)
     {
         bike.setState(new AwaitingPickupState());
-        logger.info(() -> "Bike purchased. New state: " + bike.getState());
     }
 
     /**

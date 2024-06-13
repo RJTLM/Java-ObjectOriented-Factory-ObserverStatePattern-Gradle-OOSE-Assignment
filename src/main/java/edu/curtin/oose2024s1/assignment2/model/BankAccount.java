@@ -134,7 +134,6 @@ public class BankAccount implements Observable
     @Override
     public void notifyObservers()
     {
-        logger.fine("Notifying observers of balance change.");
         for (Observer observer : observers)
         {
             observer.update();

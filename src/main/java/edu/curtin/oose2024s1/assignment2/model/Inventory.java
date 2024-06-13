@@ -64,7 +64,6 @@ public class Inventory implements Observable
     public void addAvailableBike(Bike bike)
     {
         availableBikes.add(bike);
-        logger.info(() -> "Bike added to available: " + bike);
         notifyObservers();
     }
 
@@ -226,7 +225,6 @@ public class Inventory implements Observable
     @Override
     public void notifyObservers()
     {
-        logger.fine("Notifying observers of inventory change.");
         for (Observer observer : observers)
         {
             observer.update();

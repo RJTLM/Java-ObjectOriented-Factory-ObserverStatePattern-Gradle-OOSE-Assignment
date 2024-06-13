@@ -37,7 +37,6 @@ public class Bike
     {
         this.state = new AvailableState();
         this.daysInServicingState = 0;
-        logger.info(() -> "New bike created with state: " + state);
     }
 
     /**
@@ -62,7 +61,6 @@ public class Bike
     public void setState(BikeState state)
     {
         this.state = state;
-        logger.info(() -> "Bike state changed to: " + state);
     }
 
     /**
@@ -75,7 +73,6 @@ public class Bike
     public void setAssociatedEmail(String email)
     {
         this.associatedEmail = email;
-        logger.info(() -> "Bike associated with email: " + email);
     }
 
     /**
@@ -89,7 +86,6 @@ public class Bike
     {
         state.dropOff(this);
         daysInServicingState = 0; // Reset days in servicing state
-        logger.info(() -> "Bike dropped off for service. State: " + state);
     }
 
     /**
@@ -115,7 +111,6 @@ public class Bike
     public void purchase()
     {
         state.purchase(this);
-        logger.info(() -> "Bike purchased. State: " + state);
     }
 
     /**

@@ -136,7 +136,6 @@ public class BikeShopController
             customers.putIfAbsent(email, new Customer(email));
             customers.get(email).addBike(bike);
 
-            logger.info(() -> "Drop-off accepted: Bike added for servicing for " + email + ".");
             return "Drop-off accepted: Bike added for servicing for " + email + ".";
         }
         else
@@ -179,10 +178,8 @@ public class BikeShopController
                 customers.putIfAbsent(email, new Customer(email));
                 customers.get(email).addBike(bike);
 
-                logger.info(() -> "Purchase online accepted: Bike sold to " + email + ".");
                 return "Purchase online accepted: Bike sold to " + email + ".";
             } else {
-                logger.warning("Bike is not available for purchase.");
                 return "FAILURE: Bike is not available for purchase.";
             }
         }
@@ -190,16 +187,13 @@ public class BikeShopController
         {
             if (email == null)
             {
-                logger.warning("Invalid email for online purchase.");
                 return "FAILURE: Invalid email.";
             }
             if (inventory.getAvailableBikeCount() == 0)
             {
-                logger.warning("No bikes available for online purchase.");
                 return "FAILURE: No bikes available.";
             }
         }
-        logger.warning("Unknown online purchase error.");
         return "FAILURE: Unknown online purchase error.";
     }
 
@@ -219,16 +213,13 @@ public class BikeShopController
                 bike.purchase();
                 inventory.removeAvailableBike(bike); // Ensure bike is removed from the available list
                 bankAccount.deposit(1000);
-                logger.info("Purchase in-store accepted: Bike sold.");
                 return "Purchase in-store accepted: Bike sold.";
             } else {
-                logger.warning("Bike is not available for purchase.");
                 return "FAILURE: Bike is not available for purchase.";
             }
         }
         else
         {
-            logger.warning("No bikes available for in-store purchase.");
             return "FAILURE: No bikes available.";
         }
     }
@@ -258,26 +249,21 @@ public class BikeShopController
                         // Charge the $100 service fee if the bike was serviced
                         if (bike.getState() instanceof AvailableState && bike.getDaysInServicingState() > 0) {
                             bankAccount.deposit(100); // Charge for servicing
-                            System.out.println("$100 SERVICE FEE RECEIVED");
-                            logger.info("$100 SERVICE FEE RECEIVED");
+                            logger.info("$100 Service Fee Received");
                         }
 
-                        logger.info(() -> "Pick-up accepted: Bike given to " + email + ".");
                         return "Pick-up accepted: Bike given to " + email + ".";
                     }
                 }
-                logger.warning(() -> "No bike matching customer email: " + email + ".");
                 return "FAILURE: No bike matching customer email: " + email + ".";
             }
             else
             {
-                logger.warning(() -> "No customer with email: " + email + ".");
                 return "FAILURE: No customer with email: " + email + ".";
             }
         }
         else
         {
-            logger.warning("Invalid email for pick-up.");
             return "FAILURE: Invalid email.";
         }
     }

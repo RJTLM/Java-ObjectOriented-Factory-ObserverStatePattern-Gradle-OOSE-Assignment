@@ -51,7 +51,6 @@ public class BikeShopView implements Observer
     {
         bankAccount.addObserver(this);
         inventory.addObserver(this);
-        logger.info("BikeShopView registered as observer for BankAccount and Inventory.");
     }
 
     /**
@@ -70,7 +69,7 @@ public class BikeShopView implements Observer
                 "\nBikes Awaiting Pickup: " + inventory.getAwaitingPickupBikeCount();
         System.out.println(status);
         logToFile(status);
-        logger.fine(() -> "Displayed status: " + status);
+        logger.fine(() -> "Displayed status: " + status + "\n");
     }
 
     /**
@@ -84,7 +83,6 @@ public class BikeShopView implements Observer
     {
         writer.println(message);
         writer.flush();
-        logger.fine(() -> "Logged to file: " + message);
     }
 
     /**
@@ -111,10 +109,7 @@ public class BikeShopView implements Observer
      Updates the view. This method is called when the observable notifies its observers.
      */
     @Override
-    public void update()
-    {
-        logger.info("View updated based on changes to the observable.");
-    }
+    public void update() {}
 
     /**
      METHOD: unregisterObservers
@@ -127,6 +122,5 @@ public class BikeShopView implements Observer
     {
         bankAccount.removeObserver(this);
         inventory.removeObserver(this);
-        logger.info("BikeShopView unregistered as observer for BankAccount and Inventory.");
     }
 }

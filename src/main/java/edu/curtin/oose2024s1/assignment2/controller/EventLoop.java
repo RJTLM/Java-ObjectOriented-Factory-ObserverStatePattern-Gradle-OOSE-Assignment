@@ -61,7 +61,7 @@ public class EventLoop
     public void run() throws IOException
     {
         int daysElapsed = 0;
-        logger.info("Starting event loop.");
+        logger.info("\n\nStarting event loop.");
 
         try
         {
@@ -74,7 +74,7 @@ public class EventLoop
                 // Simulate one day
                 daysElapsed++;
                 int finalDaysElapsed = daysElapsed;
-                logger.fine(() -> "Simulated day: " + finalDaysElapsed);
+                logger.fine(() -> "\n\nSimulated day: " + finalDaysElapsed);
 
                 // Display status
                 bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
@@ -96,11 +96,6 @@ public class EventLoop
                     if(result.startsWith("FAILURE"))
                     {
                         totalFailures++;
-                        logger.warning(() -> "Processing failed: " + result);
-                    }
-                    else
-                    {
-                        logger.info(() -> "Processing succeeded: " + result);
                     }
                     System.out.println(result);
                     bikeShopView.logToFile(result);
