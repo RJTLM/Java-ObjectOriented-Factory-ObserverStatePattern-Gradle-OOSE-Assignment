@@ -93,15 +93,15 @@ public class BikeShopController
 
         if (notEnoughSpace && notEnoughCash)
         {
-            return "FAILURE: Not enough space and not enough cash to purchase stock.";
+            return "FAILURE: Not enough space AND not enough cash to purchase new bikes";
         }
         else if (notEnoughSpace)
         {
-            return "FAILURE: Not enough space.";
+            return "FAILURE: Not enough space (to store more bikes)";
         }
         else if (notEnoughCash)
         {
-            return "FAILURE: Not enough cash to purchase stock.";
+            return "FAILURE: Not enough cash (for the shop to purchase new bikes)";
         }
         else
         {
@@ -111,8 +111,8 @@ public class BikeShopController
                 inventory.addAvailableBike(bike);
             }
             bankAccount.withdraw(5000);
-            logger.info("Delivery accepted: 10 bikes added.");
-            return "Delivery accepted: 10 bikes added.";
+            logger.info("DELIVERY accepted: 10 bikes added.");
+            return "DELIVERY";
         }
     }
 
@@ -136,7 +136,7 @@ public class BikeShopController
             customers.putIfAbsent(email, new Customer(email));
             customers.get(email).addBike(bike);
 
-            return "Drop-off accepted: Bike added for servicing for " + email + ".";
+            return "DROP-OFF " + email;
         }
         else
         {
@@ -178,7 +178,7 @@ public class BikeShopController
                 customers.putIfAbsent(email, new Customer(email));
                 customers.get(email).addBike(bike);
 
-                return "Purchase online accepted: Bike sold to " + email + ".";
+                return "PURCHASE-ONLINE " + email;
             } else {
                 return "FAILURE: Bike is not available for purchase.";
             }
@@ -191,7 +191,7 @@ public class BikeShopController
             }
             if (inventory.getAvailableBikeCount() == 0)
             {
-                return "FAILURE: No bikes available.";
+                return "FAILURE: No bikes left (for a customer to purchase)";
             }
         }
         return "FAILURE: Unknown online purchase error.";
@@ -213,14 +213,14 @@ public class BikeShopController
                 bike.purchase();
                 inventory.removeAvailableBike(bike); // Ensure bike is removed from the available list
                 bankAccount.deposit(1000);
-                return "Purchase in-store accepted: Bike sold.";
+                return "PURCHASE-IN-STORE";
             } else {
                 return "FAILURE: Bike is not available for purchase.";
             }
         }
         else
         {
-            return "FAILURE: No bikes available.";
+            return "FAILURE: No bikes left (for a customer to purchase)";
         }
     }
 
@@ -252,10 +252,10 @@ public class BikeShopController
                             logger.info("$100 Service Fee Received");
                         }
 
-                        return "Pick-up accepted: Bike given to " + email + ".";
+                        return "PICK-UP " + email;
                     }
                 }
-                return "FAILURE: No bike matching customer email: " + email + ".";
+                return "FAILURE: No bike matching customer email (for pick-up): " + email + ".";
             }
             else
             {

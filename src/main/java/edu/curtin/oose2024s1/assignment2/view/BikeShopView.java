@@ -62,11 +62,11 @@ public class BikeShopView implements Observer
      */
     public void displayStatus(int daysElapsed, BankAccount bankAccount, Inventory inventory)
     {
-        String status = "Day " + daysElapsed +
-                "\nBank Account Balance: $" + bankAccount.getBalance() +
-                "\nBikes Available: " + inventory.getAvailableBikeCount() +
-                "\nBikes Being Serviced: " + inventory.getServicedBikeCount() +
-                "\nBikes Awaiting Pickup: " + inventory.getAwaitingPickupBikeCount();
+        String status = "\nNumber of days elapsed: " + daysElapsed +
+                        "\nTotal cash in the bank account: $" + bankAccount.getBalance() +
+                        "\nNumber of bikes available for purchase: " + inventory.getAvailableBikeCount() +
+                        "\nNumber of bikes being serviced: " + inventory.getServicedBikeCount() +
+                        "\nNumber of bikes awaiting pick-up: " + inventory.getAwaitingPickupBikeCount();
         System.out.println(status);
         logToFile(status);
         logger.fine(() -> "Displayed status: " + status + "\n");
