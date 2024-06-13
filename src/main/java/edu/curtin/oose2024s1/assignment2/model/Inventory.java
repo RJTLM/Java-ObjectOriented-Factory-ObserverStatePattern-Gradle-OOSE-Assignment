@@ -55,30 +55,6 @@ public class Inventory implements Observable
     }
 
     /**
-    METHOD: getServicedBikes
-    IMPORT: None
-    EXPORT: servicedBikes (List<Bike>)
-    ALGORITHM:
-    Returns the list of bikes being serviced.
-    */
-    public List<Bike> getServicedBikes()
-    {
-        return servicedBikes;
-    }
-
-    /**
-    METHOD: getAwaitingPickupBikes
-    IMPORT: None
-    EXPORT: awaitingPickupBikes (List<Bike>)
-    ALGORITHM:
-    Returns the list of bikes awaiting pickup.
-    */
-    public List<Bike> getAwaitingPickupBikes()
-    {
-        return awaitingPickupBikes;
-    }
-
-    /**
     METHOD: addAvailableBike
     IMPORT: bike (Bike)
     EXPORT: None
@@ -120,21 +96,6 @@ public class Inventory implements Observable
     {
         servicedBikes.add(bike);
         logger.info(() -> "Bike added to serviced: " + bike);
-        notifyObservers();
-    }
-
-    /**
-    METHOD: removeServicedBike
-    IMPORT: bike (Bike)
-    EXPORT: None
-    ALGORITHM:
-    Removes a bike from the serviced bikes list.
-    Logs the action and notifies observers.
-    */
-    public void removeServicedBike(Bike bike)
-    {
-        servicedBikes.remove(bike);
-        logger.info(() -> "Bike removed from serviced: " + bike);
         notifyObservers();
     }
 

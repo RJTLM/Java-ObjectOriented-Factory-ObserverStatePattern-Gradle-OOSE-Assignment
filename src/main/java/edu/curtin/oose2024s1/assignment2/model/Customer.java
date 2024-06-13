@@ -33,18 +33,6 @@ public class Customer
     }
 
     /**
-    METHOD: getEmail
-    IMPORT: None
-    EXPORT: email (String)
-    ALGORITHM:
-    Returns the email address of the customer.
-    */
-    public String getEmail()
-    {
-        return email;
-    }
-
-    /**
     METHOD: getBikes
     IMPORT: None
     EXPORT: bikes (List<Bike>)

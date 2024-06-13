@@ -61,18 +61,6 @@ public class Bike
     }
 
     /**
-    METHOD: getAssociatedEmail
-    IMPORT: None
-    EXPORT: associatedEmail (String)
-    ALGORITHM:
-    Returns the email associated with the bike.
-    */
-    public String getAssociatedEmail()
-    {
-        return associatedEmail;
-    }
-
-    /**
     METHOD: setAssociatedEmail
     IMPORT: email (String)
     EXPORT: None

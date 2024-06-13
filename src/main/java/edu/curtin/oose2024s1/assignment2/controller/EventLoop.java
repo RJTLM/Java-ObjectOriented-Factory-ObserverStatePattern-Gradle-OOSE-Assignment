@@ -118,6 +118,10 @@ public class EventLoop
         // Final statistics
         displayFinalStatistics(totalMessages, totalFailures);
         logger.info("Event loop ended.");
+
+        // Unregister observers at the end of the simulation
+        // Didn't feel this was 100% necessary but included to demonstrate complete implementation of Observer Pattern.
+        bikeShopView.unregisterObservers(bankAccount, inventory);
     }
 
     /**

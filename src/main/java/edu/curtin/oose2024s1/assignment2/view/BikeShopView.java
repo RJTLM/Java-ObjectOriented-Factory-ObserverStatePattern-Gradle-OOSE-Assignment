@@ -125,6 +125,12 @@ public class BikeShopView implements Observer
         }
     }
 
+    public void unregisterObservers(BankAccount bankAccount, Inventory inventory)
+    {
+        bankAccount.removeObserver(this);
+        inventory.removeObserver(this);
+    }
+
     /**
     METHOD: update
     IMPORT: None
