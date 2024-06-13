@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 /**
-Purpose:
-    - This class will handle the simulation loop, controlling the flow of the simulation based on time (1 second = 1 day in the simulation). It will interact with the BikeShopController to process incoming messages and update the state of the bike shop.
-Role:
-    - Ensures the simulation progresses, handles the timing, and invokes the BikeShopController to process events/messages.
+ Purpose:
+ - This class will handle the simulation loop, controlling the flow of the simulation based on time (1 second = 1 day in the simulation). It will interact with the BikeShopController to process incoming messages and update the state of the bike shop.
+ Role:
+ - Ensures the simulation progresses, handles the timing, and invokes the BikeShopController to process events/messages.
  */
 // Manages the event loop for the simulation.
 public class EventLoop
@@ -28,12 +28,12 @@ public class EventLoop
     private int totalFailures = 0;
 
     /**
-    METHOD: EventLoop
-    IMPORT: bikeShopInput (BikeShopInput), bikeShopController (BikeShopController), inventory (Inventory), bankAccount (BankAccount), bikeShopView (BikeShopView)
-    EXPORT: None
-    ALGORITHM:
-    Constructor that initialises the input, controller, inventory, bank account, and view, and registers observers.
-    */
+     METHOD: EventLoop
+     IMPORT: bikeShopInput (BikeShopInput), bikeShopController (BikeShopController), inventory (Inventory), bankAccount (BankAccount), bikeShopView (BikeShopView)
+     EXPORT: None
+     ALGORITHM:
+     Constructor that initialises the input, controller, inventory, bank account, and view, and registers observers.
+     */
     public EventLoop(BikeShopInput bikeShopInput, BikeShopController bikeShopController, Inventory inventory, BankAccount bankAccount, BikeShopView bikeShopView)
     {
         this.bikeShopInput = bikeShopInput;
@@ -52,12 +52,12 @@ public class EventLoop
     }
 
     /**
-   METHOD: run
-   IMPORT: None
-   EXPORT: None
-   ALGORITHM:
-   Executes the event loop, processing messages and updating the bike shop's state.
-   */
+     METHOD: run
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Executes the event loop, processing messages and updating the bike shop's state.
+     */
     public void run() throws IOException
     {
         int daysElapsed = 0;
@@ -83,7 +83,6 @@ public class EventLoop
                 if (daysElapsed % 7 == 0)
                 {
                     bankAccount.withdraw(1000, true); // $1000 payment to the employee
-                    System.out.println("Employee paid $1000.");
                     int finalDaysElapsed1 = daysElapsed;
                     logger.info(() -> "Employee paid $1000 on day " + finalDaysElapsed1 + ".");
                 }
@@ -128,11 +127,6 @@ public class EventLoop
             logger.severe(() -> "I/O error during event loop: " + e.getMessage());
             throw e;
         }
-        catch (Exception e)
-        {
-            logger.severe(() -> "Unexpected error: " + e.getMessage());
-            throw new RuntimeException(e);
-        }
 
         // Final statistics
         displayFinalStatistics(totalMessages, totalFailures);
@@ -144,12 +138,12 @@ public class EventLoop
     }
 
     /**
-    METHOD: displayFinalStatistics
-    IMPORT: totalMessages (int), totalFailures (int)
-    EXPORT: None
-    ALGORITHM:
-    Displays final statistics at the end of the simulation and logs them to the file.
-    */
+     METHOD: displayFinalStatistics
+     IMPORT: totalMessages (int), totalFailures (int)
+     EXPORT: None
+     ALGORITHM:
+     Displays final statistics at the end of the simulation and logs them to the file.
+     */
     private void displayFinalStatistics(int totalMessages, int totalFailures)
     {
         String finalStats = "\nSimulation Ended\n" +
