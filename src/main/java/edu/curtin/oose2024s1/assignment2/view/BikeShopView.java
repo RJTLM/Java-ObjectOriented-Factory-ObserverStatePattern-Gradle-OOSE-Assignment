@@ -71,33 +71,6 @@ public class BikeShopView implements Observer
     }
 
     /**
-    METHOD: logMessage
-    IMPORT: message (String)
-    EXPORT: None
-    ALGORITHM:
-    Logs a message to both the console and the "sim_results.txt" file.
-    */
-    public void logMessage(String message)
-    {
-        System.out.println(message);
-        logToFile(message);
-    }
-
-    /**
-    METHOD: logFailure
-    IMPORT: failureReason (String)
-    EXPORT: None
-    ALGORITHM:
-    Logs a failure message to both the console and the "sim_results.txt" file.
-    */
-    public void logFailure(String failureReason)
-    {
-        String failureMessage = "FAILURE: " + failureReason;
-        System.out.println(failureMessage);
-        logToFile(failureMessage);
-    }
-
-    /**
     METHOD: logToFile
     IMPORT: message (String)
     EXPORT: None
@@ -125,12 +98,6 @@ public class BikeShopView implements Observer
         }
     }
 
-    public void unregisterObservers(BankAccount bankAccount, Inventory inventory)
-    {
-        bankAccount.removeObserver(this);
-        inventory.removeObserver(this);
-    }
-
     /**
     METHOD: update
     IMPORT: None
@@ -143,5 +110,11 @@ public class BikeShopView implements Observer
     {
         // Update the view based on changes to the bank account or inventory
         //logger.info("View updated.");
+    }
+
+    public void unregisterObservers(BankAccount bankAccount, Inventory inventory)
+    {
+        bankAccount.removeObserver(this);
+        inventory.removeObserver(this);
     }
 }
