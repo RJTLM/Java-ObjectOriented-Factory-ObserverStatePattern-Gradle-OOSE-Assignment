@@ -132,4 +132,4 @@ The application will simulate a bicycle shop that both sells and repairs bikes.
     - ~~Validate the output in `sim_results.txt`.~~
 
 11. **Criteria.md**
-    - Do Criteria.md
+    - ~~Do Criteria.md~~

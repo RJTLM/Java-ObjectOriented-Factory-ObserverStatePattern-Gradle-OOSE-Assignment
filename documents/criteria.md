@@ -1,162 +1,79 @@
-Observer Pattern:
+# Responses To The Criteria
+
+## (e) Observer Pattern
+### Observer Pattern
 - `observer` package with `Observable` and `Observer` classes.
-
-`BikeShopView` is the observer.
-
-`BankAccount` and `Inventory` are the observables.
-
+- `BikeShopView` is the observer.
+- `BankAccount` and `Inventory` are the observables.
 
 The model classes, such as BankAccount and Inventory, hold the core state of the application that needs to be observed by the view to reflect the current status of the bike shop. The controller will interact with these model classes to update the state based on business logic, and these changes will be communicated to the view through the observer pattern.
 
-
 ### Explanation of the Observer Pattern Implementation
 1. Observable (BankAccount and Inventory):
-   - Both `BankAccount` and `Inventory` classes implement the `Observable` interface.
-   - They maintain a list of observers and notify them whenever their state changes (e.g., when the balance is updated or when a bike is added/removed).
+    - Both `BankAccount` and `Inventory` classes implement the `Observable` interface.
+    - They maintain a list of observers and notify them whenever their state changes (e.g., when the balance is updated or when a bike is added/removed).
 
 2. Observer (BikeShopView):
-   - `BikeShopView` implements the `Observer` interface. 
-   - It registers itself as an observer to both `BankAccount` and `Inventory`.
-   - The `update` method in `BikeShopView` is called whenever `BankAccount` or `Inventory` notify their observers of a change. This ensures that the view always displays the current state of the model.
+    - `BikeShopView` implements the `Observer` interface.
+    - It registers itself as an observer to both `BankAccount` and `Inventory`.
+    - The `update` method in `BikeShopView` is called whenever `BankAccount` or `Inventory` notify their observers of a change. This ensures that the view always displays the current state of the model.
 
-By following this approach, you ensure that the view is always up-to-date with the latest state of the model without needing to manually refresh or poll the model for changes. This design makes the application more modular, easier to maintain, and scalable.
+![ObserverPatternDirectory](ObserverPatternDirectory.JPG)
 
-
-`BikeShopController` IS NOT the observable:
-The `BikeShopController` indeed manages operations and processes events, but it does not hold the state that the view needs to observe directly. Instead, it interacts with the model components (e.g., `BankAccount`, `Inventory`), which hold the actual data.
-
-The Observer pattern is primarily used to keep the view updated with changes in the model. Here's a more detailed breakdown:
-
-Model: Holds the state of the application (BankAccount, Inventory, etc.).
-View: Displays the state of the application (BikeShopView).
-Controller: Manages operations, processes input, and updates the model (BikeShopController).
-
-In this setup, the model should be observable because it contains the data that the view needs to display. The controller triggers changes in the model, which then notifies the view through the observer pattern.
-
-
-The Observer Pattern is used when you have a class that needs to be notified of certain events happening in another class. This class, the observer, registers its interest in these events with the event source (the observable). When the event occurs, the observable notifies all registered observers so that they can react accordingly.
-
-Implementation:
-
-Observable: A class that maintains a list of its dependents (observers) and notifies them of state changes.
-Observer: A class that registers with an observable to be notified of events and takes action when those events occur.
-
-
-For the bike shop application:
-
-BankAccount and Inventory should be observable because changes in the bank account balance and inventory are important events.
-BikeShopView should observe these classes because it needs to update the display whenever there's a change in the bank account balance or inventory.
-
-
-
-
--------------------------------------------------------------------------------------------------
-
-Based on the provided codebase, assignment requirements, and your question about the Observer pattern, here's a detailed breakdown of which classes should be observers, which should be observables, and why:
-
-### Observables
-1. **BankAccount**:
-   - **Why**: The `BankAccount` class represents the financial state of the bike shop. Any changes in the bank account balance should be observable because they affect the overall status of the shop.
-   - **How**: Implement the `Observable` interface to allow views to register as observers and get notified whenever there's a change in the balance.
-
-2. **Inventory**:
-   - **Why**: The `Inventory` class manages the collection of bikes and their states. Changes in inventory, such as adding or removing bikes, should be observable because they directly impact the shop's status.
-   - **How**: Implement the `Observable` interface to notify observers (views) when the inventory changes.
-
-### Observers
-1. **BikeShopView**:
-   - **Why**: The `BikeShopView` class displays the bike shop's status and logs messages. It should observe changes in the `BankAccount` and `Inventory` to update the displayed information accordingly.
-   - **How**: Implement the `Observer` interface to update the view whenever the observables (`BankAccount` and `Inventory`) change.
-
-### Implementation
-
-#### Observable Interface Implementation
+#### Observer Pattern Implementation
 ```java
-package edu.curtin.oose2024s1.assignment2.observer;
-
-import java.util.ArrayList;
-import java.util.List;
-
-// Interface for observable objects.
+/** Interface for observable objects. */
 public interface Observable
 {
+    // Adds an observer to the list of observers.
     void addObserver(Observer observer);
+    
+    // Removes an observer from the list of observers.
     void removeObserver(Observer observer);
+    
+    // Notifies all observers of changes.
     void notifyObservers();
 }
-```
 
-#### Observer Interface Implementation
-```java
-package edu.curtin.oose2024s1.assignment2.observer;
-
-// Interface for observers.
-public interface Observer
-{
-    void update();
-}
-```
-
-#### BankAccount Implementation
-```java
-package edu.curtin.oose2024s1.assignment2.model;
-
-import edu.curtin.oose2024s1.assignment2.observer.Observable;
-import edu.curtin.oose2024s1.assignment2.observer.Observer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Logger;
-
-// Manages the shop's bank account.
+/** Manages the shop's bank account. */
 public class BankAccount implements Observable
 {
-    private static final Logger logger = Logger.getLogger(BankAccount.class.getName());
-    private double balance;
-    private List<Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
 
-    public BankAccount(double initialBalance)
-    {
-        this.balance = initialBalance;
-    }
-
-    public double getBalance()
-    {
-        return balance;
-    }
-
-    public void deposit(double amount)
+    // Adds the specified amount to the balance and notifies observers of the change.
+    public void deposit(int amount)
     {
         balance += amount;
-        logger.info("Deposited: " + amount + ", New Balance: " + balance);
         notifyObservers();
     }
-
-    public void withdraw(double amount)
+    
+    // Subtracts the specified amount from the balance. Notifies observers if withdrawal is successful.
+    public void withdraw(int amount, boolean isEmployeePayment)
     {
-        if (balance >= amount)
+        if (isEmployeePayment || balance >= amount)
         {
             balance -= amount;
-            logger.info("Withdrew: " + amount + ", New Balance: " + balance);
             notifyObservers();
         }
-        else
-        {
-            logger.warning("Insufficient funds for withdrawal: " + amount);
-        }
+        ...
     }
-
+    
+    // Adds an observer to the list of observers.
     @Override
     public void addObserver(Observer observer)
+
     {
         observers.add(observer);
     }
-
+    
+    // Removes an observer from the list of observers.
     @Override
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
     }
-
+    
+    // Notifies all registered observers of changes by calling their update method.
     @Override
     public void notifyObservers()
     {
@@ -166,119 +83,79 @@ public class BankAccount implements Observable
         }
     }
 }
-```
 
-#### Inventory Implementation
-```java
-package edu.curtin.oose2024s1.assignment2.model;
-
-import edu.curtin.oose2024s1.assignment2.observer.Observable;
-import edu.curtin.oose2024s1.assignment2.observer.Observer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Logger;
-
-// Manages the bike inventory.
+/** Manages the bike inventory. */
 public class Inventory implements Observable
 {
-    private static final Logger logger = Logger.getLogger(Inventory.class.getName());
+    private final List<Observer> observers = new ArrayList<>();
 
-    private List<Bike> availableBikes;
-    private List<Bike> servicedBikes;
-    private List<Bike> awaitingPickupBikes;
-    private List<Observer> observers = new ArrayList<>();
-
-    public Inventory()
-    {
-        availableBikes = new ArrayList<>();
-        servicedBikes = new ArrayList<>();
-        awaitingPickupBikes = new ArrayList<>();
-    }
-
-    public List<Bike> getAvailableBikes()
-    {
-        return availableBikes;
-    }
-
-    public List<Bike> getServicedBikes()
-    {
-        return servicedBikes;
-    }
-
-    public List<Bike> getAwaitingPickupBikes()
-    {
-        return awaitingPickupBikes;
-    }
-
+    // Adds a bike to the available bikes list. Notifies observers.
     public void addAvailableBike(Bike bike)
     {
         availableBikes.add(bike);
-        logger.info("Bike added to available: " + bike);
         notifyObservers();
     }
 
+    // Removes a bike from the available bikes list. Notifies observers.
     public void removeAvailableBike(Bike bike)
     {
         availableBikes.remove(bike);
-        logger.info("Bike removed from available: " + bike);
         notifyObservers();
     }
 
+    // Adds a bike to the serviced bikes list. Notifies observers.
     public void addServicedBike(Bike bike)
     {
         servicedBikes.add(bike);
-        logger.info("Bike added to serviced: " + bike);
         notifyObservers();
     }
 
-    public void removeServicedBike(Bike bike)
-    {
-        servicedBikes.remove(bike);
-        logger.info("Bike removed from serviced: " + bike);
-        notifyObservers();
-    }
-
+    // Adds a bike to the awaiting pickup bikes list. Notifies observers.
     public void addAwaitingPickupBike(Bike bike)
     {
         awaitingPickupBikes.add(bike);
-        logger.info("Bike added to awaiting pickup: " + bike);
         notifyObservers();
     }
 
+    // Removes a bike from the awaiting pickup bikes list. Notifies observers.
     public void removeAwaitingPickupBike(Bike bike)
     {
         awaitingPickupBikes.remove(bike);
-        logger.info("Bike removed from awaiting pickup: " + bike);
         notifyObservers();
     }
 
-    public int getAvailableBikeCount()
+    // Increments the days in servicing state for all serviced bikes.
+    public void incrementDaysInServicingState()
     {
-        return availableBikes.size();
+        Iterator<Bike> iterator = servicedBikes.iterator();
+        while (iterator.hasNext())
+        {
+            Bike bike = iterator.next();
+            bike.incrementDaysInServicingState();
+            if (bike.getState() instanceof AwaitingPickupState)
+            {
+                iterator.remove();
+                addAwaitingPickupBike(bike);
+            }
+        }
+        notifyObservers();
     }
 
-    public int getServicedBikeCount()
-    {
-        return servicedBikes.size();
-    }
-
-    public int getAwaitingPickupBikeCount()
-    {
-        return awaitingPickupBikes.size();
-    }
-
+    // Adds an observer to the list of observers.
     @Override
     public void addObserver(Observer observer)
     {
         observers.add(observer);
     }
 
+    // Removes an observer from the list of observers.
     @Override
     public void removeObserver(Observer observer)
     {
         observers.remove(observer);
     }
 
+    // Notifies all observers of changes to the inventory.
     @Override
     public void notifyObservers()
     {
@@ -288,341 +165,440 @@ public class Inventory implements Observable
         }
     }
 }
-```
 
-#### BikeShopView Implementation
-```java
-package edu.curtin.oose2024s1.assignment2.view;
+/** Interface for observers. */
+public interface Observer {
+    // Called by the observable to notify the observer of changes.
+    void update();
+}
 
-import edu.curtin.oose2024s1.assignment2.model.BankAccount;
-import edu.curtin.oose2024s1.assignment2.model.Inventory;
-import edu.curtin.oose2024s1.assignment2.observer.Observer;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.logging.Logger;
-
-// Displays shop statistics and messages.
+/** Displays shop statistics and messages.*/
 public class BikeShopView implements Observer
 {
-    private static final Logger logger = Logger.getLogger(BikeShopView.class.getName());
-    private PrintWriter writer;
-    private BankAccount bankAccount;
-    private Inventory inventory;
-
-    public BikeShopView(BankAccount bankAccount, Inventory inventory)
+    // Registers the BikeShopView as an observer for the BankAccount and Inventory.
+    public void registerObservers(BankAccount bankAccount, Inventory inventory)
     {
-        this.bankAccount = bankAccount;
-        this.inventory = inventory;
         bankAccount.addObserver(this);
         inventory.addObserver(this);
-
-        try
-        {
-            writer = new PrintWriter(new FileWriter("sim_results.txt", true));
-        }
-        catch(IOException e)
-        {
-            logger.severe("Error opening sim_results.txt: " + e.getMessage());
-        }
     }
-
+    
+     // Updates the view. This method is called when the observable notifies its observers.
     @Override
-    public void update()
+    public void update() {}
+    
+    // Unregisters the BikeShopView as an observer for the BankAccount and Inventory.
+    public void unregisterObservers(BankAccount bankAccount, Inventory inventory)
     {
-        displayStatus();
-    }
-
-    public void displayStatus()
-    {
-        String status = "Bank Account Balance: $" + bankAccount.getBalance() +
-                "\nBikes Available: " + inventory.getAvailableBikeCount() +
-                "\nBikes Being Serviced: " + inventory.getServicedBikeCount() +
-                "\nBikes Awaiting Pickup: " + inventory.getAwaitingPickupBikeCount();
-        System.out.println(status);
-        logToFile(status);
-    }
-
-    public void logMessage(String message)
-    {
-        System.out.println(message);
-        logToFile(message);
-    }
-
-    public void logFailure(String failureReason)
-    {
-        String failureMessage = "FAILURE: " + failureReason;
-        System.out.println(failureMessage);
-        logToFile(failureMessage);
-    }
-
-    private void logToFile(String message)
-    {
-        writer.println(message);
-        writer.flush();
-    }
-
-    public void close()
-    {
-        if(writer != null)
-        {
-            writer.close();
-        }
+        bankAccount.removeObserver(this);
+        inventory.removeObserver(this);
     }
 }
 ```
 
-### Explanation
+## (f) State Pattern
+### State Pattern
+- **Design Purpose**: Allows the `Bike` class to change its behavior when its state changes, enabling dynamic state transitions.
+- **Implemented in**: `Bike` class.
+    - Defined by `BikeState` interface.
+    - Implemented by `AvailableState`, `ServicingState`, `AwaitingPickupState`.
 
-- **Observables**:
-   - `BankAccount` and `Inventory` are observables because they contain state information that, when changed, should notify other parts of the system.
-   - They use the `Observable` interface to maintain a list of observers and notify them when changes occur.
-
-- **Observers**:
-   - `BikeShopView` is an observer because it needs to update the displayed information whenever the state of the `BankAccount` or `Inventory` changes.
-   - It implements the `Observer` interface and registers itself with the observables.
-
-By implementing the Observer pattern this way, you ensure that your views always reflect the current state of the models, adhering to the principles of the MVC architecture and the Observer pattern.
-
-
-
-
-
-------------------------------------------------------------------------
-### State Pattern Overview
-
-The State Pattern is a behavioral design pattern that allows an object to change its behavior when its internal state changes. This pattern is particularly useful when an object needs to exhibit different behaviors based on its current state.
-
-**Key Components of the State Pattern:**
-1. **Context**: The object that contains a state.
-2. **State Interface**: An interface that defines the behavior associated with a state.
-3. **Concrete State Classes**: Implementations of the state interface that provide behavior for different states.
-4. **State Transitions**: The context delegates state-specific behavior to the current state object, and state transitions are handled by changing the current state.
-
-### Implementation in the Bike Shop Project
-
-For this project, the `Bike` class will serve as the context, with different states representing its status: `Available`, `BeingServiced`, and `AwaitingPickup`. The state pattern will allow the `Bike` class to change its behavior based on its current state.
-
-#### Steps to Implement the State Pattern
-
-1. **Define the State Interface (`BikeState`)**:
-   - This interface will declare methods that each state must implement. These methods will define the behavior that varies depending on the bike's state.
-
-2. **Implement Concrete State Classes**:
-   - Create concrete classes for each state (`AvailableState`, `BeingServicedState`, `AwaitingPickupState`). Each class will implement the `BikeState` interface and provide specific behavior for that state.
-
-3. **Modify the `Bike` Class**:
-   - Add a `BikeState` field to represent the current state of the bike.
-   - Implement methods to set the current state and delegate state-specific behavior to the state object.
-
-4. **Handle State Transitions**:
-   - Ensure that state transitions (e.g., from `Available` to `BeingServiced`) are handled correctly by changing the current state object.
-
-### Code Implementation
-
-#### 1. State Interface (`BikeState`)
+#### State Pattern Implementation
 ```java
-package edu.curtin.oose2024s1.assignment2.state;
-
-import edu.curtin.oose2024s1.assignment2.model.Bike;
-
-// Interface for bike states.
-public interface BikeState
-{
-    void dropOff(Bike bike);
-    void pickUp(Bike bike);
-    void purchase(Bike bike);
+/** Interface for bike states. */
+public interface BikeState {
+    void dropOff(Bike bike); // Defines the behavior for dropping off a bike in a specific state.
+    void pickUp(Bike bike); // Defines the behavior for picking up a bike in a specific state.
+    void purchase(Bike bike); // Defines the behavior for purchasing a bike in a specific state.
 }
-```
 
-#### 2. Concrete State Classes
-
-**AvailableState**
-```java
-package edu.curtin.oose2024s1.assignment2.state;
-
-import edu.curtin.oose2024s1.assignment2.model.Bike;
-
-// Concrete state for bikes that are available.
-public class AvailableState implements BikeState
-{
-    @Override
-    public void dropOff(Bike bike)
-    {
-        bike.setState(new BeingServicedState());
-        bike.setStatus(Bike.Status.BEING_SERVICED);
-        // Additional logic for drop-off can be added here
-    }
-
-    @Override
-    public void pickUp(Bike bike)
-    {
-        // Bikes cannot be picked up if they are available
-        throw new UnsupportedOperationException("Bike is already available.");
-    }
-
-    @Override
-    public void purchase(Bike bike)
-    {
-        bike.setState(new AwaitingPickupState());
-        bike.setStatus(Bike.Status.AWAITING_PICKUP);
-        // Additional logic for purchase can be added here
-    }
-}
-```
-
-**BeingServicedState**
-```java
-package edu.curtin.oose2024s1.assignment2.state;
-
-import edu.curtin.oose2024s1.assignment2.model.Bike;
-
-// Concrete state for bikes that are being serviced.
-public class BeingServicedState implements BikeState
-{
-    @Override
-    public void dropOff(Bike bike)
-    {
-        // Bikes cannot be dropped off if they are already being serviced
-        throw new UnsupportedOperationException("Bike is already being serviced.");
-    }
-
-    @Override
-    public void pickUp(Bike bike)
-    {
-        bike.setState(new AvailableState());
-        bike.setStatus(Bike.Status.AVAILABLE);
-        // Additional logic for pick-up can be added here
-    }
-
-    @Override
-    public void purchase(Bike bike)
-    {
-        // Bikes cannot be purchased if they are being serviced
-        throw new UnsupportedOperationException("Bike is being serviced.");
-    }
-}
-```
-
-**AwaitingPickupState**
-```java
-package edu.curtin.oose2024s1.assignment2.state;
-
-import edu.curtin.oose2024s1.assignment2.model.Bike;
-
-// Concrete state for bikes that are awaiting pickup.
-public class AwaitingPickupState implements BikeState
-{
-    @Override
-    public void dropOff(Bike bike)
-    {
-        // Bikes cannot be dropped off if they are awaiting pickup
-        throw new UnsupportedOperationException("Bike is awaiting pickup.");
-    }
-
-    @Override
-    public void pickUp(Bike bike)
-    {
-        bike.setState(new AvailableState());
-        bike.setStatus(Bike.Status.AVAILABLE);
-        // Additional logic for pick-up can be added here
-    }
-
-    @Override
-    public void purchase(Bike bike)
-    {
-        // Bikes cannot be purchased if they are awaiting pickup
-        throw new UnsupportedOperationException("Bike is awaiting pickup.");
-    }
-}
-```
-
-#### 3. Modify the `Bike` Class
-```java
-package edu.curtin.oose2024s1.assignment2.model;
-
-import edu.curtin.oose2024s1.assignment2.state.BikeState;
-import edu.curtin.oose2024s1.assignment2.state.AvailableState;
-
-// Represents a bike.
-public class Bike
-{
-    public enum Status
-    {
-        AVAILABLE, BEING_SERVICED, AWAITING_PICKUP
-    }
-
-    private Status status;
-    private String associatedEmail;
+/** Represents a bike */
+public class Bike {
     private BikeState state;
 
+    private BikeState state;
+    private String associatedEmail;
+    private int daysInServicingState;
+
+    // Constructor initialises the bike with the available state.
     public Bike()
     {
         this.state = new AvailableState();
-        this.status = Status.AVAILABLE;
+        this.daysInServicingState = 0;
     }
 
-    public Status getStatus()
+    // Returns the current state of the bike.
+    public BikeState getState()
     {
-        return status;
+        return state;
     }
 
-    public void setStatus(Status status)
-    {
-        this.status = status;
-    }
-
-    public String getAssociatedEmail()
-    {
-        return associatedEmail;
-    }
-
-    public void setAssociatedEmail(String email)
-    {
-        this.associatedEmail = email;
-    }
-
+    // Sets the state of the bike to the given state.
     public void setState(BikeState state)
     {
         this.state = state;
     }
 
+    // Sets the email associated with the bike to the given email.
+    public void setAssociatedEmail(String email)
+    {
+        this.associatedEmail = email;
+    }
+
+    // Delegates the drop-off action to the current state.
     public void dropOff()
     {
         state.dropOff(this);
+        daysInServicingState = 0; // Reset days in servicing state
     }
 
+    // Delegates the pick-up action to the current state.
     public void pickUp()
     {
         state.pickUp(this);
+        logger.info(() -> "Bike picked up. State: " + state);
     }
 
+    // Delegates the purchase action to the current state.
     public void purchase()
     {
         state.purchase(this);
     }
 
+    // Increments the days the bike has been in the servicing state.
+    public void incrementDaysInServicingState()
+    {
+        if (state instanceof ServicingState)
+        {
+            daysInServicingState++;
+            if (daysInServicingState > 2)
+            {
+                // Transition to AwaitingPickupState after servicing
+                state = new AwaitingPickupState();
+            }
+        }
+    }
+
+    // Returns the number of days the bike has been in the servicing state.
+    public int getDaysInServicingState()
+    {
+        return daysInServicingState;
+    }
+
+    // Returns a string representation of the bike, including its state and associated email.
     @Override
     public String toString()
     {
         return "Bike{" +
-                "status=" + status +
+                "state=" + state +
                 ", associatedEmail='" + associatedEmail + '\'' +
+                ", daysInServicingState=" + daysInServicingState +
                 '}';
+    }
+}
+
+/* Concrete state for bikes that are available. */
+public class AvailableState implements BikeState
+{
+    // Transitions the bike to the servicing state and disassociates any email.
+    @Override
+    public void dropOff(Bike bike)
+    {
+        bike.setState(new ServicingState());
+        bike.setAssociatedEmail(null);
+    }
+
+    // Throws an IllegalStateException because picking up a bike is not valid in the available state.
+    @Override
+    public void pickUp(Bike bike)
+    {
+        throw new IllegalStateException("Bike cannot be picked up when it is available.");
+    }
+
+    // Transitions the bike to the awaiting pickup state.
+    @Override
+    public void purchase(Bike bike)
+    {
+        bike.setState(new AwaitingPickupState());
+    }
+
+    // Returns the string representation of the state.
+    @Override
+    public String toString()
+    {
+        return "Available";
+    }
+}
+
+/** Concrete state for bikes that are being serviced. */
+public class ServicingState implements BikeState
+{
+    // Throws an exception as dropping off a bike is not a valid operation when the bike is already being serviced.
+    @Override
+    public void dropOff(Bike bike)
+    {
+        throw new IllegalStateException("Bike is already being serviced.");
+    }
+
+    // Transitions the bike to the Available state and clears the associated email.
+    @Override
+    public void pickUp(Bike bike)
+    {
+        bike.setState(new AwaitingPickupState());
+    }
+
+    // Throws an exception as purchasing a bike is not a valid operation when the bike is being serviced.
+    @Override
+    public void purchase(Bike bike)
+    {
+        throw new IllegalStateException("Bike cannot be purchased when it is being serviced.");
+    }
+
+    // Returns the string representation of the state.
+    @Override
+    public String toString()
+    {
+        return "Being Serviced";
+    }
+}
+
+/** Concrete state for bikes that are awaiting pickup. */
+public class AwaitingPickupState implements BikeState
+{
+    // Throws an IllegalStateException because dropping off a bike is not valid in the awaiting pickup state.
+    @Override
+    public void dropOff(Bike bike)
+    {
+        throw new IllegalStateException("Bike cannot be dropped off when it is awaiting pickup.");
+    }
+
+    // Transitions the bike to the available state and disassociates any email.
+    @Override
+    public void pickUp(Bike bike)
+    {
+        bike.setState(new AvailableState());
+    }
+
+    // Throws an IllegalStateException because purchasing a bike is not valid in the awaiting pickup state.
+    @Override
+    public void purchase(Bike bike)
+    {
+        throw new IllegalStateException("Bike is already purchased.");
+    }
+
+    // Returns the string representation of the state.
+    @Override
+    public String toString()
+    {
+        return "Awaiting Pickup";
     }
 }
 ```
 
-### How it All Fits Together
+## (a) General Code Quality
+- **Comments and Documentation**: Comprehensive comments included throughout.
 
-1. **Bike (Context)**: The `Bike` class maintains a reference to a `BikeState` object, representing its current state. It delegates state-specific behavior to this state object.
-2. **BikeState (State Interface)**: Defines the operations that each state must implement.
-3. **AvailableState, BeingServicedState, AwaitingPickupState (Concrete States)**: Each class implements the `BikeState` interface and provides behavior specific to the state it represents.
-4. **State Transitions**: The `Bike` class handles state transitions by changing its current state object. For example, calling `dropOff()` on a bike in the `AvailableState` transitions it to the `BeingServicedState`.
+For example:
+```java
+package edu.curtin.oose2024s1.assignment2.view;
 
-By implementing the State Pattern, you ensure that the `Bike` class can change its behavior dynamically based on its current state, leading to a more flexible and maintainable design.
+import edu.curtin.oose2024s1.assignment2.model.*;
+import edu.curtin.oose2024s1.assignment2.observer.Observer;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.logging.Logger;
 
+/**
+ Purpose:
+ - This class will manage the display of the bike shop's status, such as the number of bikes available, being serviced, and awaiting pickup, as well as the bank account balance. It will also handle logging messages to the console and writing them to the "sim_results.txt" file.
+ Role:
+ - Acts as the presentation layer of the application, showing the current state of the bike shop to the user and ensuring that all output is logged appropriately.
+ */
+// Displays shop statistics and messages.
+public class BikeShopView implements Observer
+{
+    private static final Logger logger = Logger.getLogger(BikeShopView.class.getName());
+    private PrintWriter writer;
+
+    /**
+     METHOD: BikeShopView
+     IMPORT: None
+     EXPORT: None
+     ALGORITHM:
+     Constructor that initialises the PrintWriter for writing to the "sim_results.txt" file.
+     */
+    public BikeShopView()
+    {
+        try
+        {
+            writer = new PrintWriter(new FileWriter("sim_results.txt", true));
+            logger.info("sim_results.txt opened successfully.");
+        }
+        catch(IOException e)
+        {
+            logger.severe(() -> "Error opening sim_results.txt: " + e.getMessage());
+        }
+    }
+...
+```
+- **PMD Compliance**: No warnings.
+
+## (b) Clear and Distinct Package/Class/Interface/Method Responsibilities
+### Package Responsibilities
+- **Purpose**: Organises the code into meaningful packages, enhancing modularity and maintainability.
+- **Package Structure**:
+    - `controller`: Manages operations and processes events.
+    - `factory`: Creates new Bike instances.
+    - `model`: Represents the core data and state of the application.
+    - `observer`: Defines the observer pattern interfaces and classes.
+    - `state`: Implements the state pattern for `Bike` states.
+    - `view`: Manages the display of the bike shop's status.
+
+![PackageDirectory](PackageDirectory.JPG)
+
+![UMLClassDiagram](UMLClassDiagram.png)
+
+## (c) Appropriate Error Handling and Logging
+### Error Handling
+- Applied the same logic and practices as Assignment 1.
+
+### Logging
+- Applied the same logic and practices as Assignment 1.
+
+#### Example of Error Handling and Logging
+```java
+/**
+ METHOD: run
+ IMPORT: None
+ EXPORT: None
+ ALGORITHM:
+ Executes the event loop, processing messages and updating the bike shop's state.
+ */
+public void run() throws IOException
+{
+    int daysElapsed = 0;
+    logger.info("\n\nStarting event loop.");
+
+    try
+    {
+        while(System.in.available() == 0)
+        {
+            // Clear the console for better UX
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+
+            // Simulate one day
+            daysElapsed++;
+            int finalDaysElapsed = daysElapsed;
+            logger.fine(() -> "\n\nSimulated day: " + finalDaysElapsed);
+
+            // Display status
+            bikeShopView.displayStatus(daysElapsed, bankAccount, inventory);
+
+            // Pay the employee every 7 days
+            if (daysElapsed % 7 == 0)
+            {
+                bankAccount.withdraw(1000, true); // $1000 payment to the employee
+                int finalDaysElapsed1 = daysElapsed;
+                logger.info(() -> "Employee paid $1000 on day " + finalDaysElapsed1 + ".");
+            }
+
+            // Process all messages for this day
+            String message = bikeShopInput.nextMessage();
+            while(message != null)
+            {
+                totalMessages++;
+                String result = bikeShopController.processMessage(message);
+                if(result.startsWith("FAILURE"))
+                {
+                    totalFailures++;
+                }
+                System.out.println(result);
+                bikeShopView.logToFile(result);
+                message = bikeShopInput.nextMessage();
+            }
+
+            // Increment the days in servicing state for all serviced bikes
+            inventory.incrementDaysInServicingState();
+
+            // Sleep for 1 second (simulates 1 day)
+            try
+            {
+                Thread.sleep(1000);
+            }
+            catch(InterruptedException e)
+            {
+                logger.severe(() -> "Thread interrupted: " + e.getMessage());
+                throw new AssertionError(e);
+            }
+        }
+    }
+    catch (IOException e)
+    {
+        logger.severe(() -> "I/O error during event loop: " + e.getMessage());
+        throw e;
+    }
+
+    // Final statistics
+    displayFinalStatistics(totalMessages, totalFailures);
+    logger.info("Event loop ended.");
+
+    // Unregister observers at the end of the simulation
+    bikeShopView.unregisterObservers(bankAccount, inventory);
+}
+```
+
+## (d) Implementation of a Factory and Dependency Injection
+### Factory
+- **Implemented in**: `BikeFactory` class.
+
+#### Example of Factory Pattern Implementation
+```java
+// Creates new Bike instances.
+public class BikeFactory
+{
+    private static final Logger logger = Logger.getLogger(BikeFactory.class.getName());
+
+    /**
+     METHOD: createBike
+     IMPORT: None
+     EXPORT: bike (Bike)
+     ALGORITHM:
+     Creates and returns a new Bike instance.
+     */
+    public Bike createBike()
+    {
+        Bike bike = new Bike();
+        logger.info(() -> "Created new bike: " + bike);
+        return new Bike();
+    }
+}
+```
+
+### Dependency Injection
+- **Implemented in**: `BikeShopController` constructor.
+
+#### Example of Dependency Injection
+```java
+    /**
+     METHOD: BikeShopController
+     IMPORT: inventory (Inventory), bankAccount (BankAccount)
+     EXPORT: None
+     ALGORITHM:
+     Constructor that initialises the inventory and bank account.
+     */
+    public BikeShopController(Inventory inventory, BankAccount bankAccount)
+    {
+        this.inventory = inventory;
+        this.bankAccount = bankAccount;
+        this.bikeFactory = new BikeFactory();
+    }
+```
+
+## (h) Meaningful Use of Generics
+### Generics Usage
+- **Note**: Generics were not implemented in this project.
 
 ## References
 1. https://www.cs.unc.edu/~carterjl/teaching/notes/15_MVC_Notes.pdf - Used to help understand and implement observer pattern (only used for contextual based knowledge and further understanding of observer pattern).
