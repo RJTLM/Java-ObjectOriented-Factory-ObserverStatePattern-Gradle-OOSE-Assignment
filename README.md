@@ -32,6 +32,10 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 │   ├── Brief.txt
 │   ├── criteria.md
 │   ├── Plan.md
+│   ├── UMLClassDiagram.png
+│   ├── UMLGeneralBikeStateChart.png
+│   ├── UMLBikeDropOffStateChart.png
+│   └── UMLBikePickUpStateChart.png
 │
 ├── gradle
 ├── src
@@ -109,4 +113,4 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 ### Acknowledgements
 
-This project is a part of the Object Oriented Software Engineering (OOSE)(COMP2003)unit at Curtin University.
+This project is a part of the Object Oriented Software Engineering (OOSE)(COMP2003) unit at Curtin University.

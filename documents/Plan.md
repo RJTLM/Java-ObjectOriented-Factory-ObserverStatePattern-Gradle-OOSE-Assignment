@@ -123,10 +123,13 @@ The application will simulate a bicycle shop that both sells and repairs bikes.
    - ~~Logging: Add more logging statements to help trace the program's execution. Make sure to log significant events like state changes, errors, and important actions.~~
 
 9. **Create UML Diagrams**
-    - Draw class and state diagrams using draw.io.
-    - Ensure diagrams accurately represent the implemented design.
+    - ~~Draw class and state diagrams using draw.io (Used PlantUML to try something new).~~
+    - ~~Ensure diagrams accurately represent the implemented design.~~
 
 10. **Testing and Validation**
     - ~~Ensure no PMD warnings remain, unless justified.~~
     - ~~Test the application to ensure it meets all requirements and handles errors gracefully.~~
     - ~~Validate the output in `sim_results.txt`.~~
+
+11. **Criteria.md**
+    - Do Criteria.md
