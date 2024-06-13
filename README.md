@@ -8,7 +8,7 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 
 ### Key Features
 
-- **Object-Oriented Design**: Utilizes principles of object-oriented programming to create a modular and maintainable codebase.
+- **Object-Oriented Design**: Utilises principles of object-oriented programming to create a modular and maintainable codebase.
 - **Factory Pattern**: Implements factories for creating objects, promoting loose coupling and flexibility.
 - **Observer Pattern**: Applies the observer pattern to manage and respond to changes in state across different parts of the application.
 - **State Pattern**: Uses the state pattern to handle the various states and transitions within the bike shop simulation.
@@ -17,9 +17,65 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 ### Contents
 
 - **src**: Source code implementing the Bike Shop simulation.
-- **tests**: Unit tests ensuring the correctness of the implementation.
-- **docs**: Documentation including UML diagrams and detailed descriptions of the design and architecture.
+- **documents**: Documentation including UML diagrams and detailed descriptions of the design and architecture.
 - **build.gradle**: Gradle build configuration file.
+
+### Directory Structure
+
+```plaintext
+2024_assignment2_starter_java [assignment2_app]
+│
+├── .gradle
+├── .idea
+├── build
+├── documents
+│   ├── Brief.txt
+│   ├── criteria.md
+│   ├── Plan.md
+│
+├── gradle
+├── src
+│   └── main
+│       └── java
+│           └── edu
+│               └── curtin
+│                   └── oose2024s1
+│                       └── assignment2
+│                           ├── controller
+│                           │   ├── BikeShopController.java
+│                           │   └── EventLoop.java
+│                           ├── factory
+│                           │   └── BikeFactory.java
+│                           ├── model
+│                           │   ├── BankAccount.java
+│                           │   ├── Bike.java
+│                           │   ├── Customer.java
+│                           │   └── Inventory.java
+│                           ├── observer
+│                           │   ├── Observable.java
+│                           │   └── Observer.java
+│                           ├── state
+│                           │   ├── AvailableState.java
+│                           │   ├── AwaitingPickupState.java
+│                           │   ├── BikeState.java
+│                           │   └── ServicingState.java
+│                           └── view
+│                               ├── BikeShopView.java
+│                               ├── App.java
+│                               └── BikeShopInput.java
+│
+├── app0.log
+├── build.gradle
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── LICENSE
+├── logging.properties
+├── oose-pmd-rules.xml
+├── README.md
+├── settings.gradle
+└── sim_results.txt
+```
 
 ### Getting Started
 
@@ -53,4 +109,4 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 ### Acknowledgements
 
-This project is a part of the Object-Oriented Software Engineering course at Curtin University.
+This project is a part of the Object Oriented Software Engineering (OOSE)(COMP2003)unit at Curtin University.

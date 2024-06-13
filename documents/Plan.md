@@ -25,8 +25,8 @@
     - Provide one class diagram showing the structure of the entire app; and
     - One state chart showing states and state transitions corresponding to your implementation of the State Pattern.
 
-8. **Bonus Marks for Generics (up to 4 bonus marks)**
-    - Meaningful use of generics for type-safe code reuse.
+8. **DID NOT ATTEMPT: ~~Bonus Marks for Generics (up to 4 bonus marks)~~**
+    - ~~Meaningful use of generics for type-safe code reuse.~~
 
 ### Problem Description
 
@@ -105,28 +105,28 @@ The application will simulate a bicycle shop that both sells and repairs bikes.
 
 5. **Implement the Factory**
     - ~~Create `BikeFactory` to handle bike creation.~~
-    - Factory Pattern: `BikeFactory` class is simple and effective. Ensure that all object creation is done through this factory to maintain consistency. 
-    - Dependency Injection: Ensure that dependencies are injected into classes rather than being created within the classes themselves. This makes your code more modular and easier to test.
+    - ~~Factory Pattern: `BikeFactory` class is simple and effective. Ensure that all object creation is done through this factory to maintain consistency.~~
+    - ~~Dependency Injection: Ensure that dependencies are injected into classes rather than being created within the classes themselves. This makes your code more modular and easier to test.~~
 
 6. **Implement the Observer Pattern**
     - ~~Create `Observable` and `Observer` interfaces.~~
     - ~~Implement the pattern in appropriate classes.~~
-    - Implementation: Implementation of the Observer pattern is correct. Ensure that all necessary updates are propagated to observers. In BikeShopView class, implement the update method to refresh the view when the state changes.
+    - ~~Implementation: Implementation of the Observer pattern is correct. Ensure that all necessary updates are propagated to observers. In BikeShopView class, implement the update method to refresh the view when the state changes.~~
 
 7. **Implement the State Pattern**
     - ~~Create `BikeState` interface and concrete state classes.~~
     - ~~Implement state transitions.~~
-    - State Transitions: Ensure that all state transitions are correctly handled in the BikeState implementations. Each state class should only handle operations that are valid for that state.
+    - ~~State Transitions: Ensure that all state transitions are correctly handled in the BikeState implementations. Each state class should only handle operations that are valid for that state.~~
 
 8. **Error Handling and Logging**
-   - Exception Handling: Ensure that all potential error conditions are handled gracefully. For example, if a file cannot be opened, provide a meaningful error message and take appropriate action.
-   - Logging: Add more logging statements to help trace the program's execution. Make sure to log significant events like state changes, errors, and important actions.
+   - ~~Exception Handling: Ensure that all potential error conditions are handled gracefully. For example, if a file cannot be opened, provide a meaningful error message and take appropriate action.~~
+   - ~~Logging: Add more logging statements to help trace the program's execution. Make sure to log significant events like state changes, errors, and important actions.~~
 
 9. **Create UML Diagrams**
     - Draw class and state diagrams using draw.io.
     - Ensure diagrams accurately represent the implemented design.
 
 10. **Testing and Validation**
-    - Ensure no PMD warnings remain, unless justified.
-    - Test the application to ensure it meets all requirements and handles errors gracefully.
-    - Validate the output in `sim_results.txt`.
+    - ~~Ensure no PMD warnings remain, unless justified.~~
+    - ~~Test the application to ensure it meets all requirements and handles errors gracefully.~~
+    - ~~Validate the output in `sim_results.txt`.~~
