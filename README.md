@@ -31,9 +31,12 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 ├── documents
 │   ├── Brief.txt
 │   ├── criteria.md
+│   ├── LogOutput.JPG
 │   ├── ObserverPatternDirectory.JPG
 │   ├── PackageDirectory.JPG
 │   ├── Plan.md
+│   ├── sim_resultsOutput.JPG
+│   ├── TerminalOutput.JPG
 │   ├── UMLGeneralBikeStateChart.png
 │   ├── UMLBikeDropOffStateChart.png
 │   ├── UMLClassDiagram.png
@@ -85,25 +88,35 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 
 ### Getting Started
 
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/RJTLM/Java-ObjectOriented-Factory-ObserverStatePattern-Gradle.git
-    ```
+1. **Clone the repository (Note this is currently private)**:
+   ```sh
+   git clone https://github.com/RJTLM/Java-ObjectOriented-Factory-ObserverStatePattern-Gradle.git
+   ```
 
 2. **Navigate to the project directory**:
-    ```sh
-    cd Java-ObjectOriented-Factory-ObserverStatePattern-Gradle
-    ```
+   ```sh
+   cd Java-ObjectOriented-Factory-ObserverStatePattern-Gradle
+   ```
 
 3. **Build the project using Gradle**:
-    ```sh
-    gradle build
-    ```
+   ```sh
+   gradle build
+   ```
+OR
+   ```sh
+   gradle ./build
+   ```
 
 4. **Run the simulation**:
-    ```sh
-    gradle run
-    ```
+   ```sh
+   gradle run
+   ```
+OR
+   ```sh
+   gradle ./run
+   ```
+
+This will vary depending on OS, IDE use, etc.
 
 ### License
 
