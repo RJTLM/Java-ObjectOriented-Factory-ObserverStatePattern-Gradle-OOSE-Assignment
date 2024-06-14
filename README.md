@@ -88,7 +88,30 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
 
 ### Getting Started
 
-1. **Clone the repository (Note this is currently private)**:
+2. **Navigate to the project directory *2024_assignment2_starter_java***:
+   ```sh
+   cd 2024_assignment2_starter_java
+   ```
+
+3. **Build the project using Gradle**:
+   ```sh
+   gradlew ./build
+   ```
+
+4. **Run the simulation**:
+   ```sh
+   gradlew ./run
+   ```
+
+5. **End the simulation**
+   ```plaintext
+   Press the Enter/Return key to end the simulation
+   ```
+This may vary depending on OS, IDE use, etc.
+
+### Getting Started from GitHub (Note this is currently a private repository and may not be relevant)
+
+1. **Clone the repository**:
    ```sh
    git clone https://github.com/RJTLM/Java-ObjectOriented-Factory-ObserverStatePattern-Gradle.git
    ```
@@ -102,21 +125,13 @@ The Bike Shop simulation includes functionalities for selling and repairing bike
    ```sh
    gradle build
    ```
-OR
-   ```sh
-   gradle ./build
-   ```
 
 4. **Run the simulation**:
    ```sh
    gradle run
    ```
-OR
-   ```sh
-   gradle ./run
-   ```
 
-This will vary depending on OS, IDE use, etc.
+This may vary depending on OS, IDE use, etc.
 
 ### License
 
